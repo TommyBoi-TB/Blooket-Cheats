@@ -11,7 +11,7 @@ Automatically answers questions for you
 ### [Highlight Answers](intervals/highlightAnswers.js)
 Automatically highlights the correct answers
 
-## [Anti Suspend](antiSuspend.js)
+## [Anti Suspend](antiSuspend.js) (By rzx)
 Blocks the **suspend-me** api[^1]
 
 ## [Auto Answer](autoAnswer.js)

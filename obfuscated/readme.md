@@ -15,7 +15,7 @@ When ever you need to add the cheats to your bookmarks, download [this file](Boo
 
 ## List of Cheats
 ### [Global](global/)
-[Anti Suspend](global/antiSuspend.js)<br>
+[Anti Suspend](global/antiSuspend.js) (By rzx)<br>
 [Auto Answer](global/autoAnswer.js)<br>
 [Highlight Answers](global/highlightAnswers.js)<br>
 

@@ -15,7 +15,7 @@ When ever you need to add the cheats to your bookmarks, download [this file](obf
 
 ## List of Cheats
 ### [Global](obfuscated/global/)
-[Anti Suspend](obfuscated/global/antiSuspend.js)<br>
+[Anti Suspend](obfuscated/global/antiSuspend.js) (By rzx)<br>
 [Auto Answer](obfuscated/global/autoAnswer.js)<br>
 [Highlight Answers](obfuscated/global/highlightAnswers.js)<br>
 
