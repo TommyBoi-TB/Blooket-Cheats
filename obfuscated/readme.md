@@ -15,64 +15,64 @@ When ever you need to add the cheats to your bookmarks, download [this file](Boo
 
 ## List of Cheats
 ### [Global](global/)
-[Anti Suspend](global/antiSuspend.js)
-[Auto Answer](global/autoAnswer.js)
-[Highlight Answers](global/highlightAnswers.js)
+[Anti Suspend](global/antiSuspend.js)<br>
+[Auto Answer](global/autoAnswer.js)<br>
+[Highlight Answers](global/highlightAnswers.js)<br>
 
 **[Intervals](global/intervals/)**
-[Auto Answer](global/intervals/autoAnswer.js)
-[Highlight Answers](global/intervals/highlightAnswers.js)
+[Auto Answer](global/intervals/autoAnswer.js)<br>
+[Highlight Answers](global/intervals/highlightAnswers.js)<br>
 ### [Cafe](cafe/)
-[Max Items](cafe/maxItems.js)
-[Remove Customers](cafe/removeCustomers.js)
-[Reset Abilities](cafe/resetAbilities.js)
-[Set Cash](cafe/setCash.js)
-[Stock Food](cafe/stockFood.js)
+[Max Items](cafe/maxItems.js)<br>
+[Remove Customers](cafe/removeCustomers.js)<br>
+[Reset Abilities](cafe/resetAbilities.js)<br>
+[Set Cash](cafe/setCash.js)<br>
+[Stock Food](cafe/stockFood.js)<br>
 ### [Crypto Hack](crypto/)
-[Choice ESP](crypto/choiceESP.js)
-[Password ESP](crypto/passwordESP.js)
-[Remove Hack](crypto/removeHack.js)
-[Set Crypto](crypto/setCrypto.js)
-[Set Password](crypto/setPassword.js)
-[Steal Player's Crypto](crypto/stealPlayersCrypto.js)
+[Choice ESP](crypto/choiceESP.js)<br>
+[Password ESP](crypto/passwordESP.js)<br>
+[Remove Hack](crypto/removeHack.js)<br>
+[Set Crypto](crypto/setCrypto.js)<br>
+[Set Password](crypto/setPassword.js)<br>
+[Steal Player's Crypto](crypto/stealPlayersCrypto.js)<br>
 ### [Deceptive Dinos](dinos/)
-[Rock ESP](dinos/rockESP.js)
-[Set Fossils](dinos/setFossils.js)
-[Set Multiplier](dinos/setMultiplier.js)
-[Stop Cheating](dinos/stopCheating.js)
+[Rock ESP](dinos/rockESP.js)<br>
+[Set Fossils](dinos/setFossils.js)<br>
+[Set Multiplier](dinos/setMultiplier.js)<br>
+[Stop Cheating](dinos/stopCheating.js)<br>
 ### [Tower of Doom](doom/)
-[Fill Deck](doom/fillDeck.js)
-[Max Cards](doom/maxCards.js)
-[Max Health](doom/maxHealth.js)
-[Max Stats](doom/maxStats.js)
-[Min Enemy](doom/minEnemy.js)
-[Set Coins](doom/setCoins.js)
+[Fill Deck](doom/fillDeck.js)<br>
+[Max Cards](doom/maxCards.js)<br>
+[Max Health](doom/maxHealth.js)<br>
+[Max Stats](doom/maxStats.js)<br>
+[Min Enemy](doom/minEnemy.js)<br>
+[Set Coins](doom/setCoins.js)<br>
 ### [Factory](factory/)
-[Max Blooks](factory/maxBlooks.js)
-[Remove Glitches](factory/removeGlitches.js)
-[Set All Mega Bot](factory/setAllMegaBot.js)
-[Set Cash](factory/setCash.js)
+[Max Blooks](factory/maxBlooks.js)<br>
+[Remove Glitches](factory/removeGlitches.js)<br>
+[Set All Mega Bot](factory/setAllMegaBot.js)<br>
+[Set Cash](factory/setCash.js)<br>
 ### [Gold Quest](gold/)
-[Chest ESP](gold/chestESP.js)
-[Reset Player's Gold](gold/resetPlayersGold.js)
-[Set Gold](gold/setGold.js)
-[Swap Gold](gold/swapGold.js)
+[Chest ESP](gold/chestESP.js)<br>
+[Reset Player's Gold](gold/resetPlayersGold.js)<br>
+[Set Gold](gold/setGold.js)<br>
+[Swap Gold](gold/swapGold.js)<br>
 ### [Crazy Kingdom](kingdom/)
-[Choice ESP](kingdom/choiceESP.js)
-[Disable Toucan](kingdom/disableToucan.js)
-[Max Stats](kingdom/maxStats.js)
-[Set Guests](kingdom/setGuests.js)
-[Skip Guest](kingdom/skipGuest.js)
+[Choice ESP](kingdom/choiceESP.js)<br>
+[Disable Toucan](kingdom/disableToucan.js)<br>
+[Max Stats](kingdom/maxStats.js)<br>
+[Set Guests](kingdom/setGuests.js)<br>
+[Skip Guest](kingdom/skipGuest.js)<br>
 ### [Racing](racing/)
-[Instant Win](racing/instantWin.js)
+[Instant Win](racing/instantWin.js)<br>
 ### [Blook Rush](rush/)
-[Set Blooks](rush/setBlooks.js)
-[Set Defense](rush/setDefense.js)
+[Set Blooks](rush/setBlooks.js)<br>
+[Set Defense](rush/setDefense.js)<br>
 ### [Tower Defense](tower-defense/)
-[Max Towers](tower-defense/maxTowers.js)
-[Remove Ducks](tower-defense/removeDucks.js)
-[Remove Enemies](tower-defense/removeEnemies.js)
-[Place Towers Anywhere](tower-defense/removeObsticles.js)
-[Set Damage](tower-defense/setDmg.js)
-[Set Round](tower-defense/setRound.js)
-[Set Tokens](tower-defense/setTokens.js)
+[Max Towers](tower-defense/maxTowers.js)<br>
+[Remove Ducks](tower-defense/removeDucks.js)<br>
+[Remove Enemies](tower-defense/removeEnemies.js)<br>
+[Place Towers Anywhere](tower-defense/removeObsticles.js)<br>
+[Set Damage](tower-defense/setDmg.js)<br>
+[Set Round](tower-defense/setRound.js)<br>
+[Set Tokens](tower-defense/setTokens.js)<br>
