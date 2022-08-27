@@ -18,7 +18,9 @@ When ever you need to add the cheats to your bookmarks, download [this file](obf
 [Anti Suspend](obfuscated/global/antiSuspend.js) (By rzx)<br>
 [Auto Answer](obfuscated/global/autoAnswer.js)<br>
 [Auto Sell](obfuscated/global/autoSell.js)<br>
+[Auto Buy](obfuscated/global/autoBuy.js)<br>
 [Highlight Answers](obfuscated/global/highlightAnswers.js)<br>
+[Spoof Blooks](obfuscated/global/spoofBlooks.js)<br>
 
 **[Intervals](obfuscated/global/intervals/)**
 [Auto Answer](obfuscated/global/intervals/autoAnswer.js)<br>

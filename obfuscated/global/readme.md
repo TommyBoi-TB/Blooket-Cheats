@@ -20,7 +20,13 @@ Clicks the first correct answer
 ## [Auto Sell](autoSell.js)
 Sells all of your dupes
 
+## [Auto Buy](autoBuy.js)
+Opens a box a specified amount of times
+
 ## [Highlight Answers](highlightAnswers.js)
 Highlights the correct and incorrect answers
+
+## [Spoof Blooks](spoofBlooks.js)
+Gives all blooks in game lobby
 
 [^1]: Run everytime a new tab opens to make sure
