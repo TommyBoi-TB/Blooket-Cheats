@@ -17,6 +17,9 @@ Blocks the **suspend-me** api[^1]
 ## [Auto Answer](autoAnswer.js)
 Clicks the first correct answer
 
+## [Auto Sell](autoSell.js)
+Sells all of your dupes
+
 ## [Highlight Answers](highlightAnswers.js)
 Highlights the correct and incorrect answers
 
