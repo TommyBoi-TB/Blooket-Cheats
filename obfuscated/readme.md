@@ -8,7 +8,7 @@ When ever you need to add the cheats to your bookmarks, download [this file](Boo
 
 # Todo
 
-- [ ] Finish Global cheats
+- [x] Finish Global cheats
 - [ ] More Racing cheats
 - [ ] New Gamemode cheats when new UI comes out
 - [ ] New UI cheats
