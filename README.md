@@ -24,7 +24,7 @@ When ever you need to add the cheats to your bookmarks, download [this file](obf
 [Get Rewards](obfuscated/global/getRewards.js)<br>
 [Every Answer Correct](obfuscated/global/everyAnswerCorrect.js)<br>
 
-**[Intervals](obfuscated/global/intervals/)**
+**[Intervals](obfuscated/global/intervals/)**<br>
 [Auto Answer](obfuscated/global/intervals/autoAnswer.js)<br>
 [Highlight Answers](obfuscated/global/intervals/highlightAnswers.js)<br>
 ### [Cafe](obfuscated/cafe/)
