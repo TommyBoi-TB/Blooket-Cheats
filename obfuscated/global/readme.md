@@ -1,5 +1,3 @@
-# ⚠️ THESE CHEATS WILL BE UPDATED WHEN THE NEW UI COMES OUT
-
 # Global Cheats
 
 ## [Intervals](intervals/)
