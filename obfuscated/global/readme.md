@@ -12,7 +12,7 @@ Automatically answers questions for you
 Automatically highlights the correct answers
 
 ## [Anti Suspend](antiSuspend.js) (By rzx)
-Blocks the **suspend-me** api[^1]
+Blocks the `suspend-me` api[^1]
 
 ## [Auto Answer](autoAnswer.js)
 Clicks the first correct answer
@@ -28,5 +28,11 @@ Highlights the correct and incorrect answers
 
 ## [Spoof Blooks](spoofBlooks.js)
 Gives all blooks in game lobby
+
+## [Get Rewards](getRewards.js)
+Gets max daily tokens and xp
+
+## [Every Answer Correct](everyAnswerCorrect.js)
+Makes every answer correct (Fixed bug that doesn't count it as correct in finals)
 
 [^1]: Run everytime a new tab opens to make sure

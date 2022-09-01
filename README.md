@@ -21,6 +21,8 @@ When ever you need to add the cheats to your bookmarks, download [this file](obf
 [Auto Buy](obfuscated/global/autoBuy.js)<br>
 [Highlight Answers](obfuscated/global/highlightAnswers.js)<br>
 [Spoof Blooks](obfuscated/global/spoofBlooks.js)<br>
+[Get Rewards](obfuscated/global/getRewards.js)<br>
+[Every Answer Correct](obfuscated/global/everyAnswerCorrect.js)<br>
 
 **[Intervals](obfuscated/global/intervals/)**
 [Auto Answer](obfuscated/global/intervals/autoAnswer.js)<br>

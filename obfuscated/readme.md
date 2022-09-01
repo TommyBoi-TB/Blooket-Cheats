@@ -21,6 +21,8 @@ When ever you need to add the cheats to your bookmarks, download [this file](Boo
 [Auto Buy](global/autoBuy.js)<br>
 [Highlight Answers](global/highlightAnswers.js)<br>
 [Spoof Blooks](global/spoofBlooks.js)<br>
+[Get Rewards](global/getRewards.js)<br>
+[Every Answer Correct](global/everyAnswerCorrect.js)<br>
 
 **[Intervals](global/intervals/)**
 [Auto Answer](global/intervals/autoAnswer.js)<br>
