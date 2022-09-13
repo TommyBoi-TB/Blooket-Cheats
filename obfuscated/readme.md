@@ -23,6 +23,7 @@ When ever you need to add the cheats to your bookmarks, download [this file](Boo
 [Spoof Blooks](global/spoofBlooks.js)<br>
 [Get Rewards](global/getRewards.js)<br>
 [Every Answer Correct](global/everyAnswerCorrect.js)<br>
+[Unlock Plus Gamemodes](global/unlockPlusGamemodes.js)<br>
 
 **[Intervals](global/intervals/)**<br>
 [Auto Answer](global/intervals/autoAnswer.js)<br>
