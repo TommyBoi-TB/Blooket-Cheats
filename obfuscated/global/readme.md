@@ -33,4 +33,7 @@ Gets max daily tokens and xp
 ## [Every Answer Correct](everyAnswerCorrect.js)
 Makes every answer correct (Fixed bug that doesn't count it as correct in finals)
 
+## [Unlock Plus Gamemodes](unlockPlusGamemodes.js)
+Unlocks Plus Only gamemodes
+
 [^1]: Run everytime a new tab opens to make sure
