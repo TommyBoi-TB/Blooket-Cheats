@@ -28,6 +28,8 @@ When ever you need to add the cheats to your bookmarks, download [this file](Boo
 **[Intervals](global/intervals/)**<br>
 [Auto Answer](global/intervals/autoAnswer.js)<br>
 [Highlight Answers](global/intervals/highlightAnswers.js)<br>
+### [Brawl](brawl/)
+[Reset Health](brawl/resetHealth.js)<br>
 ### [Cafe](cafe/)
 [Max Items](cafe/maxItems.js)<br>
 [Remove Customers](cafe/removeCustomers.js)<br>
