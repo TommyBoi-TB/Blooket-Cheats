@@ -60,6 +60,10 @@ When ever you need to add the cheats to your bookmarks, download [this file](Boo
 [Remove Glitches](factory/removeGlitches.js)<br>
 [Set All Mega Bot](factory/setAllMegaBot.js)<br>
 [Set Cash](factory/setCash.js)<br>
+### [Fishing Frenzy](fishing/)
+[Frenzy](fishing/frenzy.js)<br>
+[Set Lure](fishing/setLure.js)<br>
+[Set Weight](fishing/setWeight.js)<br>
 ### [Gold Quest](gold/)
 [Chest ESP](gold/chestESP.js)<br>
 [Reset Player's Gold](gold/resetPlayersGold.js)<br>
