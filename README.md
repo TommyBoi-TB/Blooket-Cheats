@@ -10,8 +10,8 @@ When ever you need to add the cheats to your bookmarks, download [this file](obf
 
 - [x] Finish Global cheats
 - [ ] More Racing cheats
-- [ ] New Gamemode cheats when new UI comes out
-- [ ] New UI cheats
+- [X] New Gamemode cheats when new UI comes out
+- [x] New UI cheats
 
 ## List of Cheats
 ### [Global](obfuscated/global/)
