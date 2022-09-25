@@ -4,7 +4,7 @@
 Cheats made by someone who knows more about what they're doing
 
 ### Bookmarklets
-When ever you need to add the cheats to your bookmarks, download [this file](obfuscated/Bookmarklets.html) and import it to your [bookmarks](chrome://bookmarks)
+When ever you need to add the cheats to your bookmarks, download [this file](obfuscated/Bookmarklets.html) and import it to your bookmarks (chrome://bookmarks)
 
 # Todo
 
