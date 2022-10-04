@@ -1,5 +1,7 @@
 # Factory Cheats
 
+## [Free Upgrades](freeUpgrades.js)
+Sets upgrade prices to 0 for all current blooks
 ## [Max Blooks](maxBlooks.js)
 Maxes out all your blooks' levels
 
