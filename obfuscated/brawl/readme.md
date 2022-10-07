@@ -1,5 +1,7 @@
 # Monster Brawl Cheats
 
+## [Invincibility](invincibility.js)
+Makes you invincible
 ## [Next Level](nextLevel.js)
 Gives you another level
 ## [Remove Enemies](removeEnemies.js)
