@@ -13,9 +13,10 @@ When ever you need to add the cheats to your bookmarks, download [this file](obf
 - [X] New Gamemode cheats when new UI comes out
 - [x] New UI cheats
 
+[^1]: [Overtime](https://github.com/overtimepog)
 ## List of Cheats
 ### [Global](obfuscated/global/)
-[Anti Suspend](obfuscated/global/antiSuspend.js) (By rzx)<br>
+[Anti Suspend](obfuscated/global/antiSuspend.js)<br>
 [Auto Answer](obfuscated/global/autoAnswer.js)<br>
 [Auto Sell](obfuscated/global/autoSell.js)<br>
 [Auto Buy](obfuscated/global/autoBuy.js)<br>
@@ -29,6 +30,10 @@ When ever you need to add the cheats to your bookmarks, download [this file](obf
 [Auto Answer](obfuscated/global/intervals/autoAnswer.js)<br>
 [Highlight Answers](obfuscated/global/intervals/highlightAnswers.js)<br>
 ### [Brawl](obfuscated/brawl/)
+[Invincibility](obfuscated/brawl/invincibility.js)<br>
+[Next Level](obfuscated/brawl/nextLevel.js)<br>
+[Remove Enemies](obfuscated/brawl/removeEnemies.js)[^1]<br>
+[Remove Obstacles](obfuscated/brawl/removeObstacles.js)[^1]<br>
 [Reset Health](obfuscated/brawl/resetHealth.js)<br>
 ### [Cafe](obfuscated/cafe/)
 [Max Items](obfuscated/cafe/maxItems.js)<br>
