@@ -4,9 +4,9 @@ window.alert = i.contentWindow.alert.bind(window);
 window.prompt = i.contentWindow.prompt.bind(window);
 window.confirm = i.contentWindow.confirm.bind(window);
 i.remove();
-var axios = Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']],]).cache).find((x) => x.exports?.a?.get).exports.a;
+var axios = Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']],]).cache).filter((x) => x.exports?.a?.get)[3].exports.a;
 
-axios.get("https://api.blooket.com/api/users").then(async ({ data: { name, tokens } }) => {
+axios.get("/api/users").then(async ({ data: { name, tokens } }) => {
     let prices = {
         medieval: 15,
         breakfast: 15,
@@ -30,7 +30,7 @@ axios.get("https://api.blooket.com/api/users").then(async ({ data: { name, token
     let error = false;
 
     for (let i = 0; i < amount; i++) {
-        await axios.put("https://api.blooket.com/api/users/unlockblook", { name, box: box.split(' ').map(str => str.charAt(0).toUpperCase() + str.slice(1).toLowerCase()).join(' ') }).then(({ data: { unlockedBlook, tokens, isNewBlook } }) => {
+        await axios.put("/api/users/unlockblook", { name, box: box.split(' ').map(str => str.charAt(0).toUpperCase() + str.slice(1).toLowerCase()).join(' ') }).then(({ data: { unlockedBlook, tokens, isNewBlook } }) => {
             blooks[unlockedBlook] ||= 0;
             blooks[unlockedBlook]++;
 
