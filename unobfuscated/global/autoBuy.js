@@ -7,21 +7,11 @@ i.remove();
 var axios = Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']],]).cache).filter((x) => x.exports?.a?.get)[3].exports.a;
 
 axios.get("/api/users").then(async ({ data: { name, tokens } }) => {
-    let prices = {
-        medieval: 15,
-        breakfast: 15,
-        wonderland: 15,
-        space: 20,
-        bot: 20,
-        aquatic: 20,
-        safari: 20,
-        dino: 25,
-        "ice monster": 25
-    }
+    let prices = Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']],]).cache).find(x => x?.exports?.a?.Safari).exports.a;
     let box = prompt("Which box do you want to open? (ex: \"Ice Monster\")");
-    if (!Object.keys(prices).includes(box.toLowerCase())) return alert("I couldn't find that box!");
+    if (!Object.keys(prices).map(x => x.toLowerCase()).includes(box.toLowerCase())) return alert("I couldn't find that box!");
 
-    let amount = Math.min(Math.floor(tokens / prices[box]), parseInt(`0${prompt("How many boxes do you want to open?")}`));
+    let amount = Math.min(Math.floor(tokens / Object.entries(prices).find(x => x[0].toLowerCase() == box.toLowerCase())[1]), parseInt(`0${prompt("How many boxes do you want to open?")}`));
     if (amount == 0) return alert("You do not have enough tokens!");
 
     let alertBlooks = confirm("Would you like to alert blooks upon unlocking?");
