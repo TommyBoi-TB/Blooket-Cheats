@@ -15,15 +15,18 @@ When ever you need to add the cheats to your bookmarks, download [this file](obf
 
 [^1]: [Overtime](https://github.com/overtimepog)
 ## List of Cheats
+
+[GUI](obfuscated/gui.js)<br>
 ### [Global](obfuscated/global/)
 [Anti Suspend](obfuscated/global/antiSuspend.js)<br>
 [Auto Answer](obfuscated/global/autoAnswer.js)<br>
-[Auto Sell](obfuscated/global/autoSell.js)<br>
 [Auto Buy](obfuscated/global/autoBuy.js)<br>
+[Auto Sell](obfuscated/global/autoSell.js)<br>
+[Enable Limited Gamemodes](obfuscated/global/enableLimitedGamemodes.js)<br>
+[Every Answer Correct](obfuscated/global/everyAnswerCorrect.js)<br>
+[Get Rewards](obfuscated/global/getRewards.js)<br>
 [Highlight Answers](obfuscated/global/highlightAnswers.js)<br>
 [Spoof Blooks](obfuscated/global/spoofBlooks.js)<br>
-[Get Rewards](obfuscated/global/getRewards.js)<br>
-[Every Answer Correct](obfuscated/global/everyAnswerCorrect.js)<br>
 [Unlock Plus Gamemodes](obfuscated/global/unlockPlusGamemodes.js)<br>
 
 **[Intervals](obfuscated/global/intervals/)**<br>
@@ -61,6 +64,7 @@ When ever you need to add the cheats to your bookmarks, download [this file](obf
 [Min Enemy](obfuscated/doom/minEnemy.js)<br>
 [Set Coins](obfuscated/doom/setCoins.js)<br>
 ### [Factory](obfuscated/factory/)
+[Free Upgrades](obfuscated/factory/freeUpgrades.js)<br>
 [Max Blooks](obfuscated/factory/maxBlooks.js)<br>
 [Remove Glitches](obfuscated/factory/removeGlitches.js)<br>
 [Set All Mega Bot](obfuscated/factory/setAllMegaBot.js)<br>
@@ -71,11 +75,13 @@ When ever you need to add the cheats to your bookmarks, download [this file](obf
 [Set Weight](obfuscated/fishing/setWeight.js)<br>
 ### [Gold Quest](obfuscated/gold/)
 [Chest ESP](obfuscated/gold/chestESP.js)<br>
+[Reset All Gold](obfuscated/gold/resetAllGold.js)<br>
 [Reset Player's Gold](obfuscated/gold/resetPlayersGold.js)<br>
 [Set Gold](obfuscated/gold/setGold.js)<br>
 [Swap Gold](obfuscated/gold/swapGold.js)<br>
 ### [Crazy Kingdom](obfuscated/kingdom/)
 [Choice ESP](obfuscated/kingdom/choiceESP.js)<br>
+[Choice ESP Loop](obfuscated/kingdom/choiceESPLoop.js)<br>
 [Disable Toucan](obfuscated/kingdom/disableToucan.js)<br>
 [Max Stats](obfuscated/kingdom/maxStats.js)<br>
 [Set Guests](obfuscated/kingdom/setGuests.js)<br>

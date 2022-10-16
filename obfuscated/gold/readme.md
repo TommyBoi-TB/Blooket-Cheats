@@ -6,6 +6,9 @@ Shows what each chest will give you
 ## [Reset Player's Gold](resetPlayersGold.js)
 Sets a player's gold to 0
 
+## [Reset All Gold](resetAllGold.js)
+Set's everyone else's gold to 0
+
 ## [Set Gold](setGold.js)
 Sets amount of gold
 
