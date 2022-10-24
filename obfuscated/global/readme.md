@@ -26,6 +26,8 @@ Makes every answer correct (Fixed bug that doesn't count it as correct in finals
 Gets max daily tokens and xp
 ## [Highlight Answers](highlightAnswers.js)
 Highlights the correct and incorrect answers
+## [Simulate Unlock](simulateUnlock.js)
+Simulate unlocking most of the blooks
 ## [Spoof Blooks](spoofBlooks.js)
 Gives all blooks in game lobby
 ## [Unlock Plus Gamemodes](unlockPlusGamemodes.js)
