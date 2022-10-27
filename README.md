@@ -74,6 +74,7 @@ When ever you need to add the cheats to your bookmarks, download [this file](obf
 [Set Lure](obfuscated/fishing/setLure.js)<br>
 [Set Weight](obfuscated/fishing/setWeight.js)<br>
 ### [Gold Quest](obfuscated/gold/)
+[Auto Choose](obfuscated/gold/autoChoose.js)<br>
 [Chest ESP](obfuscated/gold/chestESP.js)<br>
 [Reset All Gold](obfuscated/gold/resetAllGold.js)<br>
 [Reset Player's Gold](obfuscated/gold/resetPlayersGold.js)<br>

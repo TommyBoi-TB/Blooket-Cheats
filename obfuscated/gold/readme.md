@@ -1,5 +1,7 @@
 # Gold Quest Cheats
 
+## [Auto Choose](autoChoose.js)
+Automatically picks the best chest
 ## [Chest ESP](chestESP.js)
 Shows what each chest will give you
 
