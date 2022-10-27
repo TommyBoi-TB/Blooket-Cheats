@@ -18,16 +18,17 @@ When ever you need to add the cheats to your bookmarks, download [this file](obf
 
 [GUI](obfuscated/gui.js)<br>
 ### [Global](obfuscated/global/)
-[Anti Suspend](obfuscated/global/antiSuspend.js)<br>
 [Auto Answer](obfuscated/global/autoAnswer.js)<br>
-[Auto Buy](obfuscated/global/autoBuy.js)<br>
-[Auto Sell](obfuscated/global/autoSell.js)<br>
 [Enable Limited Gamemodes](obfuscated/global/enableLimitedGamemodes.js)<br>
 [Every Answer Correct](obfuscated/global/everyAnswerCorrect.js)<br>
-[Get Rewards](obfuscated/global/getRewards.js)<br>
+[Get Daily Rewards](obfuscated/global/getDailyRewards.js)<br>
 [Highlight Answers](obfuscated/global/highlightAnswers.js)<br>
-[Spoof Blooks](obfuscated/global/spoofBlooks.js)<br>
+[Prevent Suspension](obfuscated/global/preventSuspension.js)<br>
+[Sell Duplicate Blooks](obfuscated/global/sellDuplicateBlooks.js)<br>
+[Simulate Unlock](obfuscated/global/simulateUnlock.js)<br>
+[Spam Buy Blooks](obfuscated/global/spamBuyBlooks.js)<br>
 [Unlock Plus Gamemodes](obfuscated/global/unlockPlusGamemodes.js)<br>
+[Use Any Blooks](obfuscated/global/useAnyBlook.js)<br>
 
 **[Intervals](obfuscated/global/intervals/)**<br>
 [Auto Answer](obfuscated/global/intervals/autoAnswer.js)<br>
