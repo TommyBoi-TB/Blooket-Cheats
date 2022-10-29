@@ -8,10 +8,9 @@ When ever you need to add the cheats to your bookmarks, download [this file](obf
 
 # Todo
 
-- [x] Finish Global cheats
+- [ ] Infinite Damage Monster Brawl using webpack
+- [ ] Maybe custom tower defense maps also using webpack
 - [ ] More Racing cheats
-- [X] New Gamemode cheats when new UI comes out
-- [x] New UI cheats
 
 [^1]: [Overtime](https://github.com/overtimepog)
 ## List of Cheats
