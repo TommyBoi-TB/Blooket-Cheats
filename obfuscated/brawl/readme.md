@@ -1,5 +1,7 @@
 # Monster Brawl Cheats
 
+## [Instant Kill](instantKill.js)
+Maxes out damage on next powerup gained
 ## [Invincibility](invincibility.js)
 Makes you invincible
 ## [Next Level](nextLevel.js)
