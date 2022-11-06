@@ -8,7 +8,7 @@ When ever you need to add the cheats to your bookmarks, download [this file](obf
 
 # Todo
 
-- [ ] Infinite Damage Monster Brawl using webpack
+- [x] Infinite Damage Monster Brawl using webpack
 - [ ] Maybe custom tower defense maps also using webpack
 - [ ] More Racing cheats
 - [ ] Possibly auto play (If I make this it won't be any time soon, I'd have to make a lot of cases for each gamemode)
@@ -34,6 +34,7 @@ When ever you need to add the cheats to your bookmarks, download [this file](obf
 [Auto Answer](obfuscated/global/intervals/autoAnswer.js)<br>
 [Highlight Answers](obfuscated/global/intervals/highlightAnswers.js)<br>
 ### [Brawl](obfuscated/brawl/)
+[Instant Kill](obfuscated/brawl/instantKill.js)<br>
 [Invincibility](obfuscated/brawl/invincibility.js)<br>
 [Next Level](obfuscated/brawl/nextLevel.js)<br>
 [Remove Enemies](obfuscated/brawl/removeEnemies.js)[^1]<br>
