@@ -1,5 +1,5 @@
 # ⚠️ ALL CHEATS ARE SUBJECT TO CHANGE
-[Support Server](https://discord.gg/QerPBatcca)
+## [Support Server](https://discord.gg/QerPBatcca)
 
 Cheats made by someone who knows more about what they're doing
 
