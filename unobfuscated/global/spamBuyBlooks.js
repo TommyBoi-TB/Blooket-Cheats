@@ -4,11 +4,21 @@ window.alert = i.contentWindow.alert.bind(window);
 window.prompt = i.contentWindow.prompt.bind(window);
 window.confirm = i.contentWindow.confirm.bind(window);
 i.remove();
-var axios = Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']],]).cache).filter((x) => x.exports?.a?.get)[3].exports.a;
+var axios = Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']],]).cache).find((x) => x.exports?.a?.get).exports.a;
 
-axios.get("/api/users").then(async ({ data: { name, tokens } }) => {
-    let prices = Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']],]).cache).find(x => x?.exports?.a?.Safari).exports.a;
-    let box = prompt("Which box do you want to open? (ex: \"Ice Monster\")");
+axios.get("https://dashboard.blooket.com/api/users").then(async ({ data: { name, tokens } }) => {
+    let prices = Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']],]).cache).find(x => x?.exports?.a?.Safari).exports.a || {
+        Medieval: 15,
+        Breakfast: 15,
+        Wonderland: 15,
+        Space: 20,
+        Bot: 20,
+        Aquatic: 20,
+        Safari: 20,
+        Dino: 25,
+        "Ice Monster": 25
+    };;
+    let box = prompt("Which box do you want to open? (ex: \"Ice Monster\")").split(' ').map(str => str.charAt(0).toUpperCase() + str.slice(1).toLowerCase()).join(' ');
     if (!Object.keys(prices).map(x => x.toLowerCase()).includes(box.toLowerCase())) return alert("I couldn't find that box!");
 
     let amount = Math.min(Math.floor(tokens / Object.entries(prices).find(x => x[0].toLowerCase() == box.toLowerCase())[1]), parseInt(`0${prompt("How many boxes do you want to open?")}`));
@@ -20,7 +30,7 @@ axios.get("/api/users").then(async ({ data: { name, tokens } }) => {
     let error = false;
 
     for (let i = 0; i < amount; i++) {
-        await axios.put("/api/users/unlockblook", { name, box: box.split(' ').map(str => str.charAt(0).toUpperCase() + str.slice(1).toLowerCase()).join(' ') }).then(({ data: { unlockedBlook, tokens, isNewBlook } }) => {
+        await axios.put("https://dashboard.blooket.com/api/users/unlockblook", { name, box }).then(({ data: { unlockedBlook, tokens, isNewBlook } }) => {
             blooks[unlockedBlook] ||= 0;
             blooks[unlockedBlook]++;
 
