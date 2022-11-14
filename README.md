@@ -24,6 +24,7 @@ When ever you need to add the cheats to your bookmarks, download [this file](obf
 [Get Daily Rewards](obfuscated/global/getDailyRewards.js)<br>
 [Highlight Answers](obfuscated/global/highlightAnswers.js)<br>
 [Prevent Suspension](obfuscated/global/preventSuspension.js)<br>
+[Sell Cheap Duplicates](obfuscated/global/sellCheapDuplicates.js)<br>
 [Sell Duplicate Blooks](obfuscated/global/sellDuplicateBlooks.js)<br>
 [Simulate Unlock](obfuscated/global/simulateUnlock.js)<br>
 [Spam Buy Blooks](obfuscated/global/spamBuyBlooks.js)<br>

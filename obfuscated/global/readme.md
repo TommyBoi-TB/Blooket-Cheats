@@ -22,6 +22,8 @@ Gets max daily tokens and xp
 Highlights the correct and incorrect answers
 ## [Prevent Suspension](preventSuspension.js)
 Blocks the `suspend-me` api[^1]
+## [Sell Cheap Duplicates](sellCheapDuplicates.js)
+Sells all of your uncommon to epic dupes (not legendaries or chromas)
 ## [Sell Duplicate Blooks](sellDuplicateBlooks.js)
 Sells all of your dupes
 ## [Simulate Unlock](simulateUnlock.js)
