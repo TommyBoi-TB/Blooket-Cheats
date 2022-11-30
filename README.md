@@ -103,3 +103,8 @@ Cheats made by someone who knows more about what they're doing
 [Set Damage](obfuscated/tower-defense/setDmg.js)<br>
 [Set Round](obfuscated/tower-defense/setRound.js)<br>
 [Set Tokens](obfuscated/tower-defense/setTokens.js)<br>
+### [Santa's Workshop](obfuscated/workshop/)
+[Remove Distractions](obfuscated/workshop/removeDistractions.js)<br>
+[Set Toys](obfuscated/workshop/setToys.js)<br>
+[Set Toys Per Question](obfuscated/workshop/setToysPerQ.js)<br>
+[Swap Toys](obfuscated/workshop/swapToys.js)<br>
