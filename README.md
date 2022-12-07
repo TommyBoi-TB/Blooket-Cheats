@@ -46,6 +46,7 @@ Cheats made by someone who knows more about what they're doing
  * [Set Cash](obfuscated/cafe/setCash.js)<br>
  * [Stock Food](obfuscated/cafe/stockFood.js)<br>
 ### [Crypto Hack](obfuscated/crypto/)
+ * [Always Triple](obfuscated/crypto/alwaysTriple.js)<br>
  * [Choice ESP](obfuscated/crypto/choiceESP.js)<br>
  * [Password ESP](obfuscated/crypto/passwordESP.js)<br>
  * [Remove Hack](obfuscated/crypto/removeHack.js)<br>
