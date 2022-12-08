@@ -17,6 +17,7 @@ Cheats made by someone who knows more about what they're doing
 ### [GUI](obfuscated/gui.js)<br>
 ### [Global](obfuscated/global/)
  * [Auto Answer](obfuscated/global/autoAnswer.js)<br>
+ * [Auto Sell Dupes On Open](obfuscated/global/autoSellDupesOnOpen.js)<br>
  * [Enable Limited Gamemodes](obfuscated/global/enableLimitedGamemodes.js)<br>
  * [Every Answer Correct](obfuscated/global/everyAnswerCorrect.js)<br>
  * [Get Daily Rewards](obfuscated/global/getDailyRewards.js)<br>
