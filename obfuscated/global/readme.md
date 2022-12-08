@@ -12,6 +12,8 @@ Automatically highlights the correct answers
 
 ## [Auto Answer](autoAnswer.js)
 Clicks the first correct answer
+## [Auto Sell Dupes On Open](autoSellDupesOnOpen.js)
+Sells the blook you unlock when you open a pack if you already have one (Doesn't sell Legendaries or rarer)
 ## [Enable Limited Gamemodes](enableLimitedGamemodes.js)
 Allows you to host gamemodes like Santa's Workshop
 ## [Every Answer Correct](everyAnswerCorrect.js)
