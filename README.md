@@ -23,6 +23,7 @@ Cheats made by someone who knows more about what they're doing
  * [Get Daily Rewards](obfuscated/global/getDailyRewards.js)<br>
  * [Highlight Answers](obfuscated/global/highlightAnswers.js)<br>
  * [Prevent Suspension](obfuscated/global/preventSuspension.js)<br>
+ * [Remove Random Name](obfuscated/global/removeRandomName.js)<br>
  * [Sell Cheap Duplicates](obfuscated/global/sellCheapDuplicates.js)<br>
  * [Sell Duplicate Blooks](obfuscated/global/sellDuplicateBlooks.js)<br>
  * [Simulate Unlock](obfuscated/global/simulateUnlock.js)<br>
