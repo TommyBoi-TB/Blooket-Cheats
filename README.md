@@ -77,6 +77,9 @@ Cheats made by someone who knows more about what they're doing
  * [Frenzy](obfuscated/fishing/frenzy.js)<br>
  * [Set Lure](obfuscated/fishing/setLure.js)<br>
  * [Set Weight](obfuscated/fishing/setWeight.js)<br>
+### [Flappy Blook](obfuscated/flappy/)
+ * [Set Score](obfuscated/flappy/setScore.js)<br>
+ * [Toggle Ghost](obfuscated/flappy/toggleGhost.js)<br>
 ### [Gold Quest](obfuscated/gold/)
  * [Auto Choose](obfuscated/gold/autoChoose.js)<br>
  * [Chest ESP](obfuscated/gold/chestESP.js)<br>
