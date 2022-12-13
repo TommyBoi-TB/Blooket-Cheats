@@ -37,6 +37,7 @@ Cheats made by someone who knows more about what they're doing
 ### [Brawl](obfuscated/brawl/)
  * [Instant Kill](obfuscated/brawl/instantKill.js)<br>
  * [Invincibility](obfuscated/brawl/invincibility.js)<br>
+ * [Max Current Abilities](obfuscated/brawl/maxCurrentAbilities.js)<br>
  * [Next Level](obfuscated/brawl/nextLevel.js)<br>
  * [Remove Enemies](obfuscated/brawl/removeEnemies.js)[^1]<br>
  * [Remove Obstacles](obfuscated/brawl/removeObstacles.js)[^1]<br>
