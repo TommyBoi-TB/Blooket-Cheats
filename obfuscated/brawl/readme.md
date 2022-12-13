@@ -4,6 +4,8 @@
 Maxes out damage on next powerup gained
 ## [Invincibility](invincibility.js)
 Makes you invincible
+## [Max Current Abilities](maxCurrentAbilities.js)
+Maxes out all your current abilities
 ## [Next Level](nextLevel.js)
 Gives you another level
 ## [Remove Enemies](removeEnemies.js)
