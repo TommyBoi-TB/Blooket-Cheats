@@ -35,6 +35,8 @@ Cheats made by someone who knows more about what they're doing
  * [Auto Answer](obfuscated/global/intervals/autoAnswer.js)<br>
  * [Highlight Answers](obfuscated/global/intervals/highlightAnswers.js)<br>
 ### [Brawl](obfuscated/brawl/)
+ * [Double Enemy XP](obfuscated/brawl/doubleEnemyXp.js)<br>
+ * [Half Enemy Speed](obfuscated/brawl/halfEnemySpeed.js)<br>
  * [Instant Kill](obfuscated/brawl/instantKill.js)<br>
  * [Invincibility](obfuscated/brawl/invincibility.js)<br>
  * [Max Current Abilities](obfuscated/brawl/maxCurrentAbilities.js)<br>

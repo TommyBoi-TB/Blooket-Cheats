@@ -1,5 +1,9 @@
 # Monster Brawl Cheats
 
+## [Double Enemy XP](doubleEnemyXp.js)
+Doubles enemy XP drop value
+## [Half Enemy Speed](halfEnemySpeed.js)
+Makes enemies move 2x slower
 ## [Instant Kill](instantKill.js)
 Sets all enemies health to 1
 ## [Invincibility](invincibility.js)
