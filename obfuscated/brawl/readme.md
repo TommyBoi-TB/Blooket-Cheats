@@ -4,14 +4,14 @@
 Sets all enemies health to 1
 ## [Invincibility](invincibility.js)
 Makes you invincible
+## [Kill Enemies](killEnemies.js)
+Kills all currennt enemies
 ## [Magnet](magnet.js)
 Pulls all xp towards you
 ## [Max Current Abilities](maxCurrentAbilities.js)
 Maxes out all your current abilities
 ## [Next Level](nextLevel.js)
 Gives you another level
-## [Remove Enemies](removeEnemies.js)
-Removes all currennt enemies
 ## [Remove Obstacles](removeObstacles.js)
 Removes all rocks and obstacles
 ## [Reset Health](resetHealth.js)
