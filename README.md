@@ -103,6 +103,7 @@ Cheats made by someone who knows more about what they're doing
  * [Set Blooks](obfuscated/rush/setBlooks.js)<br>
  * [Set Defense](obfuscated/rush/setDefense.js)<br>
 ### [Tower Defense](obfuscated/tower-defense/)
+ * [Earthquake](obfuscated/tower-defense/earthquake.js)<br>
  * [Max Towers](obfuscated/tower-defense/maxTowers.js)<br>
  * [Remove Ducks](obfuscated/tower-defense/removeDucks.js)<br>
  * [Remove Enemies](obfuscated/tower-defense/removeEnemies.js)<br>

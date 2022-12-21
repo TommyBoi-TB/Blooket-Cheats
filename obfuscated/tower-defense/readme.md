@@ -1,5 +1,8 @@
 # Tower Defense Cheats
 
+## [Earthquake](earthquake.js)
+Shuffles around towers
+
 ## [Max Towers](maxTowers.js)
 Makes all your towers op
 
