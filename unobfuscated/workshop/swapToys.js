@@ -9,23 +9,24 @@
 * ALL TERMS STATED IN THE LINK BELOW APPLY ASWELL
 * https://github.com/Minesraft2/Blooket-Cheats/blob/main/LICENSE
 */
-// THE UPDATE CHECKER IS ADDED DURING COMMIT PREP, THERE MAY BE REPEATING CODE, DO NOT TOUCH
+
+// THE UPDATE CHECKER IS ADDED DURING COMMIT PREP, THERE MAY BE REDUNDANT CODE, DO NOT TOUCH
 
 // Update Checker start
 let i = document.createElement('iframe');
 document.body.append(i);
 window.confirm = i.contentWindow.confirm.bind(window);
 i.remove();
-if (1673300739948 > (await Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://dashboard.blooket.com/api/games?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/workshop/swapToys.js")?.answers?.[0]}`))) || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
+if (1673301837353 > (await Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://dashboard.blooket.com/api/games?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/workshop/swapToys.js")?.answers?.[0]}`))) || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
 // Update Checker end
     let { stateNode } = Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner;
-	stateNode.props.liveGameController.getDatabaseVal("c", (players) => {
-	    stateNode.setState({
-	        choosingPlayer: false,
-	        players: (players ? Object.entries(players).map(([name, { b, t }]) => ({ name, blook: b, toys: t || 0 })).filter((e) => e.name != stateNode.props.client.name).sort(({ toys }, { toys: toys2 }) => toys2 - toys) : []),
-	        phaseTwo: true,
-	        stage: "prize",
-	        choiceObj: { type: "swap" }
-	    }, () => setTimeout(() => stateNode.setState({ choosingPlayer: true }), 300));
-	});
+    stateNode.props.liveGameController.getDatabaseVal("c", (players) => {
+        stateNode.setState({
+            choosingPlayer: false,
+            players: (players ? Object.entries(players).map(([name, { b, t }]) => ({ name, blook: b, toys: t || 0 })).filter((e) => e.name != stateNode.props.client.name).sort(({ toys }, { toys: toys2 }) => toys2 - toys) : []),
+            phaseTwo: true,
+            stage: "prize",
+            choiceObj: { type: "swap" }
+        }, () => setTimeout(() => stateNode.setState({ choosingPlayer: true }), 300));
+    });
 }

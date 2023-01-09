@@ -9,29 +9,30 @@
 * ALL TERMS STATED IN THE LINK BELOW APPLY ASWELL
 * https://github.com/Minesraft2/Blooket-Cheats/blob/main/LICENSE
 */
-// THE UPDATE CHECKER IS ADDED DURING COMMIT PREP, THERE MAY BE REPEATING CODE, DO NOT TOUCH
+
+// THE UPDATE CHECKER IS ADDED DURING COMMIT PREP, THERE MAY BE REDUNDANT CODE, DO NOT TOUCH
 
 // Update Checker start
 let i = document.createElement('iframe');
 document.body.append(i);
 window.confirm = i.contentWindow.confirm.bind(window);
 i.remove();
-if (1673300739870 > (await Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://dashboard.blooket.com/api/games?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/global/autoSellDupesOnOpen.js")?.answers?.[0]}`))) || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
+if (1673301837261 > (await Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://dashboard.blooket.com/api/games?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/global/autoSellDupesOnOpen.js")?.answers?.[0]}`))) || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
 // Update Checker end
     XMLHttpRequest.prototype._original_open ||= XMLHttpRequest.prototype.open;
-	XMLHttpRequest.prototype.open = function () {
-	    this.addEventListener("load", async function () {
-	        try {
-	            if (this.responseURL !== "https://dashboard.blooket.com/api/users/unlockblook") return;
-	            var axios = Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']],]).cache).find((x) => x.exports?.a?.get).exports.a;
-	            var { rarity } = webpackJsonp.push([[], { ['rarity']: (_, a, b) => { a.rarity = (blook) => b('MDrD').a[blook].rarity } }, [['rarity']]]);
-	            const { unlockedBlook: blook } = JSON.parse(this.response);
-	            const { data: { name, unlocks } } = await axios.get("https://dashboard.blooket.com/api/users");
-	            if (!unlocks[blook] || ["Legendary", "Chroma", "Mystical"].includes(rarity(blook))) return;
-	            await axios.put("https://dashboard.blooket.com/api/users/sellblook", { name, blook, numSold: 1 });
-	            console.log(`Sold duplicate ${blook}`);
-	        } catch { }
-	    });
-	    XMLHttpRequest.prototype._original_open.apply(this, arguments);
-	};
+    XMLHttpRequest.prototype.open = function () {
+        this.addEventListener("load", async function () {
+            try {
+                if (this.responseURL !== "https://dashboard.blooket.com/api/users/unlockblook") return;
+                var axios = Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']],]).cache).find((x) => x.exports?.a?.get).exports.a;
+                var { rarity } = webpackJsonp.push([[], { ['rarity']: (_, a, b) => { a.rarity = (blook) => b('MDrD').a[blook].rarity } }, [['rarity']]]);
+                const { unlockedBlook: blook } = JSON.parse(this.response);
+                const { data: { name, unlocks } } = await axios.get("https://dashboard.blooket.com/api/users");
+                if (!unlocks[blook] || ["Legendary", "Chroma", "Mystical"].includes(rarity(blook))) return;
+                await axios.put("https://dashboard.blooket.com/api/users/sellblook", { name, blook, numSold: 1 });
+                console.log(`Sold duplicate ${blook}`);
+            } catch { }
+        });
+        XMLHttpRequest.prototype._original_open.apply(this, arguments);
+    };
 }
