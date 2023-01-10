@@ -17,9 +17,9 @@ let i = document.createElement('iframe');
 document.body.append(i);
 window.confirm = i.contentWindow.confirm.bind(window);
 i.remove();
-if (1673311687173 > (await Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://dashboard.blooket.com/api/games?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/doom/maxCards.js")?.answers?.[0]}`))) || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
-/* Update Checker end */
-    let i = document.createElement('iframe');
+Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://dashboard.blooket.com/api/games?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/global/useAnyBlook.js")?.answers?.[0]}`)).then(x => {
+    if (x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
+        let i = document.createElement('iframe');
     document.body.append(i);
     window.alert = i.contentWindow.alert.bind(window);
     i.remove();
@@ -31,4 +31,5 @@ if (1673311687173 > (await Object.values(webpackJsonp.push([[], { ['']: (_, a, b
             card.wisdom = 20;
         });
     } else alert("You need to be on the map to run this cheat!");
-}
+    }
+});
