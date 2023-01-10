@@ -12,3 +12,6 @@ Which script is causing the problem
 
 ## The Problem
 The problem with the script
+
+## How I ran it
+Bookmarklets.html import, javascript: in url bar, or paste in console.
