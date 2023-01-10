@@ -13,29 +13,32 @@
 /* THE UPDATE CHECKER IS ADDED DURING COMMIT PREP, THERE MAY BE REDUNDANT CODE, DO NOT TOUCH */
 
 /* Update Checker start */
-let i = document.createElement('iframe');
-document.body.append(i);
-window.confirm = i.contentWindow.confirm.bind(window);
-i.remove();
-Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://dashboard.blooket.com/api/games?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/global/useAnyBlook.js")?.answers?.[0]}`)).then(x => {
-    if (x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
-        let data = Object.values(window.webpackJsonp.push([[], { ['1234']: (_, a, b) => { a.webpack = b }, }, [['1234']]]).webpack.c).find(x => x.exports.a?.Gold).exports;
-    data.a = Object.assign({
-        Toy: {
-            name: "Santa's Workshop",
-            img: "https://media.blooket.com/image/upload/v1607057672/Media/santasWorkshop.jpg",
-            desc: "Super Snowy, Chilly, and Rapid-fire Fun!",
-            detail: "Get in the Holiday spirit by answering questions to build toys and take them from other players",
-            focus: "Speed & Holiday Cheer",
-            limit: "Player Limit: 60 (300 for Plus)",
-            suggest: "3+ players suggested",
-            methods: ["Host"],
-            limited: !0,
-            plusOnly: !1,
-            active: true
+(async () => { /* This is to prevent "identifier i is already declared errors" */
+    let i = document.createElement('iframe');
+    document.body.append(i);
+    window.confirm = i.contentWindow.confirm.bind(window);
+    i.remove();
+    Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://dashboard.blooket.com/api/games?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/global/useAnyBlook.js")?.answers?.[0]}`)).then(async x => {
+        if (x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
+            /* Update Checker end */
+            let data = Object.values(window.webpackJsonp.push([[], { ['1234']: (_, a, b) => { a.webpack = b }, }, [['1234']]]).webpack.c).find(x => x.exports.a?.Gold).exports;
+            data.a = Object.assign({
+                Toy: {
+                    name: "Santa's Workshop",
+                    img: "https://media.blooket.com/image/upload/v1607057672/Media/santasWorkshop.jpg",
+                    desc: "Super Snowy, Chilly, and Rapid-fire Fun!",
+                    detail: "Get in the Holiday spirit by answering questions to build toys and take them from other players",
+                    focus: "Speed & Holiday Cheer",
+                    limit: "Player Limit: 60 (300 for Plus)",
+                    suggest: "3+ players suggested",
+                    methods: ["Host"],
+                    limited: !0,
+                    plusOnly: !1,
+                    active: true
+                }
+            }, data.a);
+            Object.values(data.a).forEach(x => (x.active = true, x.plusOnly = false));
+            Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner.stateNode.forceUpdate();
         }
-    }, data.a);
-    Object.values(data.a).forEach(x => (x.active = true, x.plusOnly = false));
-    Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner.stateNode.forceUpdate();
-    }
-});
+    });
+})();
