@@ -1,5 +1,7 @@
 # Factory Cheats
 
+## [Choose Blook](chooseBlook.js)
+Gives you a blook
 ## [Free Upgrades](freeUpgrades.js)
 Sets upgrade prices to 0 for all current blooks
 
