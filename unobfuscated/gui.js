@@ -2281,15 +2281,15 @@
             
             function dragElement(element, parent) {
                 var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-                element.onmousedown = function (e = window.event) {
+                element.onpointerdown = function (e = window.event) {
             /* // e.preventDefault(); */
                     pos3 = e.clientX;
                     pos4 = e.clientY;
-                    document.onmouseup = function () {
-                        document.onmouseup = null;
-                        document.onmousemove = null;
+                    document.onpointerup = function () {
+                        document.onpointerup = null;
+                        document.onpointermove = null;
                     };
-                    document.onmousemove = function (e = window.event) {
+                    document.onpointermove = function (e = window.event) {
             /* // e.preventDefault(); */
                         pos1 = pos3 - e.clientX;
                         pos2 = pos4 - e.clientY;
