@@ -73,6 +73,7 @@ Cheats made by someone who knows more about what they're doing
  * [Min Enemy](unobfuscated/doom/minEnemy.js)<br>
  * [Set Coins](unobfuscated/doom/setCoins.js)<br>
 ### [Factory](unobfuscated/factory/)
+ * [Choose Blook](unobfuscated/factory/chooseBlook.js)<br>
  * [Free Upgrades](unobfuscated/factory/freeUpgrades.js)<br>
  * [Max Blooks](unobfuscated/factory/maxBlooks.js)<br>
  * [Remove Glitches](unobfuscated/factory/removeGlitches.js)<br>
