@@ -22,8 +22,7 @@
         if (x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
             /* Update Checker end */
             const { stateNode } = Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner;
-            stateNode.freeQuestions = stateNode.questions = stateNode.props.client.questions = stateNode.props.client.questions.map(x => ({ ...x, correctAnswers: x.answers }));
-            stateNode.render();
+            stateNode.freeQuestions = stateNode.questions = stateNode.props.client.questions.map(x => ({ ...x, correctAnswers: x.answers }));
         }
     });
 })();

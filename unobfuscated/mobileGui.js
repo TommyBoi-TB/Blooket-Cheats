@@ -356,7 +356,7 @@
                             description: "Sets every answer to be correct",
                             run: function () {
                                 const { stateNode } = Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner;
-                                stateNode.freeQuestions = stateNode.questions = stateNode.props.client.questions = stateNode.props.client.questions.map(x => ({ ...x, correctAnswers: x.answers }))
+                                stateNode.freeQuestions = stateNode.questions = stateNode.props.client.questions.map(x => ({ ...x, correctAnswers: x.answers }));
                             }
                         },
                         {
