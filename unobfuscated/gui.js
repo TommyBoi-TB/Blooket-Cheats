@@ -1016,6 +1016,17 @@
                         }
                     },
                     {
+                        name: "Use Any Blook Part",
+                        description: "Let's you use any blook part when making a custom blook in the stats page",
+                        run: function () {
+                            Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner.stateNode.setState((state) => {
+                                for (const part in state.user.blookParts) state.user.blookParts[part] = Array(100).fill(0).map((x, i) => i + 1);
+                                state.editingBlook = -1;
+                                return state;
+                            });
+                        }
+                    },
+                    {
                         name: "Unlock Plus Gamemodes",
                         description: "Allows you to play any gamemode that is plus only",
                         run: function () {
