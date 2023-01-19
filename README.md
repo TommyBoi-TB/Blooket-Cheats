@@ -20,7 +20,6 @@ Cheats made by someone who knows more about what they're doing
 ### [Global](unobfuscated/global/)
  * [Auto Answer](unobfuscated/global/autoAnswer.js)<br>
  * [Auto Sell Dupes On Open](unobfuscated/global/autoSellDupesOnOpen.js)<br>
- * [Enable Limited Gamemodes](unobfuscated/global/enableLimitedGamemodes.js)<br>
  * [Every Answer Correct](unobfuscated/global/everyAnswerCorrect.js)<br>
  * [Get Daily Rewards](unobfuscated/global/getDailyRewards.js)<br>
  * [Highlight Answers](unobfuscated/global/highlightAnswers.js)<br>
