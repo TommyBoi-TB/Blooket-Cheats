@@ -1,10 +1,14 @@
 ---
 name: Suggestion
 about: Give a cheat or script idea
-title: 'IDEA: Idea title'
+title: 'IDEA: Script idea name'
 labels: enhancement
 assignees: ''
 
 ---
 
-Describe idea here
+Gamemode (if any): 
+
+Cheat Function:
+
+Specifics/Alternatives:
