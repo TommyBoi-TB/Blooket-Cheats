@@ -18,3 +18,5 @@ The problem with the script (ie console errors):
 
 ## Screenshots
 Add any applicable screenshots (ie console if you have access):
+
+**Make sure that no one else has already opened an issue about this script!**
