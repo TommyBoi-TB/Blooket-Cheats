@@ -53,6 +53,7 @@ Cheats made by someone who knows more about what they're doing
  * [Stock Food](unobfuscated/cafe/stockFood.js)<br>
 ### [Crypto Hack](unobfuscated/crypto/)
  * [Always Triple](unobfuscated/crypto/alwaysTriple.js)<br>
+ * [Auto Guess](unobfuscated/crypto/autoGuess.js)<br>
  * [Choice ESP](unobfuscated/crypto/choiceESP.js)<br>
  * [Password ESP](unobfuscated/crypto/passwordESP.js)<br>
  * [Remove Hack](unobfuscated/crypto/removeHack.js)<br>
