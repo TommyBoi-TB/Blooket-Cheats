@@ -2,6 +2,10 @@
 
 ## [Always Triple](alwaysTriple.js)
 Always get triple crypto
+
+## [Auto Guess](autoGuess.js)
+Automatically guess the correct password
+
 ## [Choice ESP](choiceESP.js)
 Shows what each choice will give you
 
