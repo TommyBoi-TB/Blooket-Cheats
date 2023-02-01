@@ -1,5 +1,7 @@
 # Deceptive Dino Cheats
 
+## [Auto Choose](autoChoose.js)
+Automatically choose the best fossil when excavating
 ## [Rock ESP](rockESP.js)
 Shows what each rock will give you
 

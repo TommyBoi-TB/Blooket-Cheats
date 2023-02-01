@@ -19,7 +19,7 @@
     window.confirm = i.contentWindow.confirm.bind(window);
     i.remove();
     Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://" + (location.host.startsWith("dashboard") ? location.host : "play.blooket.com") + "/api/games?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/mobileGui.js")?.answers?.[0]}`)).then(async x => {
-        if (1675022258531 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
+        if (1675211683316 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
             /* Update Checker end */
             ; (() => {
                 let n = document.createElement('iframe');
@@ -1122,6 +1122,43 @@
                     ],
                     dinos: [
                         {
+                            name: "Auto Choose",
+                            description: "Automatically choose the best fossil when excavating",
+                            type: "toggle",
+                            enabled: false,
+                            data: null,
+                            run: function () {
+                                if (!this.enabled) {
+                                    this.enabled = true;
+                                    this.data = setInterval(() => {
+                                        const { webpack } = webpackJsonp.push([[], { ['1234']: (_, a, b) => { a.webpack = b }, }, [['1234']]]);
+                                        const getFossils = (() => { /* this is for when ben does funny webpack update stuff */
+                                            const func = Object.values(webpack('74sb')).find(x => x.toString().includes('rate'));
+                                            return () => func([{ type: "fossil", val: 10, rate: .1, blook: "Amber" }, { type: "fossil", val: 25, rate: .1, blook: "Dino Egg" }, { type: "fossil", val: 50, rate: .175, blook: "Dino Fossil" }, { type: "fossil", val: 75, rate: .175, blook: "Stegosaurus" }, { type: "fossil", val: 100, rate: .15, blook: "Velociraptor" }, { type: "fossil", val: 125, rate: .125, blook: "Brontosaurus" }, { type: "fossil", val: 250, rate: .075, blook: "Triceratops" }, { type: "fossil", val: 500, rate: .025, blook: "Tyrannosaurus Rex" }, { type: "mult", val: 1.5, rate: .05 }, { type: "mult", val: 2, rate: .025 }], 3);
+                                        })();
+                                        try {
+                                            let { stateNode } = Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner;
+                                            if (stateNode.state.stage === "excavate") {
+                                                stateNode.state.choices.length || (stateNode.state.choices = getFossils());
+                                                let max = 0, index = -1;
+                                                for (let i = 0; i < stateNode.state.choices.length; i++) {
+                                                    const { type, val } = stateNode.state.choices[i];
+                                                    const value = (type == "fossil" ? stateNode.state.fossils + val * stateNode.state.fossilMult : stateNode.state.fossils * val) || 0;
+                                                    if (value <= max && type != "mult") continue;
+                                                    max = value, index = i + 1;
+                                                }
+                                                document.querySelector('div[class^="styles__rockRow"] > div[role="button"]:nth-child(' + index + ')').click();
+                                            }
+                                        } catch { }
+                                    }, 50);
+                                } else {
+                                    this.enabled = false;
+                                    clearInterval(this.data);
+                                    this.data = null;
+                                }
+                            }
+                        },
+                        {
                             name: "Rock ESP",
                             description: "Shows what is under the rocks",
                             type: "toggle",
@@ -1146,29 +1183,11 @@
                                                 choice.style.display = "flex";
                                                 choice.style.justifyContent = "center";
                                                 choice.style.transform = "translateY(25px)";
-                                                choice.innerText = rock.type === "fossil" ? `+${Math.round(rock.val * stateNode.state.fossilMult) > 99999999 ? parseNumber(Math.round(rock.val * stateNode.state.fossilMult)) : Math.round(rock.val * stateNode.state.fossilMult)} Fossils` : `x${rock.val} Fossils Per Excavation`;;
+                                                choice.innerText = rock.type === "fossil" ? `+${Math.round(rock.val * stateNode.state.fossilMult) > 99999999 ? Object.values(webpack('74sb')).find(x => x.toString().includes('\xd7'))(Math.round(rock.val * stateNode.state.fossilMult)) : Math.round(rock.val * stateNode.state.fossilMult)} Fossils` : `x${rock.val} Fossils Per Excavation`;;
                                                 element.append(choice);
                                             });
                                         });
                                     }, 50);
-                                    function parseNumber(a) {
-                                        var j = ["\u2070", "\xb9", "\xb2", "\xb3", "\u2074", "\u2075", "\u2076", "\u2077", "\u2078", "\u2079"],
-                                            e = a;
-                                        if (a >= 1e3) {
-                                            var g = ["", "K", "M", "B", "T"],
-                                                c = Math.floor((a.toString().length - 1) / 3);
-                                            if (c < g.length) {
-                                                for (var b = "", f = 3; f >= 1 && !((b = parseFloat((0 !== c ? a / Math.pow(1e3, c) : a).toPrecision(f))).toString().replace(/[^a-zA-Z 0-9]+/g, "").length <= 3); f--);
-                                                b % 1 != 0 && (b = b.toFixed(1)), e = b + g[c]
-                                            } else {
-                                                for (var k, h, d = a, i = 0; d >= 100;) d = Math.floor(d / 10), i += 1;
-                                                e = "".concat(d / 10, " \xd7 10").concat((h = "", (i + 1).toString().split("").forEach(function (a) {
-                                                    h += j[Number(a)]
-                                                }), h))
-                                            }
-                                        }
-                                        return e
-                                    }
                                 } else {
                                     this.enabled = false;
                                     clearInterval(this.data);
