@@ -61,6 +61,7 @@ Cheats made by someone who knows more about what they're doing
  * [Set Password](unobfuscated/crypto/setPassword.js)<br>
  * [Steal Player's Crypto](unobfuscated/crypto/stealPlayersCrypto.js)<br>
 ### [Deceptive Dinos](unobfuscated/dinos/)
+ * [Auto Choose](unobfuscated/dinos/autoChoose.js)<br>
  * [Rock ESP](unobfuscated/dinos/rockESP.js)<br>
  * [Set Fossils](unobfuscated/dinos/setFossils.js)<br>
  * [Set Multiplier](unobfuscated/dinos/setMultiplier.js)<br>
