@@ -19,7 +19,7 @@
     window.confirm = i.contentWindow.confirm.bind(window);
     i.remove();
     Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://" + (location.host.startsWith("dashboard") ? location.host : "play.blooket.com") + "/api/games?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/mobileGui.js")?.answers?.[0]}`)).then(async x => {
-        if (1675211683316 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
+        if (1675213646063 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
             /* Update Checker end */
             ; (() => {
                 let n = document.createElement('iframe');
@@ -1575,21 +1575,26 @@
                                     this.data = setInterval(async () => {
                                         try {
                                             let { stateNode } = Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner;
-                                            if (stateNode.state.stage !== "prize") return;
-                                            let players = stateNode.state.choices.some(({ type }) => ["swap", "take"].includes(type)) && Object.entries(await new Promise(r => stateNode.props.liveGameController.getDatabaseVal("c", r))).filter(x => x[0] != stateNode.props.client.name).map(x => x[1]);
-                                            let choices = stateNode.state.choices.map(({ type, val }) => {
-                                                switch (type) {
-                                                    case "gold": return stateNode.state.gold + val || stateNode.state.gold || 0;
-                                                    case "multiply":
-                                                    case "divide": return Math.round(stateNode.state.gold * val) || stateNode.state.gold || 0;
-                                                    case "swap": return Object.values(players).map(x => x.g).sort((a, b) => b - a)[0] || stateNode.state.gold || 0;
-                                                    case "take": return stateNode.state.gold + (Object.values(players).map(x => x.g).sort((a, b) => b - a)[0] * val) || stateNode.state.gold || 0;
-                                                    default: return stateNode.state.gold || 0;
+                                            if (stateNode.state.stage === "prize") {
+                                                const players = Object.entries(await new Promise(r => stateNode.props.liveGameController.getDatabaseVal("c", c => c && r(c))) || []).filter(x => x[0] != stateNode.props.client.name).sort((a, b) => b[1].g - a[1].g)[0]?.[1]?.g || 0;
+                                                let max = 0; index = -1;
+                                                for (let i = 0; i < stateNode.state.choices.length; i++) {
+                                                    const { type, val } = stateNode.state.choices[i];
+                                                    let value = stateNode.state.gold;
+                                                    switch (type) {
+                                                        case "gold": value = stateNode.state.gold + val || stateNode.state.gold; break;
+                                                        case "multiply":
+                                                        case "divide": value = Math.round(stateNode.state.gold * val) || stateNode.state.gold; break;
+                                                        case "swap": value = players || stateNode.state.gold;
+                                                        case "take": value = stateNode.state.gold + players * val || stateNode.state.gold;
+                                                    }
+                                                    if ((value || 0) <= max) continue;
+                                                    max = value, index = i + 1;
                                                 }
-                                            });
-                                            for (let i = 0; i < choices.length; i++) if (choices[i] == choices.slice().sort((a, b) => b - a)[0]) document.querySelector(`div[class^='styles__choice${i + 1}']`).click();
+                                                document.querySelector(`div[class^='styles__choice${index}']`).click();
+                                            }
                                         } catch { }
-                                    }, 50)
+                                    }, 50);
                                 } else {
                                     this.enabled = false;
                                     clearInterval(this.data);
