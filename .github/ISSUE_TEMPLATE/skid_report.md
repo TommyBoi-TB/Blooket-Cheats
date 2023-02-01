@@ -7,6 +7,6 @@ assignees: Minesraft2
 
 ---
 
-Link to skid here
+Link to skid:
 
-Describe what they're taking here.
+Cheat(s) stolen:

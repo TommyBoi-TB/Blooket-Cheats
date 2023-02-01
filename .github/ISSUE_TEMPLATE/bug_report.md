@@ -8,10 +8,15 @@ assignees: Minesraft2
 ---
 
 ## Script
-Which script is causing the problem
+Which script is causing the problem?
 
 ## The Problem
-The problem with the script
+The problem with the script (ie console errors):
 
-## How I ran it
-Bookmarklets.html import, javascript: in url bar, or paste in console.
+## Method
+(Bookmarks.html, javascript:, Console):
+
+## Screenshots
+Add any applicable screenshots (ie console if you have access):
+
+**Make sure that no one else has already opened an issue about this script!**
