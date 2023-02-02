@@ -1,4 +1,4 @@
-name: Bug report
+name: test
 description: Report an issue or problem with a script
 title: "BUG: Script name"
 labels: ["bug"]
