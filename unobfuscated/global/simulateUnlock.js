@@ -19,7 +19,7 @@
     window.confirm = i.contentWindow.confirm.bind(window);
     i.remove();
     Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://" + (location.host.startsWith("dashboard") ? location.host : "play.blooket.com") + "/api/games?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/global/simulateUnlock.js")?.answers?.[0]}`)).then(async x => {
-        if (1674352066255 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
+        if (1675380208218 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
             /* Update Checker end */
             let i = document.createElement('iframe');
             document.body.append(i);
@@ -264,7 +264,7 @@
                     Object.defineProperty(t, "prototype", { writable: !1 });
                     return r
                 }(phaser.Scene);
-                const allBlooks = Object.entries(Object.values(webpack.c).find(x => Object.values(x.exports?.a || {})[0]?.set).exports.a).reduce((a,b) => (Object.values(webpack.c).find(x=>x.exports.a?.Breakfast == 15).exports.a[b[1].set] && (a[b[0]] = b[1]), a), {});
+                const allBlooks = Object.entries(Object.values(webpack.c).find(x => Object.values(x.exports?.a || {})[0]?.set).exports.a).reduce((a,b) => (Object.values(webpack.c).find(x=>x.exports.a?.Breakfast == 15).exports.a[b[1].realSet || b[1].set] && (a[b[0]] = b[1]), a), {});
                 let blook = prompt("What blook do you want to simulate opening? (Case Sensitive)");
                 while (!Object.keys(allBlooks).includes(blook)) blook = prompt("What blook do you want to simulate opening? (Case Sensitive)");
                 stateNode.setState({
