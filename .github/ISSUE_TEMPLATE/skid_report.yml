@@ -1,6 +1,6 @@
 name: Skid Report
 description: Report someone stealing our scripts or violating the license
-title: 'SKID: <skid github account name here>'
+title: "SKID: <skid github account name here>"
 labels: ["skid"]
 assignees:
   - Minesraft2
@@ -11,7 +11,8 @@ body:
       label: Skid
       description: Link to the skid
       placeholder: https://github.com/skidname/skid
-    required: true
+    validations:
+      required: true
   - type: textarea
     id: stolen
     attributes:
