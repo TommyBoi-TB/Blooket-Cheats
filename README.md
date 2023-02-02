@@ -88,6 +88,7 @@ Cheats made by someone who knows more about what they're doing
  * [Set Score](unobfuscated/flappy/setScore.js)<br>
  * [Toggle Ghost](unobfuscated/flappy/toggleGhost.js)<br>
 ### [Gold Quest](unobfuscated/gold/)
+ * [Always Triple](unobfuscated/gold/alwaysTriple.js)<br>
  * [Auto Choose](unobfuscated/gold/autoChoose.js)<br>
  * [Chest ESP](unobfuscated/gold/chestESP.js)<br>
  * [Reset All Gold](unobfuscated/gold/resetAllGold.js)<br>
