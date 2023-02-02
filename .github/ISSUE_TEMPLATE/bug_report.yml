@@ -27,7 +27,7 @@ body:
       description: How did you run the script?
       options:
       - label: Imported Bookmarklets.html
-      - label: "Put 'javascript:(code)' in the url bar"
+      - label: "Put 'javascript:(code)' in the url bar or a bookmark"
       - label: Pasted script into console
     validations:
       required: true
