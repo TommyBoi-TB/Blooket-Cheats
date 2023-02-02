@@ -8,7 +8,7 @@
 ![Opera GX part 4](/tutorial/chrome/part%20(4).png)
 # 5. Save file
 ![Opera GX part 5](/tutorial/chrome/part%20(5).png)
-# 6. Click on the three dots in the top right > Bookmarks > Import bookmarks and settings OR do `Ctrl + Shift + O`
+# 6. Click on the three dots in the top right > Bookmarks > Import bookmarks and settings **OR** do `Ctrl + Shift + O` > three dots in the top right > import
 ![Opera GX part 6](/tutorial/chrome/part%20(6).png)
 # 7. Switch to `Bookmarks HTML File`
 ![Opera GX part 7](/tutorial/chrome/part%20(7).png)
