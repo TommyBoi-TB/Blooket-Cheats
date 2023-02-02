@@ -1,8 +1,9 @@
 name: Bug report
 description: Report an issue or problem with a script
 title: "BUG: Script name"
-labels: bug
-assignees: Minesraft2
+labels: ["bug"]
+assignees:
+  - Minesraft2
 body:
   - type: input
     id: script
