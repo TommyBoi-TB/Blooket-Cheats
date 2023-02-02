@@ -1,6 +1,6 @@
-name: test
+name: Bug Report
 description: Report an issue or problem with a script
-title: "BUG: Script name"
+title: "BUG: (script name)"
 labels: ["bug"]
 assignees:
   - Minesraft2
@@ -13,7 +13,7 @@ body:
       placeholder: scriptname.js
     validations:
       required: true
-  - type: input
+  - type: textarea
     id: problem
     attributes:
       label: Problem
