@@ -16,7 +16,7 @@ Maxes out player's current card[^2]
 Makes the enemy card stats all 0[^2]
 
 ## [Set Coins](setCoins.js)
-Try's to set amount of tower coins you have[^2]
+Tries to set amount of tower coins you have[^2]
 
 [^1]: Only runnable on towers page
 [^2]: Only runnable on the attribute selection page
