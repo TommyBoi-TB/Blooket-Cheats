@@ -3,6 +3,7 @@
 
 <h2 align="center"><a href="https://discord.gg/QerPBatcca">Support Server</a></h2>
 <h2 align="center"><a href="tutorial/readme.md">Instructions for importing bookmarklets</a></h2>
+
 # Todo
 
 - [ ] Possibly auto play
