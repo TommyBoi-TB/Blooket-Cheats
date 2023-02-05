@@ -5,6 +5,10 @@ Cheats made by someone who knows more about what they're doing
 If any cheats are not working, try copying them from the repo again, _then_ make an issue
 ## [Support Server](https://discord.gg/QerPBatcca)
 ## [Instructions for importing bookmarklets](tutorial/readme.md)
+# Todo
+
+- [ ] Possibly auto play
+- [ ] More Racing cheats
 
 ## Information
 
@@ -37,10 +41,6 @@ Unobfuscated scripts will not work if you try copying it and pasting it into a b
 No, I am not gliz. I'm a close friend who worked on the original Blooket cheats with him and took over after he got a cease and desist.
 </details>
 
-# Todo
-
-- [ ] Possibly auto play
-- [ ] More Racing cheats
 
 <details><summary><h2>List of Cheats</h2></summary>
 
