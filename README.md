@@ -44,111 +44,116 @@ No, I am not gliz. I'm a close friend who worked on the original Blooket cheats 
 
 <details><summary><h2>List of Cheats</h2></summary>
 
-### [GUI](unobfuscated/gui.js)<br>
-### [Global](unobfuscated/global/)
- * [Auto Answer](unobfuscated/global/autoAnswer.js)<br>
- * [Auto Sell Dupes On Open](unobfuscated/global/autoSellDupesOnOpen.js)<br>
- * [Every Answer Correct](unobfuscated/global/everyAnswerCorrect.js)<br>
- * [Get Daily Rewards](unobfuscated/global/getDailyRewards.js)<br>
- * [Highlight Answers](unobfuscated/global/highlightAnswers.js)<br>
- * [Prevent Suspension](unobfuscated/global/preventSuspension.js)<br>
- * [Remove Random Name](unobfuscated/global/removeRandomName.js)<br>
- * [Sell Cheap Duplicates](unobfuscated/global/sellCheapDuplicates.js)<br>
- * [Sell Duplicate Blooks](unobfuscated/global/sellDuplicateBlooks.js)<br>
- * [Simulate Unlock](unobfuscated/global/simulateUnlock.js)<br>
- * [Spam Buy Blooks](unobfuscated/global/spamBuyBlooks.js)<br>
- * [Unlock Plus Gamemodes](unobfuscated/global/unlockPlusGamemodes.js)<br>
- * [Use Any Blooks](unobfuscated/global/useAnyBlook.js)<br>
-
-#### **[Intervals](unobfuscated/global/intervals/)**<br>
- * [Auto Answer](unobfuscated/global/intervals/autoAnswer.js)<br>
- * [Highlight Answers](unobfuscated/global/intervals/highlightAnswers.js)<br>
-### [Brawl](unobfuscated/brawl/)
- * [Double Enemy XP](unobfuscated/brawl/doubleEnemyXp.js)<br>
- * [Half Enemy Speed](unobfuscated/brawl/halfEnemySpeed.js)<br>
- * [Instant Kill](unobfuscated/brawl/instantKill.js)<br>
- * [Invincibility](unobfuscated/brawl/invincibility.js)<br>
- * [Max Current Abilities](unobfuscated/brawl/maxCurrentAbilities.js)<br>
- * [Next Level](unobfuscated/brawl/nextLevel.js)<br>
- * [Remove Enemies](unobfuscated/brawl/removeEnemies.js)[^1]<br>
- * [Remove Obstacles](unobfuscated/brawl/removeObstacles.js)[^1]<br>
- * [Reset Health](unobfuscated/brawl/resetHealth.js)<br>
-### [Cafe](unobfuscated/cafe/)
- * [Max Items](unobfuscated/cafe/maxItems.js)<br>
- * [Remove Customers](unobfuscated/cafe/removeCustomers.js)<br>
- * [Reset Abilities](unobfuscated/cafe/resetAbilities.js)<br>
- * [Set Cash](unobfuscated/cafe/setCash.js)<br>
- * [Stock Food](unobfuscated/cafe/stockFood.js)<br>
-### [Crypto Hack](unobfuscated/crypto/)
- * [Always Triple](unobfuscated/crypto/alwaysTriple.js)<br>
- * [Auto Guess](unobfuscated/crypto/autoGuess.js)<br>
- * [Choice ESP](unobfuscated/crypto/choiceESP.js)<br>
- * [Password ESP](unobfuscated/crypto/passwordESP.js)<br>
- * [Remove Hack](unobfuscated/crypto/removeHack.js)<br>
- * [Set Crypto](unobfuscated/crypto/setCrypto.js)<br>
- * [Set Password](unobfuscated/crypto/setPassword.js)<br>
- * [Steal Player's Crypto](unobfuscated/crypto/stealPlayersCrypto.js)<br>
-### [Deceptive Dinos](unobfuscated/dinos/)
- * [Auto Choose](unobfuscated/dinos/autoChoose.js)<br>
- * [Rock ESP](unobfuscated/dinos/rockESP.js)<br>
- * [Set Fossils](unobfuscated/dinos/setFossils.js)<br>
- * [Set Multiplier](unobfuscated/dinos/setMultiplier.js)<br>
- * [Stop Cheating](unobfuscated/dinos/stopCheating.js)<br>
-### [Tower of Doom](unobfuscated/doom/)
- * [Fill Deck](unobfuscated/doom/fillDeck.js)<br>
- * [Max Cards](unobfuscated/doom/maxCards.js)<br>
- * [Max Health](unobfuscated/doom/maxHealth.js)<br>
- * [Max Stats](unobfuscated/doom/maxStats.js)<br>
- * [Min Enemy](unobfuscated/doom/minEnemy.js)<br>
- * [Set Coins](unobfuscated/doom/setCoins.js)<br>
-### [Factory](unobfuscated/factory/)
- * [Choose Blook](unobfuscated/factory/chooseBlook.js)<br>
- * [Free Upgrades](unobfuscated/factory/freeUpgrades.js)<br>
- * [Max Blooks](unobfuscated/factory/maxBlooks.js)<br>
- * [Remove Glitches](unobfuscated/factory/removeGlitches.js)<br>
- * [Set All Mega Bot](unobfuscated/factory/setAllMegaBot.js)<br>
- * [Set Cash](unobfuscated/factory/setCash.js)<br>
-### [Fishing Frenzy](unobfuscated/fishing/)
- * [Frenzy](unobfuscated/fishing/frenzy.js)<br>
- * [Set Lure](unobfuscated/fishing/setLure.js)<br>
- * [Set Weight](unobfuscated/fishing/setWeight.js)<br>
-### [Flappy Blook](unobfuscated/flappy/)
- * [Set Score](unobfuscated/flappy/setScore.js)<br>
- * [Toggle Ghost](unobfuscated/flappy/toggleGhost.js)<br>
-### [Gold Quest](unobfuscated/gold/)
- * [Always Triple](unobfuscated/gold/alwaysTriple.js)<br>
- * [Auto Choose](unobfuscated/gold/autoChoose.js)<br>
- * [Chest ESP](unobfuscated/gold/chestESP.js)<br>
- * [Reset All Gold](unobfuscated/gold/resetAllGold.js)<br>
- * [Reset Player's Gold](unobfuscated/gold/resetPlayersGold.js)<br>
- * [Set Gold](unobfuscated/gold/setGold.js)<br>
- * [Swap Gold](unobfuscated/gold/swapGold.js)<br>
-### [Crazy Kingdom](unobfuscated/kingdom/)
- * [Choice ESP](unobfuscated/kingdom/choiceESP.js)<br>
- * [Choice ESP Loop](unobfuscated/kingdom/choiceESPLoop.js)<br>
- * [Disable Toucan](unobfuscated/kingdom/disableToucan.js)<br>
- * [Max Stats](unobfuscated/kingdom/maxStats.js)<br>
- * [Set Guests](unobfuscated/kingdom/setGuests.js)<br>
- * [Skip Guest](unobfuscated/kingdom/skipGuest.js)<br>
-### [Racing](unobfuscated/racing/)
- * [Instant Win](unobfuscated/racing/instantWin.js)<br>
-### [Blook Rush](unobfuscated/rush/)
- * [Set Blooks](unobfuscated/rush/setBlooks.js)<br>
- * [Set Defense](unobfuscated/rush/setDefense.js)<br>
-### [Tower Defense](unobfuscated/tower-defense/)
- * [Earthquake](unobfuscated/tower-defense/earthquake.js)<br>
- * [Max Towers](unobfuscated/tower-defense/maxTowers.js)<br>
- * [Remove Ducks](unobfuscated/tower-defense/removeDucks.js)<br>
- * [Remove Enemies](unobfuscated/tower-defense/removeEnemies.js)<br>
- * [Place Towers Anywhere](unobfuscated/tower-defense/removeObsticles.js)<br>
- * [Set Damage](unobfuscated/tower-defense/setDmg.js)<br>
- * [Set Round](unobfuscated/tower-defense/setRound.js)<br>
- * [Set Tokens](unobfuscated/tower-defense/setTokens.js)<br>
-### [Santa's Workshop](unobfuscated/workshop/)
- * [Remove Distractions](unobfuscated/workshop/removeDistractions.js)<br>
- * [Set Toys](unobfuscated/workshop/setToys.js)<br>
- * [Set Toys Per Question](unobfuscated/workshop/setToysPerQ.js)<br>
- * [Swap Toys](unobfuscated/workshop/swapToys.js)<br>
+* [GUI](unobfuscated/gui.js)
+* [Mobile GUI](unobfuscated/mobileGui.js)
+### Monster Brawl
+  * [Double Enemy XP](unobfuscated/brawl/doubleEnemyXp.js)
+  * [Half Enemy Speed](unobfuscated/brawl/halfEnemySpeed.js)
+  * [Instant Kill](unobfuscated/brawl/instantKill.js)
+  * [Invincibility](unobfuscated/brawl/invincibility.js)
+  * [Kill Enemies](unobfuscated/brawl/killEnemies.js)
+  * [Magnet](unobfuscated/brawl/magnet.js)
+  * [Max Current Abilities](unobfuscated/brawl/maxCurrentAbilities.js)
+  * [Next Level](unobfuscated/brawl/nextLevel.js)
+  * [Remove Obstacles](unobfuscated/brawl/removeObstacles.js)
+  * [Reset Health](unobfuscated/brawl/resetHealth.js)
+### Cafe
+  * [Max Items](unobfuscated/cafe/maxItems.js)
+  * [Remove Customers](unobfuscated/cafe/removeCustomers.js)
+  * [Reset Abilities](unobfuscated/cafe/resetAbilities.js)
+  * [Set Cash](unobfuscated/cafe/setCash.js)
+  * [Stock Food](unobfuscated/cafe/stockFood.js)
+### Crypto Hack
+  * [Always Triple](unobfuscated/crypto/alwaysTriple.js)
+  * [Auto Guess](unobfuscated/crypto/autoGuess.js)
+  * [Choice ESP](unobfuscated/crypto/choiceESP.js)
+  * [Password ESP](unobfuscated/crypto/passwordESP.js)
+  * [Remove Hack](unobfuscated/crypto/removeHack.js)
+  * [Set Crypto](unobfuscated/crypto/setCrypto.js)
+  * [Set Password](unobfuscated/crypto/setPassword.js)
+  * [Steal Players Crypto](unobfuscated/crypto/stealPlayersCrypto.js)
+### Deceptive Dinos
+  * [Auto Choose](unobfuscated/dinos/autoChoose.js)
+  * [Rock ESP](unobfuscated/dinos/rockESP.js)
+  * [Set Fossils](unobfuscated/dinos/setFossils.js)
+  * [Set Multiplier](unobfuscated/dinos/setMultiplier.js)
+  * [Stop Cheating](unobfuscated/dinos/stopCheating.js)
+### Tower of Doom
+  * [Fill Deck](unobfuscated/doom/fillDeck.js)
+  * [Max Cards](unobfuscated/doom/maxCards.js)
+  * [Max Health](unobfuscated/doom/maxHealth.js)
+  * [Max Stats](unobfuscated/doom/maxStats.js)
+  * [Min Enemy](unobfuscated/doom/minEnemy.js)
+  * [Set Coins](unobfuscated/doom/setCoins.js)
+### Factory
+  * [Choose Blook](unobfuscated/factory/chooseBlook.js)
+  * [Free Upgrades](unobfuscated/factory/freeUpgrades.js)
+  * [Max Blooks](unobfuscated/factory/maxBlooks.js)
+  * [Remove Glitches](unobfuscated/factory/removeGlitches.js)
+  * [Send Glitch](unobfuscated/factory/sendGlitch.js)
+  * [Set All Mega Bot](unobfuscated/factory/setAllMegaBot.js)
+  * [Set Cash](unobfuscated/factory/setCash.js)
+### Fishing Frenzy
+  * [Frenzy](unobfuscated/fishing/frenzy.js)
+  * [Remove Distraction](unobfuscated/fishing/removeDistraction.js)
+  * [Send Distraction](unobfuscated/fishing/sendDistraction.js)
+  * [Set Lure](unobfuscated/fishing/setLure.js)
+  * [Set Weight](unobfuscated/fishing/setWeight.js)
+### Flappy Blook
+  * [Set Score](unobfuscated/flappy/setScore.js)
+  * [Toggle Ghost](unobfuscated/flappy/toggleGhost.js)
+### Global
+  * [Auto Answer](unobfuscated/global/autoAnswer.js)
+  * [Auto Sell Dupes On Open](unobfuscated/global/autoSellDupesOnOpen.js)
+  * [Every Answer Correct](unobfuscated/global/everyAnswerCorrect.js)
+  * [Get Daily Rewards](unobfuscated/global/getDailyRewards.js)
+  * [Highlight Answers](unobfuscated/global/highlightAnswers.js)
+  * [Prevent Suspension](unobfuscated/global/preventSuspension.js)
+  * [Remove Random Name](unobfuscated/global/removeRandomName.js)
+  * [Sell Cheap Duplicates](unobfuscated/global/sellCheapDuplicates.js)
+  * [Sell Duplicate Blooks](unobfuscated/global/sellDuplicateBlooks.js)
+  * [Simulate Unlock](unobfuscated/global/simulateUnlock.js)
+  * [Spam Buy Blooks](unobfuscated/global/spamBuyBlooks.js)
+  * [Unlock Plus Gamemodes](unobfuscated/global/unlockPlusGamemodes.js)
+  * [Use Any Blook](unobfuscated/global/useAnyBlook.js)
+#### Intervals
+    * [Auto Answer](unobfuscated/global/intervals/autoAnswer.js)
+    * [Highlight Answers](unobfuscated/global/intervals/highlightAnswers.js)
+### Gold Quest
+  * [Always Triple](unobfuscated/gold/alwaysTriple.js)
+  * [Auto Choose](unobfuscated/gold/autoChoose.js)
+  * [Chest ESP](unobfuscated/gold/chestESP.js)
+  * [Reset All Gold](unobfuscated/gold/resetAllGold.js)
+  * [Reset Players Gold](unobfuscated/gold/resetPlayersGold.js)
+  * [Set Gold](unobfuscated/gold/setGold.js)
+  * [Swap Gold](unobfuscated/gold/swapGold.js)
+### Crazy Kingdom
+  * [Choice ESP](unobfuscated/kingdom/choiceESP.js)
+  * [Choice ESP Loop](unobfuscated/kingdom/choiceESPLoop.js)
+  * [Disable Toucan](unobfuscated/kingdom/disableToucan.js)
+  * [Max Stats](unobfuscated/kingdom/maxStats.js)
+  * [Set Guests](unobfuscated/kingdom/setGuests.js)
+  * [Skip Guest](unobfuscated/kingdom/skipGuest.js)
+### Racing
+  * [Instant Win](unobfuscated/racing/instantWin.js)
+### Blook Rush
+  * [Set Blooks](unobfuscated/rush/setBlooks.js)
+  * [Set Defense](unobfuscated/rush/setDefense.js)
+### Tower Defense
+  * [Earthquake](unobfuscated/tower-defense/earthquake.js)
+  * [Max Towers](unobfuscated/tower-defense/maxTowers.js)
+  * [Remove Ducks](unobfuscated/tower-defense/removeDucks.js)
+  * [Remove Enemies](unobfuscated/tower-defense/removeEnemies.js)
+  * [Remove Obsticles](unobfuscated/tower-defense/removeObsticles.js)
+  * [Set Damage](unobfuscated/tower-defense/setDmg.js)
+  * [Set Round](unobfuscated/tower-defense/setRound.js)
+  * [Set Tokens](unobfuscated/tower-defense/setTokens.js)
+### Santa's Workshop
+  * [Remove Distractions](unobfuscated/workshop/removeDistractions.js)
+  * [Send Distraction](unobfuscated/workshop/sendDistraction.js)
+  * [Set Toys](unobfuscated/workshop/setToys.js)
+  * [Set Toys Per Question](unobfuscated/workshop/setToysPerQ.js)
+  * [Swap Toys](unobfuscated/workshop/swapToys.js)
 </details>
 
 [^1]: [Overtime](https://github.com/overtimepog)
