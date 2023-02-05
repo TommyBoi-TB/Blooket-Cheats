@@ -1,3 +1,4 @@
+Cheats made by someone who knows more about what they're doing
 ## Check out the [content branch](https://github.com/Minesraft2/Blooket-Cheats/tree/content) for more cheats
 
 # ⚠️ IMPORTANT ⚠️
@@ -5,16 +6,43 @@ If any cheats are not working, try copying them from the repo again, _then_ make
 ## [Support Server](https://discord.gg/QerPBatcca)
 ## [Instructions for importing bookmarklets](tutorial/readme.md)
 
-Cheats made by someone who knows more about what they're doing
+## Information
+
+<details><summary><h3>How to use</h3></summary>
+
+There are 3 good methods to using these scripts:
+1. Importing one of the Bookmarklets.html files using [these instructions](https://github.com/Minesraft2/Blooket-Cheats/blob/main/tutorial/readme.md)
+2. Going to the [GitHub pages site](https://minesraft2.github.io/Blooket-Cheats), choosing a gamemode, then dragging a cheat to your bookmarks bar or clicking one to copy the script
+3. Copying a script and running it in the inspect element console
+</details>
+
+<details><summary><h3>What can I do if JavaScript is blocked?</h3></summary>
+
+We don't actually know what to do about this or how to fix it, sorry.
+</details>
+
+<details><summary><h3><script> is not working?</h3></summary>
+
+Make sure you're running it properly (see [How to use](#how-to-use)), if it still doesn't work and other cheats do, then [make an issue](https://github.com/Minesraft2/Blooket-Cheats/issues)
+</details>
+
+<details><summary><h3>What is the difference between obfuscated and unobfuscated?</h3></summary>
+
+Obfuscated are scripts that are changed to be unreadable, unobfuscated are the original scripts (both with an added update checker).
+Unobfuscated scripts will not work if you try copying it and pasting it into a bookmarklet. This is because of the lack of semicolons in certain places. Please either use the obfuscated scripts or use one of the methods mentions in the first FAQ
+</details>
+
+<details><summary><h3>Are you the same person as gliz?</h3></summary>
+
+No, I am not gliz. I'm a close friend who worked on the original Blooket cheats with him and took over after he got a cease and desist.
+</details>
 
 # Todo
 
 - [ ] Possibly auto play
-- [ ] Maybe custom tower defense maps also using webpack
 - [ ] More Racing cheats
 
-[^1]: [Overtime](https://github.com/overtimepog)
-## List of Cheats
+<details><summary><h2>List of Cheats</h2></summary>
 
 ### [GUI](unobfuscated/gui.js)<br>
 ### [Global](unobfuscated/global/)
@@ -121,3 +149,6 @@ Cheats made by someone who knows more about what they're doing
  * [Set Toys](unobfuscated/workshop/setToys.js)<br>
  * [Set Toys Per Question](unobfuscated/workshop/setToysPerQ.js)<br>
  * [Swap Toys](unobfuscated/workshop/swapToys.js)<br>
+</details>
+
+[^1]: [Overtime](https://github.com/overtimepog)
