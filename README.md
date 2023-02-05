@@ -1,10 +1,8 @@
-Cheats made by someone who knows more about what they're doing
-## Check out the [content branch](https://github.com/Minesraft2/Blooket-Cheats/tree/content) for more cheats
+<p align="center">Cheats made by someone who knows more about what they're doing</p>
+<h2 align="center">Check out the <a href="https://github.com/Minesraft2/Blooket-Cheats/tree/content">content branch</a> for more cheats<h2>
 
-# ⚠️ IMPORTANT ⚠️
-If any cheats are not working, try copying them from the repo again, _then_ make an issue
-## [Support Server](https://discord.gg/QerPBatcca)
-## [Instructions for importing bookmarklets](tutorial/readme.md)
+<h2 align="center"><a href="https://discord.gg/QerPBatcca">Support Server</a></h2>
+<h2 align="center"><a href="tutorial/readme.md">Instructions for importing bookmarklets</a></h2>
 # Todo
 
 - [ ] Possibly auto play
