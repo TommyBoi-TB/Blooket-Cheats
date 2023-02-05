@@ -39,6 +39,11 @@ Unobfuscated scripts will not work if you try copying it and pasting it into a b
 No, I am not gliz. I'm a close friend who worked on the original Blooket cheats with him and took over after he got a cease and desist.
 </details>
 
+<details><summary><h3>Can you get infinite tokens or blooks?</h3></summary>
+
+No, those are managed on the server, we can't change any user data related to those.
+</details>
+
 
 <details><summary><h2>List of Cheats</h2></summary>
 
