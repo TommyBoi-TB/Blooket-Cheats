@@ -115,6 +115,7 @@ No, those are managed on the server, we can't change any user data related to th
 * [Remove Random Name](unobfuscated/global/removeRandomName.js)
 * [Sell Cheap Duplicates](unobfuscated/global/sellCheapDuplicates.js)
 * [Sell Duplicate Blooks](unobfuscated/global/sellDuplicateBlooks.js)
+* [Simulate Pack](unobfuscated/global/simulatePack.js.js)
 * [Simulate Unlock](unobfuscated/global/simulateUnlock.js)
 * [Spam Buy Blooks](unobfuscated/global/spamBuyBlooks.js)
 * [Unlock Plus Gamemodes](unobfuscated/global/unlockPlusGamemodes.js)
