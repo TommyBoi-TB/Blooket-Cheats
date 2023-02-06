@@ -31,6 +31,15 @@ body:
         - Imported Bookmarklets.html
         - "Put 'javascript:(code)' in the url bar or a bookmark"
         - Pasted script into console
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      description: Unobfuscated or obfuscated
+      multiple: true
+      options:
+        - Unobfuscated
+        - Obfuscated
     validations:
       required: true
   - type: textarea
