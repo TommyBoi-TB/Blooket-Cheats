@@ -28,6 +28,8 @@ Allows you to put a custom name
 Sells all of your uncommon to epic dupes (not legendaries or chromas)
 ## [Sell Duplicate Blooks](sellDuplicateBlooks.js)
 Sells all of your dupes
+## [Simulate Pack](simulatePack.js)
+Simulate opening a pack
 ## [Simulate Unlock](simulateUnlock.js)
 Simulate unlocking most of the blooks
 ## [Spam Buy Blooks](spamBuyBlooks.js)
