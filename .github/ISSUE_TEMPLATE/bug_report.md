@@ -8,13 +8,10 @@ assignees: Minesraft2
 ---
 
 ## Script
-Which script is causing the problem?
+Which script is causing the problem
 
 ## The Problem
-The problem with the script (ie console errors):
+The problem with the script
 
-## Method
-(Bookmarks.html, javascript:, Console):
-
-## Screenshots
-Add any applicable screenshots (ie console if you have access):
+## How I ran it
+Bookmarklets.html import, javascript: in url bar, or paste in console.
