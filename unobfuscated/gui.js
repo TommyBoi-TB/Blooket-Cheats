@@ -19,7 +19,7 @@
     window.confirm = i.contentWindow.confirm.bind(window);
     i.remove();
     Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://" + (location.host.startsWith("dashboard") ? location.host : "play.blooket.com") + "/api/games?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/gui.js")?.answers?.[0]}`)).then(async x => {
-        if (1676126981777 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
+        if (1676327571191 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
             /* Update Checker end */
             /* // (() => { */
             const addStyles = (element, styles = {}) => Object.entries(styles).forEach(([key, value]) => element.style[key] = value);
@@ -1765,6 +1765,64 @@
                         }
                     }
                 ],
+                defense2: [
+                    {
+                        name: "Max Tower Stats",
+                        description: "Makes all placed towers overpowered",
+                        run: function () {
+                            Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner.stateNode.state.towers.forEach(tower => {
+                                tower.stats.dmg = 1e6;
+                                tower.stats.fireRate = 50;
+                                tower.stats.ghostDetect = true;
+                                tower.stats.maxTargets = 1e6;
+                                tower.stats.numProjectiles = 100;
+                                tower.stats.range = 100;
+                            });
+                        }
+                    },
+                    {
+                        name: "Kill Enemies",
+                        description: "Kills all the enemies",
+                        run: function () {
+                            let { stateNode } = Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner;
+                            stateNode.state.game.scene.enemyQueue.length = 0;
+                            stateNode.state.game.scene.physics.world.bodies.entries.forEach(x => x?.gameObject?.receiveDamage?.(x.gameObject.hp, 1));
+                        }
+                    },
+                    {
+                        name: "Set Coins",
+                        description: "Sets coins",
+                        inputs: [{
+                            name: "Coins",
+                            type: "number"
+                        }],
+                        run: function (coins) {
+                            Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner.stateNode.setState({ coins });
+                        }
+                    },
+                    {
+                        name: "Set Health",
+                        description: "Sets the amount of health you have",
+                        inputs: [{
+                            name: "Health",
+                            type: "number"
+                        }],
+                        run: function (health) {
+                            Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner.stateNode.setState({ health });
+                        }
+                    },
+                    {
+                        name: "Set Round",
+                        description: "Sets the current round",
+                        inputs: [{
+                            name: "Round",
+                            type: "number"
+                        }],
+                        run: function (round) {
+                            Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner.stateNode.setState({ round });
+                        }
+                    },
+                ],
                 dinos: [
                     {
                         name: "Auto Choose",
@@ -2641,6 +2699,7 @@
             addMode("Crypto Hack", "https://media.blooket.com/image/upload/v1661496293/Media/uiTest/CryptoIcon.svg", Cheats.crypto);
             addMode("<span style=\"font-size: 17px\">Deceptive Dinos</span>", [`<img style="height: 30px; margin-left: 8px; margin-right: 12px" src="https://media.blooket.com/image/upload/v1655161325/Media/survivor/Dog.svg">`], Cheats.dinos);
             addMode("<span style=\"font-size: 18px\">Tower Defense</span>", [`<img style="width: 30px; margin-right: 5px" src="https://media.blooket.com/image/upload/v1657235025/Media/survivor/Laser_Lvl1.svg">`], Cheats.defense);
+            addMode("<span style=\"font-size: 16px\">Tower Defense 2</span>", [`<img style="width: 30px; margin-right: 5px; rotate: 45deg" src="https://media.blooket.com/image/upload/v1593095354/Media/defense/missile.svg">`], Cheats.defense2);
             addMode("Factory", "https://media.blooket.com/image/upload/v1661496293/Media/uiTest/Factory_Upgrades.svg", Cheats.factory);
             addMode("<span style=\"font-size: 19px\">Fishing Frenzy</span>", "https://media.blooket.com/image/upload/v1661496295/Media/uiTest/Fish_Weight.svg", Cheats.fishing);
             addMode("Flappy Blook", "https://media.blooket.com/image/upload/v1645222006/Blooks/yellowBird.svg", Cheats.flappy);

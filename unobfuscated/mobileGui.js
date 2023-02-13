@@ -19,7 +19,7 @@
     window.confirm = i.contentWindow.confirm.bind(window);
     i.remove();
     Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://" + (location.host.startsWith("dashboard") ? location.host : "play.blooket.com") + "/api/games?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/mobileGui.js")?.answers?.[0]}`)).then(async x => {
-        if (1676126981785 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
+        if (1676327571196 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
             /* Update Checker end */
             ; (() => {
                 let n = document.createElement('iframe');
@@ -1406,6 +1406,64 @@
                             }
                         }
                     ],
+                    defense2: [
+                        {
+                            name: "Max Tower Stats",
+                            description: "Makes all placed towers overpowered",
+                            run: function () {
+                                Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner.stateNode.state.towers.forEach(tower => {
+                                    tower.stats.dmg = 1e6;
+                                    tower.stats.fireRate = 50;
+                                    tower.stats.ghostDetect = true;
+                                    tower.stats.maxTargets = 1e6;
+                                    tower.stats.numProjectiles = 100;
+                                    tower.stats.range = 100;
+                                });
+                            }
+                        },
+                        {
+                            name: "Kill Enemies",
+                            description: "Kills all the enemies",
+                            run: function () {
+                                let { stateNode } = Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner;
+                                stateNode.state.game.scene.enemyQueue.length = 0;
+                                stateNode.state.game.scene.physics.world.bodies.entries.forEach(x => x?.gameObject?.receiveDamage?.(x.gameObject.hp, 1));
+                            }
+                        },
+                        {
+                            name: "Set Coins",
+                            description: "Sets coins",
+                            run: function () {
+                                let i = document.createElement('iframe');
+                                document.body.append(i);
+                                window.prompt = i.contentWindow.prompt.bind(window);
+                                i.remove();
+                                Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner.stateNode.setState({ coins: Number(parseInt(prompt("How many tokens would you like?"))) })
+                            }
+                        },
+                        {
+                            name: "Set Health",
+                            description: "Sets the amount of health you have",
+                            run: function (health) {
+                                let i = document.createElement('iframe');
+                                document.body.append(i);
+                                window.prompt = i.contentWindow.prompt.bind(window);
+                                i.remove();
+                                Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner.stateNode.setState({ health: Number(parseInt(prompt("How much health do you want?"))) });
+                            }
+                        },
+                        {
+                            name: "Set Round",
+                            description: "Sets the current round",
+                            run: function (round) {
+                                let i = document.createElement('iframe');
+                                document.body.append(i);
+                                window.prompt = i.contentWindow.prompt.bind(window);
+                                i.remove();
+                                Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner.stateNode.setState({ round: Number(parseInt(prompt("What round do you want to set to?"))) })
+                            }
+                        },
+                    ],
                     dinos: [
                         {
                             name: "Auto Choose",
@@ -2344,6 +2402,8 @@
                             return capitalize ? "Cafe" : "cafe";
                         case "/defense":
                             return capitalize ? "Tower Defense" : "defense";
+                        case "/play/defense2":
+                            return capitalize ? "Tower Defense 2" : "defense2";
                         case "/kingdom":
                             return capitalize ? "Crazy Kingdom" : "kingdom";
                         default:
