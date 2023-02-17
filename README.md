@@ -39,7 +39,7 @@ Unobfuscated scripts will not work if you try copying it and pasting it into a b
 No, these are things we would've already done if they were possible, they're managed on the backend of Blooket so we can't modify them
 </details>
 
-<details><summary><h3>Can you make hacks for \x3Cgame></h3></summary>
+<details><summary><h3>Can you make hacks for \<game></h3></summary>
 
 I'll start making scripts for other games when the Blooket scripts stop needing so much maintenance
 </details>
