@@ -23,7 +23,7 @@ There are 3 good methods to using these scripts:
 We don't actually know what to do about this or how to fix it, sorry.
 </details>
 
-<details><summary><h3><script> is not working?</h3></summary>
+<details><summary><h3>(script) is not working?</h3></summary>
 
 Make sure you're running it properly (see [How to use](https://github.com/Minesraft2/Blooket-Cheats#how-to-use)), if it still doesn't work and other cheats do, then [make an issue](https://github.com/Minesraft2/Blooket-Cheats/issues)
 </details>
@@ -39,7 +39,7 @@ Unobfuscated scripts will not work if you try copying it and pasting it into a b
 No, these are things we would've already done if they were possible, they're managed on the backend of Blooket so we can't modify them
 </details>
 
-<details><summary><h3>Can you make hacks for \<game></h3></summary>
+<details><summary><h3>Can you make hacks for (game)</h3></summary>
 
 I'll start making scripts for other games when the Blooket scripts stop needing so much maintenance
 </details>
@@ -47,16 +47,6 @@ I'll start making scripts for other games when the Blooket scripts stop needing 
 <details><summary><h3>Are you the same person as gliz?</h3></summary>
 
 No, I am not gliz. I'm a close friend who worked on the original Blooket cheats with him and took over after he got a cease and desist.
-</details>
-
-<details><summary><h3>Can I have the G, W role?</h3></summary>
-
-No, those roles are for close friends and people I trust with moderator permissions
-</details>
-
-<details><summary><h3>Can I have the Big Brian role?</h3></summary>
-
-You can get this role by actively helping people out, not by asking
 </details>
 
 
