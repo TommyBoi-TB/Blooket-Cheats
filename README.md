@@ -25,13 +25,23 @@ We don't actually know what to do about this or how to fix it, sorry.
 
 <details><summary><h3><script> is not working?</h3></summary>
 
-Make sure you're running it properly (see [How to use](#how-to-use)), if it still doesn't work and other cheats do, then [make an issue](https://github.com/Minesraft2/Blooket-Cheats/issues)
+Make sure you're running it properly (see [How to use](https://github.com/Minesraft2/Blooket-Cheats#how-to-use)), if it still doesn't work and other cheats do, then [make an issue](https://github.com/Minesraft2/Blooket-Cheats/issues)
 </details>
 
 <details><summary><h3>What is the difference between obfuscated and unobfuscated?</h3></summary>
 
 Obfuscated are scripts that are changed to be unreadable, unobfuscated are the original scripts (both with an added update checker).
-Unobfuscated scripts will not work if you try copying it and pasting it into a bookmarklet. This is because of the lack of semicolons in certain places. Please either use the obfuscated scripts or use one of the methods mentions in the How to use
+Unobfuscated scripts will not work if you try copying it and pasting it into a bookmarklet. This is because of the lack of semicolons in certain places. Please either use the obfuscated scripts or use one of the methods mentions in the first FAQ
+</details>
+
+<details><summary><h3>Can you give me infinite tokens / bypass daily limit / permanently give me blooks / change pack luck?</h3></summary>
+
+No, these are things we would've already done if they were possible, they're managed on the backend of Blooket so we can't modify them
+</details>
+
+<details><summary><h3>Can you make hacks for <game></h3></summary>
+
+I'll start making scripts for other games when the Blooket scripts stop needing so much maintenance
 </details>
 
 <details><summary><h3>Are you the same person as gliz?</h3></summary>
@@ -39,9 +49,14 @@ Unobfuscated scripts will not work if you try copying it and pasting it into a b
 No, I am not gliz. I'm a close friend who worked on the original Blooket cheats with him and took over after he got a cease and desist.
 </details>
 
-<details><summary><h3>Can you get infinite tokens or blooks?</h3></summary>
+<details><summary><h3>Can I have the G, W role?</h3></summary>
 
-No, those are managed on the server, we can't change any user data related to those.
+No, those roles are for close friends and people I trust with moderator permissions
+</details>
+
+<details><summary><h3>Can I have the Big Brian role?</h3></summary>
+
+You can get this role by actively helping people out, not by asking
 </details>
 
 
