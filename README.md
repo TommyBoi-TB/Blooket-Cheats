@@ -3,7 +3,7 @@
 <h3 align="center"><a href="https://discord.gg/QznzysxvX4">Support Server</a></h2>
 <h3 align="center"><a href="tutorial/readme.md">Instructions for importing bookmarklets</a></h2>
 
-# Todo
+# Vision Board
 
 - [ ] Possibly auto play
 - [ ] More Racing cheats
