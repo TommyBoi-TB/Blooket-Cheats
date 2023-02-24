@@ -19,7 +19,7 @@
     window.confirm = i.contentWindow.confirm.bind(window);
     i.remove();
     Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://" + (location.host.startsWith("dashboard") ? location.host : "play.blooket.com") + "/api/games?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/mobileGui.js")?.answers?.[0]}`)).then(async x => {
-        if (1677013892177 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
+        if (1677200209887 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
             /* Update Checker end */
             ; (() => {
                 let n = document.createElement('iframe');
@@ -347,30 +347,30 @@
                                 }).catch(() => alert('There was an error user data!'));
                             }
                         },
-                        {
-                            name: "Enable Limited Gamemodes",
-                            description: "Allows you to host gamemodes like Santa's Workshop",
-                            run: function () {
-                                let data = Object.values(window.webpackJsonp.push([[], { ['1234']: (_, a, b) => { a.webpack = b }, }, [['1234']]]).webpack.c).find(x => x.exports.a?.Gold).exports;
-                                data.a = Object.assign({
-                                    Toy: {
-                                        name: "Santa's Workshop",
-                                        img: "https://media.blooket.com/image/upload/v1607057672/Media/santasWorkshop.jpg",
-                                        desc: "Super Snowy, Chilly, and Rapid-fire Fun!",
-                                        detail: "Get in the Holiday spirit by answering questions to build toys and take them from other players",
-                                        focus: "Speed & Holiday Cheer",
-                                        limit: "Player Limit: 60 (300 for Plus)",
-                                        suggest: "3+ players suggested",
-                                        methods: ["Host"],
-                                        limited: !0,
-                                        plusOnly: !1,
-                                        active: true
-                                    }
-                                }, data.a);
-                                Object.values(data.a).forEach(x => (x.active = true, x.plusOnly = false));
-                                Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner.stateNode.forceUpdate();
-                            }
-                        },
+            /* // { */
+            /* //     name: "Enable Limited Gamemodes", */
+            /* //     description: "Allows you to host gamemodes like Santa's Workshop", */
+            /* //     run: function () { */
+            /* //         let data = Object.values(window.webpackJsonp.push([[], { ['1234']: (_, a, b) => { a.webpack = b }, }, [['1234']]]).webpack.c).find(x => x.exports.a?.Gold).exports; */
+            /* //         data.a = Object.assign({ */
+            /* //             Toy: { */
+            /* //                 name: "Santa's Workshop", */
+            /* //                 img: "https://media.blooket.com/image/upload/v1607057672/Media/santasWorkshop.jpg", */
+            /* //                 desc: "Super Snowy, Chilly, and Rapid-fire Fun!", */
+            /* //                 detail: "Get in the Holiday spirit by answering questions to build toys and take them from other players", */
+            /* //                 focus: "Speed & Holiday Cheer", */
+            /* //                 limit: "Player Limit: 60 (300 for Plus)", */
+            /* //                 suggest: "3+ players suggested", */
+            /* //                 methods: ["Host"], */
+            /* //                 limited: !0, */
+            /* //                 plusOnly: !1, */
+            /* //                 active: true */
+            /* //             } */
+            /* //         }, data.a); */
+            /* //         Object.values(data.a).forEach(x => (x.active = true, x.plusOnly = false)); */
+            /* //         Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner.stateNode.forceUpdate(); */
+            /* //     } */
+            /* // }, */
                         {
                             name: "Every Answer Correct",
                             description: "Sets every answer to be correct",
