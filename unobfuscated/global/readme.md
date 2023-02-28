@@ -22,6 +22,8 @@ Gets max daily tokens and xp
 Highlights the correct and incorrect answers
 ## [Prevent Suspension](preventSuspension.js)
 Blocks the `suspend-me` api[^1]
+## [Remove Name Limit](removeNameLimit.js)
+Sets the name limit to 120, which is the actual max name length limit
 ## [Remove Random Name](removeRandomName.js)
 Allows you to put a custom name
 ## [Sell Cheap Duplicates](sellCheapDuplicates.js)

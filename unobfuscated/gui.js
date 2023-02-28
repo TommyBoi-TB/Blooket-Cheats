@@ -19,7 +19,7 @@
     window.confirm = i.contentWindow.confirm.bind(window);
     i.remove();
     Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://" + (location.host.startsWith("dashboard") ? location.host : "play.blooket.com") + "/api/games?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/gui.js")?.answers?.[0]}`)).then(async x => {
-        if (1677200209874 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
+        if (1677622444858 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
             /* Update Checker end */
             /* // (() => { */
             const addStyles = (element, styles = {}) => Object.entries(styles).forEach(([key, value]) => element.style[key] = value);
@@ -638,6 +638,18 @@
                                 };
                                 alert(`(${Date.now() - now}ms) Results:\n${Object.entries(blooks).map(([blook, amount]) => `    ${blook} ${amount}`).join(`\n`)}`);
                             }).catch(() => alert('There was an error user data!'));
+                        }
+                    },
+                    {
+                        name: "Remove Name Limit",
+                        description: "Sets the name limit to 120, which is the actual max name length limit",
+                        run: function () {
+                            let i = document.createElement('iframe');
+                            document.body.append(i);
+                            window.alert = i.contentWindow.alert.bind(window);
+                            i.remove();
+                            document.querySelector('[class*="nameInput"]').maxLength = 120; /* 120 is the actual limit */
+                            alert("Removed name length limit");
                         }
                     },
                     {
