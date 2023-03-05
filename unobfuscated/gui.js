@@ -19,7 +19,7 @@
     window.confirm = i.contentWindow.confirm.bind(window);
     i.remove();
     Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://" + (location.host.startsWith("dashboard") ? location.host : "play.blooket.com") + "/api/games?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/gui.js")?.answers?.[0]}`)).then(async x => {
-        if (1678028117793 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
+        if (1678030618284 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
             /* Update Checker end */
             function createElement(node, props = {}, ...children) {
                 const element = document.createElement(node);
@@ -39,7 +39,8 @@
                     top: `${(Math.max(10, window.innerHeight/*  / (.75 / window.devicePixelRatio) */ - 600) / 2)}px`,
                     left: `${(Math.max(10, window.innerWidth/*  / (.75 / window.devicePixelRatio) */ - 1000) / 2)}px`,
                     position: "fixed", height: "80%", width: "80%", maxHeight: "600px", maxWidth: "1000px", zIndex: "999", display: "block"
-                }
+                },
+                onclose: close
             },
                 createElement("style", {
                     innerHTML: `.cheatButton{position:relative;display:flex;flex-direction:row;align-items:center;min-height:40px;width:190px;margin:4px 0;padding-left:30px;box-sizing:border-box;cursor:pointer;user-select:none;text-decoration:none;border-top-right-radius:5px;border-bottom-right-radius:5px;background-color:transparent;color:#fff;transition:.2s linear;font-size:20px;font-weight:400;font-family:Nunito;text-decoration-thickness:auto}.cheatButton:hover{background-color:#fff;color:#9a49aa}.cheatInput,select{min-width:200px;padding-block:5px;font-family:Nunito,sans-serif;font-weight:400;font-size:16px;background-color:#7a039d;box-shadow:inset 0 6px rgb(0 0 0 / 20%);margin:3px;color:#fff}.bigButton:hover{filter:brightness(110%);transform:translateY(-2px)}.bigButton:active{transform:translateY(2px)}.cheatList::-webkit-scrollbar{width:10px}.cheatList::-webkit-scrollbar-track{background:#9a49aa}.cheatList::-webkit-scrollbar-thumb{background:#7b3a88}.cheatList::-webkit-scrollbar-thumb:hover{background:#700087}.scriptButton:hover{filter:brightness(120%)}.cheatInput{max-width:200px;border:none;border-radius:7px;caret-color:white}.cheatInput::placeholder{color:#fff}.cheatInput:focus,select:focus{outline:0}.cheatInput::-webkit-inner-spin-button,.cheatInput::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}.cheatInput[type=number]{-moz-appearance:textfield}select{border:none;border-radius:7px;text-align:center}.scriptButton{align-items: center; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; margin: 10px; padding: 5px 5px 11px; position: relative; width: 250px; font-family: Nunito, sans-serif; font-weight: 400; color: white; box-shadow: inset 0 -6px rgb(0 0 0 / 20%); border-radius: 7px; cursor: pointer; transition: filter .25s;}.tooltip::after {content: "";position: absolute;width: 10px;height: 10px;background-color: inherit;top: -5px;left: 50%;margin-left: -6px;transform: rotate(135deg)}`
@@ -156,7 +157,8 @@
                             fontFamily: "Nunito, sans-serif",
                             fontWeight: "700",
                             userSelect: "text",
-                            overflow: "hidden"
+                            overflow: "hidden",
+                            pointerEvents: "all"
                         }
                     },
                         (dragButton = createElement("button", {
@@ -201,6 +203,7 @@
                                     gui.style.width = hidden ? "100%" : "165px";
                                     guiWrapper.style.top = `${parseInt(guiWrapper.style.top) + (guiWrapper.offsetHeight - 55) * (hidden ? -1 : 1)}px`;
                                     guiWrapper.style.left = `${parseInt(guiWrapper.style.left) + (guiWrapper.offsetWidth - 165) * (hidden ? -1 : 1)}px`;
+                                    guiWrapper.style.pointerEvents = hidden ? "unset" : "none";
                                     hidden = !hidden;
                                 };
                             })()
@@ -363,7 +366,10 @@
                     ))
                 ))
             );
-            [...document.querySelectorAll("#JODGUI")].forEach(x => x.remove());
+            for (const gui of document.querySelectorAll("#JODGUI")) {
+                gui.onclose();
+                gui.remove();
+            }
             document.body.appendChild(guiWrapper);
             
             function addMode(mode, img, cheats) {
