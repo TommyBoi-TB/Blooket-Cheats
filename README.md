@@ -5,7 +5,9 @@
 
 # Vision Board
 
-- [ ] Possibly auto play
+- [ ] Auto Play
+- [ ] GUI Game Events tab
+- [ ] GUI Color Customizations tab
 - [ ] More Racing cheats
 
 ## Information
