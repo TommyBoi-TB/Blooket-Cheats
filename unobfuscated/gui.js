@@ -19,7 +19,7 @@
     window.confirm = i.contentWindow.confirm.bind(window);
     i.remove();
     Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://" + (location.host.startsWith("dashboard") ? location.host : "play.blooket.com") + "/api/games?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/gui.js")?.answers?.[0]}`)).then(async x => {
-        if (1677974695001 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
+        if (1677977896614 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
             /* Update Checker end */
             function createElement(node, props = {}, ...children) {
                 const element = document.createElement(node);
@@ -191,16 +191,16 @@
                 onclick: (function () {
                     let hidden = false;
                     return () => {
-                        for (let child of [...$gui.children]) {
-                            if (child == $controlButtons) continue;
+                        for (let child of [...gui.children]) {
+                            if (child == controlButtons) continue;
                             if (hidden) child.style.display = child.style._display;
                             else {
                                 child.style._display = child.style.display;
                                 child.style.display = "none";
                             }
                         };
-                        $gui.style.height = hidden ? "100%" : "55px";
-                        $gui.style.width = hidden ? "100%" : "165px";
+                        gui.style.height = hidden ? "100%" : "55px";
+                        gui.style.width = hidden ? "100%" : "165px";
                         guiWrapper.style.top = `${parseInt(guiWrapper.style.top) + (guiWrapper.offsetHeight - 55) * (hidden ? -1 : 1)}px`;
                         guiWrapper.style.left = `${parseInt(guiWrapper.style.left) + (guiWrapper.offsetWidth - 165) * (hidden ? -1 : 1)}px`;
                         hidden = !hidden;
