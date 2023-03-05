@@ -6,7 +6,7 @@
 # Vision Board
 
 - [ ] Auto Play
-- [ ] GUI scroll wheel to get rid of global 2
+- [x] GUI scroll wheel to get rid of global 2
 - [ ] GUI Game Events tab
 - [x] GUI Color Customizations tab
 - [ ] More Racing cheats

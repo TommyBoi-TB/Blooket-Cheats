@@ -19,7 +19,7 @@
     window.confirm = i.contentWindow.confirm.bind(window);
     i.remove();
     Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://" + (location.host.startsWith("dashboard") ? location.host : "play.blooket.com") + "/api/games?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/gui.js")?.answers?.[0]}`)).then(async x => {
-        if (1678037512289 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
+        if (1678041579894 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
             /* Update Checker end */
             function createElement(node, props = {}, ...children) {
                 const element = document.createElement(node);
@@ -50,7 +50,7 @@
                     })()
                 })),
                 createElement("style", {
-                    innerHTML: `.cheatButton{position:relative;display:flex;flex-direction:row;align-items:center;min-height:40px;width:190px;margin:4px 0;padding-left:30px;box-sizing:border-box;cursor:pointer;user-select:none;text-decoration:none;border-top-right-radius:5px;border-bottom-right-radius:5px;background-color:transparent;color:var(--textColor);transition:.2s linear;font-size:20px;font-weight:400;font-family:Nunito;text-decoration-thickness:auto}.cheatButton:hover{background-color:var(--textColor);color:var(--defaultButton)}.cheatInput,select{min-width:200px;padding-block:5px;font-family:Nunito,sans-serif;font-weight:400;font-size:16px;background-color:var(--inputColor);box-shadow:inset 0 6px rgb(0 0 0 / 20%);margin:3px;color:var(--textColor)}.bigButton:hover{filter:brightness(110%);transform:translateY(-2px)}.bigButton:active{transform:translateY(2px)}.cheatList::-webkit-scrollbar{width:10px}.cheatList::-webkit-scrollbar-track{background:var(--cheatList)}.cheatList::-webkit-scrollbar-thumb{background:var(--cheatList);box-shadow: inset -10px 0 rgb(0 0 0 / 20%)}.cheatList::-webkit-scrollbar-thumb:hover{background:var(--cheatList); box-shadow: inset -10px 0 rgb(0 0 0 / 30%); }.scriptButton:hover{filter:brightness(120%)}.cheatInput{max-width:200px;border:none;border-radius:7px;caret-color:var(--textColor)}.cheatInput::placeholder{color:var(--textColor)}.cheatInput:focus,select:focus{outline:0}.cheatInput::-webkit-inner-spin-button,.cheatInput::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}.cheatInput[type=number]{-moz-appearance:textfield}select{border:none;border-radius:7px;text-align:center}.scriptButton{align-items: center; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; margin: 10px; padding: 5px 5px 11px; position: relative; width: 250px; font-family: Nunito, sans-serif; font-weight: 400; color: var(--textColor); box-shadow: inset 0 -6px rgb(0 0 0 / 20%); border-radius: 7px; cursor: pointer; transition: filter .25s;}.tooltip::after {content: "";position: absolute;width: 10px;height: 10px;background-color: inherit;top: -5px;left: 50%;margin-left: -6px;transform: rotate(135deg)}`
+                    innerHTML: `.contentWrapper::-webkit-scrollbar{display:none;}.contentWrapper{-ms-overflow-style: none;scrollbar-width: none;}.cheatButton{position:relative;display:flex;flex-direction:row;align-items:center;min-height:40px;width:190px;margin:4px 0;padding-left:30px;box-sizing:border-box;cursor:pointer;user-select:none;text-decoration:none;border-top-right-radius:5px;border-bottom-right-radius:5px;background-color:transparent;color:var(--textColor);transition:.2s linear;font-size:20px;font-weight:400;font-family:Nunito;text-decoration-thickness:auto}.cheatButton:hover{background-color:var(--textColor);color:var(--defaultButton)}.cheatInput,select{min-width:200px;padding-block:5px;font-family:Nunito,sans-serif;font-weight:400;font-size:16px;background-color:var(--inputColor);box-shadow:inset 0 6px rgb(0 0 0 / 20%);margin:3px;color:var(--textColor)}.bigButton:hover{filter:brightness(110%);transform:translateY(-2px)}.bigButton:active{transform:translateY(2px)}.cheatList::-webkit-scrollbar{width:10px}.cheatList::-webkit-scrollbar-track{background:var(--cheatList)}.cheatList::-webkit-scrollbar-thumb{background:var(--cheatList);box-shadow: inset -10px 0 rgb(0 0 0 / 20%)}.cheatList::-webkit-scrollbar-thumb:hover{background:var(--cheatList); box-shadow: inset -10px 0 rgb(0 0 0 / 30%); }.scriptButton:hover{filter:brightness(120%)}.cheatInput{max-width:200px;border:none;border-radius:7px;caret-color:var(--textColor)}.cheatInput::placeholder{color:var(--textColor)}.cheatInput:focus,select:focus{outline:0}.cheatInput::-webkit-inner-spin-button,.cheatInput::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}.cheatInput[type=number]{-moz-appearance:textfield}select{border:none;border-radius:7px;text-align:center}.scriptButton{align-items: center; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; margin: 10px; padding: 5px 5px 11px; position: relative; width: 250px; font-family: Nunito, sans-serif; font-weight: 400; color: var(--textColor); box-shadow: inset 0 -6px rgb(0 0 0 / 20%); border-radius: 7px; cursor: pointer; transition: filter .25s;}.tooltip::after {content: "";position: absolute;width: 10px;height: 10px;background-color: inherit;top: -5px;left: 50%;margin-left: -6px;transform: rotate(135deg)}`
                 }),
                 (gui = createElement("div", {
                     style: {
@@ -285,104 +285,114 @@
                     Discord
                 </div>
                 </div>`
-                        }))),
-                    (content = createElement("div", {
-                        id: "content",
-                        style: {
-                            position: "absolute",
-                            bottom: "50px",
-                            right: "50px",
-                            left: "270px",
-                            top: "97px"
+                        }))), createElement("div", {
+                            className: "contentWrapper",
+                            style: {
+                                position: "absolute",
+                                left: "220px",
+                                top: "70px",
+                                overflowY: "scroll",
+                                width: "calc(100% - 220px)",
+                                height: "calc(100% - 70px)",
+                                borderRadius: "7px"
+                            }
+                        },
+                            (content = createElement("div", {
+                                id: "content",
+                                style: {
+                                    position: "absolute",
+                                    inset: "27px 50px 50px 50px"
             /* // display: "flex", */
             /* // alignItems: "stretch, */
             /* // margin: "50px", */
             /* // backgroundColor: "#8000ff" */
-                        }
-                    },
-                        (tooltip = createElement("div", {
-                            className: "tooltip",
-                            style: {
-                                position: "absolute",
-                                top: "0",
-                                left: "0",
-                                backgroundColor: "rgb(32, 8.5, 47.5)",
-                                height: "fit-content",
-                                maxWidth: "300px",
-                                zIndex: "5",
-                                borderRadius: "7.5px",
-                                color: "white",
-                                display: "flex",
-                                justifyContent: "center",
-                                alignItems: "center",
-                                padding: "5px",
-                                paddingInline: "15px",
-                                pointerEvents: "none",
-                                opacity: "0",
-                                textAlign: "center"
-                            },
-                            innerText: "description"
-                        })),
-                        (cheats = createElement("div", {
-                            style: {
-                                alignItems: "center",
-                                boxSizing: "border-box",
-                                display: "flex",
-                                flexDirection: "row",
-                                flexWrap: "wrap",
-                                justifyContent: "space-evenly",
-                                padding: "20px 5px 20px",
-                                position: "relative",
-                                width: "100%",
-                                fontFamily: "Nunito, sans-serif",
-                                fontWeight: "400",
-                                color: "var(--textColor)",
-                                backgroundColor: "#40115f",
-                                boxShadow: "inset 0 -6px rgb(0 0 0 / 20%)",
-                                borderRadius: "7px"
-                            }
-                        },
-                            (headerText = createElement("div", {
-                                className: "headerText",
-                                style: {
-                                    boxSizing: "border-box",
-                                    display: "block",
-                                    height: "45px",
-                                    left: "-10px",
-                                    padding: "4px 4px 8px",
-                                    position: "absolute",
-                                    top: "-28px",
-                                    backgroundColor: "var(--contentBackground)",
-                                    boxShadow: "0 4px rgb(0 0 0 / 20%), inset 0 -4px rgb(0 0 0 / 20%)",
-                                    borderRadius: "7px"
                                 }
                             },
-                                createElement("div", {
+                                (tooltip = createElement("div", {
+                                    className: "tooltip",
+                                    style: {
+                                        position: "absolute",
+                                        top: "0",
+                                        left: "0",
+                                        backgroundColor: "rgb(32, 8.5, 47.5)",
+                                        height: "fit-content",
+                                        maxWidth: "300px",
+                                        zIndex: "5",
+                                        borderRadius: "7.5px",
+                                        color: "white",
+                                        display: "flex",
+                                        justifyContent: "center",
+                                        alignItems: "center",
+                                        padding: "5px",
+                                        paddingInline: "15px",
+                                        pointerEvents: "none",
+                                        opacity: "0",
+                                        textAlign: "center"
+                                    },
+                                    innerText: "description"
+                                })),
+                                (cheats = createElement("div", {
                                     style: {
                                         alignItems: "center",
                                         boxSizing: "border-box",
                                         display: "flex",
-                                        height: "100%",
-                                        justifyContent: "center",
-                                        padding: "0 15px",
+                                        flexDirection: "row",
+                                        flexWrap: "wrap",
+                                        justifyContent: "space-evenly",
+                                        padding: "20px 5px 20px",
+                                        position: "relative",
                                         width: "100%",
-                                        fontFamily: "Titan One, sans-serif",
-                                        fontSize: "26px",
+                                        fontFamily: "Nunito, sans-serif",
                                         fontWeight: "400",
-                                        textShadow: "-1px -1px 0 #646464, 1px -1px 0 #646464, -1px 1px 0 #646464, 2px 2px 0 #646464",
-                                        color: "white",
-                                        background: "linear-gradient(#fcd843,#fcd843 50%,#feb31a 50.01%,#feb31a)",
-                                        borderRadius: "5px"
+                                        color: "var(--textColor)",
+                                        backgroundColor: "#40115f",
+                                        boxShadow: "inset 0 -6px rgb(0 0 0 / 20%)",
+                                        borderRadius: "7px"
                                     }
-                                })
+                                },
+                                    (headerText = createElement("div", {
+                                        className: "headerText",
+                                        style: {
+                                            boxSizing: "border-box",
+                                            display: "block",
+                                            height: "45px",
+                                            left: "-10px",
+                                            padding: "4px 4px 8px",
+                                            position: "absolute",
+                                            top: "-28px",
+                                            backgroundColor: "var(--contentBackground)",
+                                            boxShadow: "0 4px rgb(0 0 0 / 20%), inset 0 -4px rgb(0 0 0 / 20%)",
+                                            borderRadius: "7px"
+                                        }
+                                    },
+                                        createElement("div", {
+                                            style: {
+                                                alignItems: "center",
+                                                boxSizing: "border-box",
+                                                display: "flex",
+                                                height: "100%",
+                                                justifyContent: "center",
+                                                padding: "0 15px",
+                                                width: "100%",
+                                                fontFamily: "Titan One, sans-serif",
+                                                fontSize: "26px",
+                                                fontWeight: "400",
+                                                textShadow: "-1px -1px 0 #646464, 1px -1px 0 #646464, -1px 1px 0 #646464, 2px 2px 0 #646464",
+                                                color: "white",
+                                                background: "linear-gradient(#fcd843,#fcd843 50%,#feb31a 50.01%,#feb31a)",
+                                                borderRadius: "5px"
+                                            }
+                                        })
+                                    ))
+                                ))
                             ))
-                        ))
-                    ))
+                        )
                 ))
             );
             for (const oldGui of document.querySelectorAll("#JODGUI")) oldGui.remove();
             
             document.body.appendChild(guiWrapper);
+            
             
             function addMode(mode, img, cheats) {
                 const button = createElement("div", {
@@ -515,6 +525,18 @@
                         }
                     },
                     {
+                        name: "Auto Answer",
+                        description: "Click the correct answer for you",
+                        run: function () {
+                            const { stateNode: { state: { question, stage, feedback }, props: { client: { question: pquestion } } } } = Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner;
+                            try {
+                                if (question.qType != "typing") if (stage !== "feedback" && !feedback) [...document.querySelectorAll(`[class*="answerContainer"]`)][(question || pquestion).answers.map((x, i) => (question || pquestion).correctAnswers.includes(x) ? i : null).filter(x => x != null)[0]]?.click?.();
+                                else document.querySelector('[class*="feedback"]')?.firstChild?.click?.();
+                                else Object.values(document.querySelector("[class*='typingAnswerWrapper']"))[1].children._owner.stateNode.sendAnswer(question.answers[0])
+                            } catch { }
+                        }
+                    },
+                    {
                         name: "Auto Sell Dupes On Open",
                         description: "Sells the blook you unlock when you open a pack if you already have one (Doesn't sell Legendaries or rarer)",
                         type: "toggle",
@@ -547,15 +569,32 @@
                         }
                     },
                     {
-                        name: "Auto Answer",
-                        description: "Click the correct answer for you",
+                        name: "Every Answer Correct",
+                        description: "Sets every answer to be correct",
                         run: function () {
-                            const { stateNode: { state: { question, stage, feedback }, props: { client: { question: pquestion } } } } = Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner;
-                            try {
-                                if (question.qType != "typing") if (stage !== "feedback" && !feedback) [...document.querySelectorAll(`[class*="answerContainer"]`)][(question || pquestion).answers.map((x, i) => (question || pquestion).correctAnswers.includes(x) ? i : null).filter(x => x != null)[0]]?.click?.();
-                                else document.querySelector('[class*="feedback"]')?.firstChild?.click?.();
-                                else Object.values(document.querySelector("[class*='typingAnswerWrapper']"))[1].children._owner.stateNode.sendAnswer(question.answers[0])
-                            } catch { }
+                            const { stateNode } = Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner;
+                            stateNode.freeQuestions = stateNode.questions = stateNode.props.client.questions.map(x => ({ ...x, correctAnswers: x.answers }));
+                        }
+                    },
+                    {
+                        name: "Get Daily Rewards",
+                        description: "Gets max daily tokens and xp",
+                        run: function () {
+                            let i = document.createElement('iframe');
+                            document.body.append(i);
+                            window.alert = i.contentWindow.alert.bind(window);
+                            i.remove();
+                            if (!location.href.includes("play.blooket.com")) alert("This cheat only works on play.blooket.com");
+                            else {
+                                var axios = Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']],]).cache).find((x) => x.exports?.a?.get).exports.a;
+                                axios.post("https://play.blooket.com/api/playersessions/solo", { gameMode: "Factory" }).then(({ data: { t } }) => {
+                                    axios.get("https://play.blooket.com/api/users/me").then(({ data: { name } }) => {
+                                        axios.put("https://play.blooket.com/api/users/add-rewards", { t, name, addedTokens: 500, addedXp: 300 })
+                                            .then(({ data: { dailyReward } }) => alert(`Added max tokens and xp, and got ${dailyReward} daily wheel tokens!`))
+                                            .catch(() => alert('There was an error when adding rewards.'));
+                                    }).catch(() => alert('There was an error user data.'));
+                                });
+                            }
                         }
                     },
                     {
@@ -567,75 +606,6 @@
                                 if ((state.question || props.client.question).correctAnswers.includes((state.question || props.client.question).answers[i])) answer.style.backgroundColor = "rgb(0, 207, 119)";
                                 else answer.style.backgroundColor = "rgb(189, 15, 38)";
                             });
-                        }
-                    },
-                    {
-                        name: "Spam Buy Blooks",
-                        description: "Opens a box an amount of times",
-                        inputs: [
-                            {
-                                name: "Box",
-                                type: "options",
-                                options: () => {
-                                    return new Promise(r => {
-                                        r(Object.keys(Object.values(webpackJsonp.push([[], { ['1234']: (_, a, b) => { a.webpack = b }, }, [['1234']]]).webpack.c).find(x => x?.exports?.a?.Safari)?.exports.a || {}));
-                                    });
-                                }
-                            },
-                            {
-                                name: "Amount",
-                                type: "number"
-                            }
-                        ],
-                        run: function (box, amountToOpen) {
-                            let i = document.createElement('iframe');
-                            document.body.append(i);
-                            window.alert = i.contentWindow.alert.bind(window);
-                            window.prompt = i.contentWindow.prompt.bind(window);
-                            window.confirm = i.contentWindow.confirm.bind(window);
-                            i.remove();
-                            var webpack = Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']],]).cache);
-                            var axios = webpack.find((x) => x.exports?.a?.get).exports.a;
-                            box = box.split(' ').map(x => x.charAt(0).toUpperCase() + x.slice(1).toLowerCase()).join(' ');
-            
-                            axios.get("https://dashboard.blooket.com/api/users").then(async ({ data: { name, tokens } }) => {
-                                let prices = webpack.find(x => x?.exports?.a?.Safari)?.exports?.a || {
-                                    Medieval: 15,
-                                    Breakfast: 15,
-                                    Wonderland: 15,
-                                    Space: 20,
-                                    Bot: 20,
-                                    Aquatic: 20,
-                                    Safari: 20,
-                                    Dino: 25,
-                                    "Ice Monster": 25
-                                };
-                                let amount = Math.min(Math.floor(tokens / prices[box]), amountToOpen);
-                                if (amount == 0) {
-                                    if (amountToOpen > 0) alert("You do not have enough tokens!");
-                                    return;
-                                };
-            
-                                let alertBlooks = confirm("Would you like to alert blooks upon unlocking?");
-                                let blooks = {};
-                                let now = Date.now();
-                                let error = false;
-            
-                                for (let i = 0; i < amount; i++) {
-                                    await axios.put("https://dashboard.blooket.com/api/users/unlockblook", { name, box }).then(({ data: { unlockedBlook, tokens, isNewBlook } }) => {
-                                        blooks[unlockedBlook] ||= 0;
-                                        blooks[unlockedBlook]++;
-            
-                                        let before = Date.now();
-            
-                                        if (alertBlooks) alert(`${unlockedBlook} (${i + 1}/${amount}) ${isNewBlook ? "NEW! " : ''}${tokens} tokens left`);
-            
-                                        now += Date.now() - before;
-                                    }).catch(e => error = true);
-                                    if (error) break;
-                                };
-                                alert(`(${Date.now() - now}ms) Results:\n${Object.entries(blooks).map(([blook, amount]) => `    ${blook} ${amount}`).join(`\n`)}`);
-                            }).catch(() => alert('There was an error user data!'));
                         }
                     },
                     {
@@ -698,8 +668,6 @@
                             }).catch(() => alert('There was an error user data!'));
                         }
                     },
-                ],
-                global2: [
             /* // { */
             /* //     name: "Enable Limited Gamemodes", */
             /* //     description: "Allows you to host gamemodes like Santa's Workshop", */
@@ -724,35 +692,6 @@
             /* //         Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner.stateNode.forceUpdate(); */
             /* //     } */
             /* // }, */
-                    {
-                        name: "Every Answer Correct",
-                        description: "Sets every answer to be correct",
-                        run: function () {
-                            const { stateNode } = Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner;
-                            stateNode.freeQuestions = stateNode.questions = stateNode.props.client.questions.map(x => ({ ...x, correctAnswers: x.answers }));
-                        }
-                    },
-                    {
-                        name: "Get Daily Rewards",
-                        description: "Gets max daily tokens and xp",
-                        run: function () {
-                            let i = document.createElement('iframe');
-                            document.body.append(i);
-                            window.alert = i.contentWindow.alert.bind(window);
-                            i.remove();
-                            if (!location.href.includes("play.blooket.com")) alert("This cheat only works on play.blooket.com");
-                            else {
-                                var axios = Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']],]).cache).find((x) => x.exports?.a?.get).exports.a;
-                                axios.post("https://play.blooket.com/api/playersessions/solo", { gameMode: "Factory" }).then(({ data: { t } }) => {
-                                    axios.get("https://play.blooket.com/api/users/me").then(({ data: { name } }) => {
-                                        axios.put("https://play.blooket.com/api/users/add-rewards", { t, name, addedTokens: 500, addedXp: 300 })
-                                            .then(({ data: { dailyReward } }) => alert(`Added max tokens and xp, and got ${dailyReward} daily wheel tokens!`))
-                                            .catch(() => alert('There was an error when adding rewards.'));
-                                    }).catch(() => alert('There was an error user data.'));
-                                });
-                            }
-                        }
-                    },
                     {
                         name: "Simulate Pack",
                         description: "Simulate opening a pack",
@@ -1317,6 +1256,82 @@
                         }
                     },
                     {
+                        name: "Spam Buy Blooks",
+                        description: "Opens a box an amount of times",
+                        inputs: [
+                            {
+                                name: "Box",
+                                type: "options",
+                                options: () => {
+                                    return new Promise(r => {
+                                        r(Object.keys(Object.values(webpackJsonp.push([[], { ['1234']: (_, a, b) => { a.webpack = b }, }, [['1234']]]).webpack.c).find(x => x?.exports?.a?.Safari)?.exports.a || {}));
+                                    });
+                                }
+                            },
+                            {
+                                name: "Amount",
+                                type: "number"
+                            }
+                        ],
+                        run: function (box, amountToOpen) {
+                            let i = document.createElement('iframe');
+                            document.body.append(i);
+                            window.alert = i.contentWindow.alert.bind(window);
+                            window.prompt = i.contentWindow.prompt.bind(window);
+                            window.confirm = i.contentWindow.confirm.bind(window);
+                            i.remove();
+                            var webpack = Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']],]).cache);
+                            var axios = webpack.find((x) => x.exports?.a?.get).exports.a;
+                            box = box.split(' ').map(x => x.charAt(0).toUpperCase() + x.slice(1).toLowerCase()).join(' ');
+            
+                            axios.get("https://dashboard.blooket.com/api/users").then(async ({ data: { name, tokens } }) => {
+                                let prices = webpack.find(x => x?.exports?.a?.Safari)?.exports?.a || {
+                                    Medieval: 15,
+                                    Breakfast: 15,
+                                    Wonderland: 15,
+                                    Space: 20,
+                                    Bot: 20,
+                                    Aquatic: 20,
+                                    Safari: 20,
+                                    Dino: 25,
+                                    "Ice Monster": 25
+                                };
+                                let amount = Math.min(Math.floor(tokens / prices[box]), amountToOpen);
+                                if (amount == 0) {
+                                    if (amountToOpen > 0) alert("You do not have enough tokens!");
+                                    return;
+                                };
+            
+                                let alertBlooks = confirm("Would you like to alert blooks upon unlocking?");
+                                let blooks = {};
+                                let now = Date.now();
+                                let error = false;
+            
+                                for (let i = 0; i < amount; i++) {
+                                    await axios.put("https://dashboard.blooket.com/api/users/unlockblook", { name, box }).then(({ data: { unlockedBlook, tokens, isNewBlook } }) => {
+                                        blooks[unlockedBlook] ||= 0;
+                                        blooks[unlockedBlook]++;
+            
+                                        let before = Date.now();
+            
+                                        if (alertBlooks) alert(`${unlockedBlook} (${i + 1}/${amount}) ${isNewBlook ? "NEW! " : ''}${tokens} tokens left`);
+            
+                                        now += Date.now() - before;
+                                    }).catch(e => error = true);
+                                    if (error) break;
+                                };
+                                alert(`(${Date.now() - now}ms) Results:\n${Object.entries(blooks).map(([blook, amount]) => `    ${blook} ${amount}`).join(`\n`)}`);
+                            }).catch(() => alert('There was an error user data!'));
+                        }
+                    },
+                    {
+                        name: "Unlock Plus Gamemodes",
+                        description: "Allows you to play any gamemode that is plus only",
+                        run: function () {
+                            Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner.stateNode.setState(state => (state.gameModes.forEach(gm => gm.plusOnly = false), state));
+                        }
+                    },
+                    {
                         name: "Use Any Blook",
                         description: "Allows you to play as any blook",
                         run: function () {
@@ -1325,13 +1340,6 @@
                             if (location.pathname == "/blooks") stateNode.setState({ blookData: Object.keys(blooks).reduce((a, b) => (a[b] = (stateNode.state.blookData[b] || 1), a), {}), allSets: Object.values(blooks).reduce((a, b) => (a.includes(b.set) ? a : a.concat(b.set)), []) });
                             else if (Array.isArray(stateNode.state.unlocks)) stateNode.setState({ unlocks: Object.keys(blooks) });
                             else stateNode.setState({ unlocks: blooks });
-                        }
-                    },
-                    {
-                        name: "Unlock Plus Gamemodes",
-                        description: "Allows you to play any gamemode that is plus only",
-                        run: function () {
-                            Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner.stateNode.setState(state => (state.gameModes.forEach(gm => gm.plusOnly = false), state));
                         }
                     }
                 ],
@@ -2842,7 +2850,6 @@
             };
             
             addMode("Global", "https://media.blooket.com/image/upload/v1661496291/Media/uiTest/Games_Played_2.svg", Cheats.global)();
-            addMode("Global 2", "https://media.blooket.com/image/upload/v1661496291/Media/uiTest/Games_Played_2.svg", Cheats.global2);
             addMode("Gold Quest", "https://media.blooket.com/image/upload/v1661496292/Media/uiTest/Gold.svg", Cheats.gold);
             addMode("Cafe", "https://media.blooket.com/image/upload/v1655161189/Media/survivor/Pizza_lvl1.svg", Cheats.cafe);
             addMode("Crypto Hack", "https://media.blooket.com/image/upload/v1661496293/Media/uiTest/CryptoIcon.svg", Cheats.crypto);
