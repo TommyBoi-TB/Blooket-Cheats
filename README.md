@@ -44,9 +44,24 @@ No, these are things we would've already done if they were possible, they're man
 I'll start making scripts for other games when the Blooket scripts stop needing so much maintenance
 </details>
 
+<details><summary><h3>Can you make more Battle Royale cheats</h3></summary>
+
+Battle Royale is a gamemode that works almost entirely on the host's end. The only thing we have control over is answering questions.
+</details>
+
 <details><summary><h3>Are you the same person as gliz?</h3></summary>
 
 No, I am not gliz. I'm a close friend who worked on the original Blooket cheats with him and took over after he got a cease and desist.
+</details>
+
+<details><summary><h3>How do I do this on mobile?</h3></summary>
+
+These scripts aren't made for mobile, so we don't really know how to get them to work on it.
+</details>
+
+<details><summary><h3>What's the Mobile GUI?</h3></summary>
+
+The mobile GUI is the original GUI I made long ago. Some people said it worked on mobile and it's a lot neater for mobile use apparently so we just called it that.
 </details>
 
 
