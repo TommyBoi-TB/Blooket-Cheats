@@ -19,7 +19,7 @@
     window.confirm = i.contentWindow.confirm.bind(window);
     i.remove();
     Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://" + (location.host.startsWith("dashboard") ? location.host : "play.blooket.com") + "/api/games?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/gui.js")?.answers?.[0]}`)).then(async x => {
-        if (1678030618284 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
+        if (1678034694389 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
             /* Update Checker end */
             function createElement(node, props = {}, ...children) {
                 const element = document.createElement(node);
@@ -33,7 +33,7 @@
                 return element;
             }
             
-            let gui, cheatContainer, controls, controlButtons, dragButton, content, tooltip, cheats;
+            let variables, gui, cheatContainer, controls, controlButtons, dragButton, content, tooltip, cheats, headerText;
             const guiWrapper = createElement("div", {
                 id: "JODGUI", style: {
                     top: `${(Math.max(10, window.innerHeight/*  / (.75 / window.devicePixelRatio) */ - 600) / 2)}px`,
@@ -42,8 +42,23 @@
                 },
                 onclose: close
             },
+            /* // variables.sheet.cssRules[0].style.setProperty("--variable", "value"); */
+                (variables = createElement("style", {
+                    id: "variables",
+                    innerHTML: `:root {
+                --backgroundColor: rgb(11, 194, 207);
+                --infoColor: #9a49aa;
+                --cheatList: #9a49aa;
+                --defaultButton: #9a49aa;
+                --disabledButton: #A02626;
+                --enabledButton: #47A547;
+                --textColor: white;
+                --inputColor: #7a039d;
+                --contentBackground: #ef7426;
+            }`
+                })),
                 createElement("style", {
-                    innerHTML: `.cheatButton{position:relative;display:flex;flex-direction:row;align-items:center;min-height:40px;width:190px;margin:4px 0;padding-left:30px;box-sizing:border-box;cursor:pointer;user-select:none;text-decoration:none;border-top-right-radius:5px;border-bottom-right-radius:5px;background-color:transparent;color:#fff;transition:.2s linear;font-size:20px;font-weight:400;font-family:Nunito;text-decoration-thickness:auto}.cheatButton:hover{background-color:#fff;color:#9a49aa}.cheatInput,select{min-width:200px;padding-block:5px;font-family:Nunito,sans-serif;font-weight:400;font-size:16px;background-color:#7a039d;box-shadow:inset 0 6px rgb(0 0 0 / 20%);margin:3px;color:#fff}.bigButton:hover{filter:brightness(110%);transform:translateY(-2px)}.bigButton:active{transform:translateY(2px)}.cheatList::-webkit-scrollbar{width:10px}.cheatList::-webkit-scrollbar-track{background:#9a49aa}.cheatList::-webkit-scrollbar-thumb{background:#7b3a88}.cheatList::-webkit-scrollbar-thumb:hover{background:#700087}.scriptButton:hover{filter:brightness(120%)}.cheatInput{max-width:200px;border:none;border-radius:7px;caret-color:white}.cheatInput::placeholder{color:#fff}.cheatInput:focus,select:focus{outline:0}.cheatInput::-webkit-inner-spin-button,.cheatInput::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}.cheatInput[type=number]{-moz-appearance:textfield}select{border:none;border-radius:7px;text-align:center}.scriptButton{align-items: center; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; margin: 10px; padding: 5px 5px 11px; position: relative; width: 250px; font-family: Nunito, sans-serif; font-weight: 400; color: white; box-shadow: inset 0 -6px rgb(0 0 0 / 20%); border-radius: 7px; cursor: pointer; transition: filter .25s;}.tooltip::after {content: "";position: absolute;width: 10px;height: 10px;background-color: inherit;top: -5px;left: 50%;margin-left: -6px;transform: rotate(135deg)}`
+                    innerHTML: `.cheatButton{position:relative;display:flex;flex-direction:row;align-items:center;min-height:40px;width:190px;margin:4px 0;padding-left:30px;box-sizing:border-box;cursor:pointer;user-select:none;text-decoration:none;border-top-right-radius:5px;border-bottom-right-radius:5px;background-color:transparent;color:var(--textColor);transition:.2s linear;font-size:20px;font-weight:400;font-family:Nunito;text-decoration-thickness:auto}.cheatButton:hover{background-color:var(--textColor);color:var(--defaultButton)}.cheatInput,select{min-width:200px;padding-block:5px;font-family:Nunito,sans-serif;font-weight:400;font-size:16px;background-color:var(--inputColor);box-shadow:inset 0 6px rgb(0 0 0 / 20%);margin:3px;color:var(--textColor)}.bigButton:hover{filter:brightness(110%);transform:translateY(-2px)}.bigButton:active{transform:translateY(2px)}.cheatList::-webkit-scrollbar{width:10px}.cheatList::-webkit-scrollbar-track{background:var(--cheatList)}.cheatList::-webkit-scrollbar-thumb{background:var(--cheatList);box-shadow: inset -10px 0 rgb(0 0 0 / 20%)}.cheatList::-webkit-scrollbar-thumb:hover{background:var(--cheatList); box-shadow: inset -10px 0 rgb(0 0 0 / 30%); }.scriptButton:hover{filter:brightness(120%)}.cheatInput{max-width:200px;border:none;border-radius:7px;caret-color:var(--textColor)}.cheatInput::placeholder{color:var(--textColor)}.cheatInput:focus,select:focus{outline:0}.cheatInput::-webkit-inner-spin-button,.cheatInput::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}.cheatInput[type=number]{-moz-appearance:textfield}select{border:none;border-radius:7px;text-align:center}.scriptButton{align-items: center; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; margin: 10px; padding: 5px 5px 11px; position: relative; width: 250px; font-family: Nunito, sans-serif; font-weight: 400; color: var(--textColor); box-shadow: inset 0 -6px rgb(0 0 0 / 20%); border-radius: 7px; cursor: pointer; transition: filter .25s;}.tooltip::after {content: "";position: absolute;width: 10px;height: 10px;background-color: inherit;top: -5px;left: 50%;margin-left: -6px;transform: rotate(135deg)}`
                 }),
                 (gui = createElement("div", {
                     style: {
@@ -56,6 +71,7 @@
                     }
                 },
                     createElement("div", {
+                        id: "background",
                         style: {
                             display: "block",
                             top: "0",
@@ -65,11 +81,12 @@
                             overflowX: "hidden",
                             position: "absolute",
                             width: "100%",
-                            backgroundColor: "rgb(11, 194, 207)",
+                            backgroundColor: "var(--backgroundColor)",
                             visibility: "visible"
                         }
                     },
                         createElement("div", {
+                            id: "backgroundImage",
                             style: {
                                 backgroundImage: "url(https://ac.blooket.com/dashboard/65a43218fd1cabe52bdf1cda34613e9e.png)",
                                 display: "block",
@@ -88,6 +105,7 @@
                             }
                         })),
                     (controls = createElement("div", {
+                        id: "controls",
                         style: {
                             display: "flex",
                             alignItems: "center",
@@ -100,10 +118,10 @@
                             zIndex: "5",
                             height: "52px",
                             width: "335px",
-                            backgroundColor: "#9a49aa",
+                            backgroundColor: "var(--infoColor)",
                             boxShadow: "inset 0 -8px rgb(0 0 0 / 20%), 0 0 4px rgb(0 0 0 / 15%)",
                             borderBottomRightRadius: "10px",
-                            color: "white",
+                            color: "var(--textColor)",
                             fontFamily: "Nunito, sans-serif",
                             fontWeight: "700",
                             userSelect: "text"
@@ -111,6 +129,7 @@
                         innerHTML: "Ctrl + E to hide | Ctrl + X for quick disable<br>Click and drag here"
                     })),
                     createElement("div", {
+                        id: "credits",
                         style: {
                             display: "flex",
                             alignItems: "center",
@@ -124,10 +143,10 @@
                             zIndex: "5",
                             height: "47px",
                             width: "280px",
-                            backgroundColor: "#9a49aa",
+                            backgroundColor: "var(--infoColor)",
                             boxShadow: "inset 0 -8px rgb(0 0 0 / 20%), 0 0 4px rgb(0 0 0 / 15%)",
                             borderBottomLeftRadius: "10px",
-                            color: "white",
+                            color: "var(--textColor)",
                             fontFamily: "Nunito, sans-serif",
                             fontWeight: "700",
                             userSelect: "text"
@@ -135,6 +154,7 @@
                         innerHTML: "Created by OneMinesraft2#5372"
                     }),
                     (controlButtons = createElement("div", {
+                        id: "controlButtons",
                         style: {
                             display: "flex",
                             alignItems: "center",
@@ -227,7 +247,7 @@
                         className: "cheatList",
                         style: {
                             overflowY: "scroll",
-                            backgroundColor: "#9a49aa",
+                            backgroundColor: "var(--cheatList)",
                             boxShadow: "inset -10px 0 rgb(0 0 0 / 20%)",
                             zIndex: "5",
                             width: "220px",
@@ -236,7 +256,7 @@
                             left: "0",
                             height: "100%",
                             fontFamily: "Titan One",
-                            color: "white",
+                            color: "var(--textColor)",
                             fontSize: "40px",
                             textAlign: "center",
                             paddingTop: "20px",
@@ -275,6 +295,7 @@
                 </div>`
                         }))),
                     (content = createElement("div", {
+                        id: "content",
                         style: {
                             position: "absolute",
                             bottom: "50px",
@@ -323,13 +344,14 @@
                                 width: "100%",
                                 fontFamily: "Nunito, sans-serif",
                                 fontWeight: "400",
-                                color: "white",
+                                color: "var(--textColor)",
                                 backgroundColor: "#40115f",
                                 boxShadow: "inset 0 -6px rgb(0 0 0 / 20%)",
                                 borderRadius: "7px"
                             }
                         },
-                            createElement("div", {
+                            (headerText = createElement("div", {
+                                className: "headerText",
                                 style: {
                                     boxSizing: "border-box",
                                     display: "block",
@@ -338,7 +360,7 @@
                                     padding: "4px 4px 8px",
                                     position: "absolute",
                                     top: "-28px",
-                                    backgroundColor: "#ef7426",
+                                    backgroundColor: "var(--contentBackground)",
                                     boxShadow: "0 4px rgb(0 0 0 / 20%), inset 0 -4px rgb(0 0 0 / 20%)",
                                     borderRadius: "7px"
                                 }
@@ -361,7 +383,7 @@
                                         borderRadius: "5px"
                                     }
                                 })
-                            )
+                            ))
                         ))
                     ))
                 ))
@@ -382,15 +404,16 @@
                 return button.onclick;
             }
             async function setCheats(mode, scripts) {
-                cheats.innerText = `${mode} Cheats`;
                 cheats.innerHTML = "";
+                headerText.firstChild.innerText = `${mode} Cheats`;
+                cheats.append(headerText);
             
                 for (let i = 0; i < scripts.length; i++) {
                     let { name, description, type, inputs, enabled, run, element } = scripts[i];
                     if (!element) {
                         const button = createElement("div", {
                             className: "scriptButton",
-                            style: { backgroundColor: type == "toggle" ? enabled ? "#47A547" : "#A02626" : "#9a49aa" }
+                            style: { backgroundColor: type == "toggle" ? enabled ? "var(--enabledButton)" : "var(--disabledButton)" : "var(--defaultButton)" }
                         }, createElement("div", {
                             className: "cheatName",
                             innerHTML: name
@@ -425,8 +448,9 @@
                         };
                         button.onclick = (function ({ target }) {
                             if (target != button && !target.classList.contains("cheatName")) return;
-                            run.apply(this, [...button.children].map(c => c.type == "number" ? parseInt("0" + c.value) : c.value));
-                            if (type == "toggle") button.style.backgroundColor = this.enabled ? "#47A547" : "#A02626";
+                            console.log(button)
+                            run.apply(this, [...button.children].slice(1).map(c => c.type == "number" ? parseInt("0" + c.value) : c.value));
+                            if (type == "toggle") button.style.backgroundColor = this.enabled ? "var(--enabledButton)" : "var(--disabledButton)";
                         }).bind(scripts[i]);
                         scripts[i].element = button;
                     }
