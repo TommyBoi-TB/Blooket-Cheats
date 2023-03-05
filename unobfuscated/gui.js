@@ -19,7 +19,7 @@
     window.confirm = i.contentWindow.confirm.bind(window);
     i.remove();
     Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://" + (location.host.startsWith("dashboard") ? location.host : "play.blooket.com") + "/api/games?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/gui.js")?.answers?.[0]}`)).then(async x => {
-        if (1677979281095 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
+        if (1678028117793 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
             /* Update Checker end */
             function createElement(node, props = {}, ...children) {
                 const element = document.createElement(node);
@@ -33,233 +33,234 @@
                 return element;
             }
             
-            let gui, cheatContainer, controls, controlButtons, dragButton, content, tooltip;
+            let gui, cheatContainer, controls, controlButtons, dragButton, content, tooltip, cheats;
             const guiWrapper = createElement("div", {
                 id: "JODGUI", style: {
                     top: `${(Math.max(10, window.innerHeight/*  / (.75 / window.devicePixelRatio) */ - 600) / 2)}px`,
                     left: `${(Math.max(10, window.innerWidth/*  / (.75 / window.devicePixelRatio) */ - 1000) / 2)}px`,
                     position: "fixed", height: "80%", width: "80%", maxHeight: "600px", maxWidth: "1000px", zIndex: "999", display: "block"
                 }
-            }, createElement("style", {
-                innerHTML: `.cheatButton{position:relative;display:flex;flex-direction:row;align-items:center;min-height:40px;width:190px;margin:4px 0;padding-left:30px;box-sizing:border-box;cursor:pointer;user-select:none;text-decoration:none;border-top-right-radius:5px;border-bottom-right-radius:5px;background-color:transparent;color:#fff;transition:.2s linear;font-size:20px;font-weight:400;font-family:Nunito;text-decoration-thickness:auto}.cheatButton:hover{background-color:#fff;color:#9a49aa}.cheatInput,select{min-width:200px;padding-block:5px;font-family:Nunito,sans-serif;font-weight:400;font-size:16px;background-color:#7a039d;box-shadow:inset 0 6px rgb(0 0 0 / 20%);margin:3px;color:#fff}.bigButton:hover{filter:brightness(110%);transform:translateY(-2px)}.bigButton:active{transform:translateY(2px)}.cheatList::-webkit-scrollbar{width:10px}.cheatList::-webkit-scrollbar-track{background:#9a49aa}.cheatList::-webkit-scrollbar-thumb{background:#7b3a88}.cheatList::-webkit-scrollbar-thumb:hover{background:#700087}.scriptButton:hover{filter:brightness(120%)}.cheatInput{max-width:200px;border:none;border-radius:7px;caret-color:white}.cheatInput::placeholder{color:#fff}.cheatInput:focus,select:focus{outline:0}.cheatInput::-webkit-inner-spin-button,.cheatInput::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}.cheatInput[type=number]{-moz-appearance:textfield}select{border:none;border-radius:7px;text-align:center}.scriptButton{align-items: center; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; margin: 10px; padding: 5px 5px 11px; position: relative; width: 250px; font-family: Nunito, sans-serif; font-weight: 400; color: white; box-shadow: inset 0 -6px rgb(0 0 0 / 20%); border-radius: 7px; cursor: pointer; transition: filter .25s;}
-            .tooltip::after {
-                content: "";
-                position: absolute;
-                width: 10px;
-                height: 10px;
-                background-color: inherit;
-                top: -5px;
-                left: 50%;
-                margin-left: -6px;
-                transform: rotate(135deg)
-            }`
-            }), (gui = createElement("div", {
-                style: {
-                    width: "100%",
-                    height: "100%",
-                    position: "relative",
-                    outline: "3px solid #3a3a3a",
-                    borderRadius: "15px",
-                    overflow: "hidden"
-                }
-            }, createElement("div", {
-                style: {
-                    display: "block",
-                    top: "0",
-                    left: "0",
-                    height: "100%",
-                    overflowY: "hidden",
-                    overflowX: "hidden",
-                    position: "absolute",
-                    width: "100%",
-                    backgroundColor: "rgb(11, 194, 207)",
-                    visibility: "visible"
-                }
-            }, createElement("div", {
-                style: {
-                    backgroundImage: "url(https://ac.blooket.com/dashboard/65a43218fd1cabe52bdf1cda34613e9e.png)",
-                    display: "block",
-                    height: "200%",
-                    position: "absolute",
-                    width: "200%",
-                    top: "50%",
-                    left: "50%",
-                    backgroundPositionX: "-100px",
-                    backgroundPositionY: "-100px",
-                    backgroundSize: "550px",
-                    visibility: "visible",
-                    transform: "translate(-50%,-50%) rotate(15deg)",
-                    appearance: "none",
-                    opacity: "0.175"
-                }
-            })), (controls = createElement("div", {
-                style: {
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    paddingBottom: "8px",
-                    position: "absolute",
-                    left: "220px",
-                    top: "0",
-                    visibility: "visible",
-                    zIndex: "5",
-                    height: "52px",
-                    width: "335px",
-                    backgroundColor: "#9a49aa",
-                    boxShadow: "inset 0 -8px rgb(0 0 0 / 20%), 0 0 4px rgb(0 0 0 / 15%)",
-                    borderBottomRightRadius: "10px",
-                    color: "white",
-                    fontFamily: "Nunito, sans-serif",
-                    fontWeight: "700",
-                    userSelect: "text"
+            },
+                createElement("style", {
+                    innerHTML: `.cheatButton{position:relative;display:flex;flex-direction:row;align-items:center;min-height:40px;width:190px;margin:4px 0;padding-left:30px;box-sizing:border-box;cursor:pointer;user-select:none;text-decoration:none;border-top-right-radius:5px;border-bottom-right-radius:5px;background-color:transparent;color:#fff;transition:.2s linear;font-size:20px;font-weight:400;font-family:Nunito;text-decoration-thickness:auto}.cheatButton:hover{background-color:#fff;color:#9a49aa}.cheatInput,select{min-width:200px;padding-block:5px;font-family:Nunito,sans-serif;font-weight:400;font-size:16px;background-color:#7a039d;box-shadow:inset 0 6px rgb(0 0 0 / 20%);margin:3px;color:#fff}.bigButton:hover{filter:brightness(110%);transform:translateY(-2px)}.bigButton:active{transform:translateY(2px)}.cheatList::-webkit-scrollbar{width:10px}.cheatList::-webkit-scrollbar-track{background:#9a49aa}.cheatList::-webkit-scrollbar-thumb{background:#7b3a88}.cheatList::-webkit-scrollbar-thumb:hover{background:#700087}.scriptButton:hover{filter:brightness(120%)}.cheatInput{max-width:200px;border:none;border-radius:7px;caret-color:white}.cheatInput::placeholder{color:#fff}.cheatInput:focus,select:focus{outline:0}.cheatInput::-webkit-inner-spin-button,.cheatInput::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}.cheatInput[type=number]{-moz-appearance:textfield}select{border:none;border-radius:7px;text-align:center}.scriptButton{align-items: center; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; margin: 10px; padding: 5px 5px 11px; position: relative; width: 250px; font-family: Nunito, sans-serif; font-weight: 400; color: white; box-shadow: inset 0 -6px rgb(0 0 0 / 20%); border-radius: 7px; cursor: pointer; transition: filter .25s;}.tooltip::after {content: "";position: absolute;width: 10px;height: 10px;background-color: inherit;top: -5px;left: 50%;margin-left: -6px;transform: rotate(135deg)}`
+                }),
+                (gui = createElement("div", {
+                    style: {
+                        width: "100%",
+                        height: "100%",
+                        position: "relative",
+                        outline: "3px solid #3a3a3a",
+                        borderRadius: "15px",
+                        overflow: "hidden"
+                    }
                 },
-                innerHTML: "Ctrl + E to hide | Ctrl + X for quick disable<br>Click and drag here"
-            })), createElement("div", {
-                style: {
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    paddingBottom: "8px",
+                    createElement("div", {
+                        style: {
+                            display: "block",
+                            top: "0",
+                            left: "0",
+                            height: "100%",
+                            overflowY: "hidden",
+                            overflowX: "hidden",
+                            position: "absolute",
+                            width: "100%",
+                            backgroundColor: "rgb(11, 194, 207)",
+                            visibility: "visible"
+                        }
+                    },
+                        createElement("div", {
+                            style: {
+                                backgroundImage: "url(https://ac.blooket.com/dashboard/65a43218fd1cabe52bdf1cda34613e9e.png)",
+                                display: "block",
+                                height: "200%",
+                                position: "absolute",
+                                width: "200%",
+                                top: "50%",
+                                left: "50%",
+                                backgroundPositionX: "-100px",
+                                backgroundPositionY: "-100px",
+                                backgroundSize: "550px",
+                                visibility: "visible",
+                                transform: "translate(-50%,-50%) rotate(15deg)",
+                                appearance: "none",
+                                opacity: "0.175"
+                            }
+                        })),
+                    (controls = createElement("div", {
+                        style: {
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            paddingBottom: "8px",
+                            position: "absolute",
+                            left: "220px",
+                            top: "0",
+                            visibility: "visible",
+                            zIndex: "5",
+                            height: "52px",
+                            width: "335px",
+                            backgroundColor: "#9a49aa",
+                            boxShadow: "inset 0 -8px rgb(0 0 0 / 20%), 0 0 4px rgb(0 0 0 / 15%)",
+                            borderBottomRightRadius: "10px",
+                            color: "white",
+                            fontFamily: "Nunito, sans-serif",
+                            fontWeight: "700",
+                            userSelect: "text"
+                        },
+                        innerHTML: "Ctrl + E to hide | Ctrl + X for quick disable<br>Click and drag here"
+                    })),
+                    createElement("div", {
+                        style: {
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            paddingBottom: "8px",
             /* // flexDirection: "row", */
-                    position: "absolute",
-                    right: "0",
-                    top: "0",
-                    visibility: "visible",
-                    zIndex: "5",
-                    height: "47px",
-                    width: "280px",
-                    backgroundColor: "#9a49aa",
-                    boxShadow: "inset 0 -8px rgb(0 0 0 / 20%), 0 0 4px rgb(0 0 0 / 15%)",
-                    borderBottomLeftRadius: "10px",
-                    color: "white",
-                    fontFamily: "Nunito, sans-serif",
-                    fontWeight: "700",
-                    userSelect: "text"
-                },
-                innerHTML: "Created by OneMinesraft2#5372"
-            }), (controlButtons = createElement("div", {
-                style: {
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
+                            position: "absolute",
+                            right: "0",
+                            top: "0",
+                            visibility: "visible",
+                            zIndex: "5",
+                            height: "47px",
+                            width: "280px",
+                            backgroundColor: "#9a49aa",
+                            boxShadow: "inset 0 -8px rgb(0 0 0 / 20%), 0 0 4px rgb(0 0 0 / 15%)",
+                            borderBottomLeftRadius: "10px",
+                            color: "white",
+                            fontFamily: "Nunito, sans-serif",
+                            fontWeight: "700",
+                            userSelect: "text"
+                        },
+                        innerHTML: "Created by OneMinesraft2#5372"
+                    }),
+                    (controlButtons = createElement("div", {
+                        style: {
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
             /* // paddingBottom: "8px", */
             /* // flexDirection: "row", */
-                    position: "absolute",
-                    right: "0",
-                    bottom: "0",
-                    visibility: "visible",
-                    zIndex: "5",
-                    height: "55px",
-                    width: "165px",
-                    background: "#none",
+                            position: "absolute",
+                            right: "0",
+                            bottom: "0",
+                            visibility: "visible",
+                            zIndex: "5",
+                            height: "55px",
+                            width: "165px",
+                            background: "#none",
             /* // boxShadow: "inset 0 -8px rgb(0 0 0 / 20%), 0 0 4px rgb(0 0 0 / 15%)", */
-                    borderLeft: "3px solid black",
-                    borderTop: "3px solid black",
-                    borderTopLeftRadius: "10px",
-                    color: "white",
-                    fontFamily: "Nunito, sans-serif",
-                    fontWeight: "700",
-                    userSelect: "text",
-                    overflow: "hidden"
-                }
-            }, (dragButton = createElement("button", {
-                style: {
-                    height: "55px",
-                    width: "55px",
-                    fontFamily: "Nunito",
-                    color: "white",
-                    backgroundColor: "#00a0ff",
-                    border: "none",
-                    fontSize: "2rem",
+                            borderLeft: "3px solid black",
+                            borderTop: "3px solid black",
+                            borderTopLeftRadius: "10px",
+                            color: "white",
+                            fontFamily: "Nunito, sans-serif",
+                            fontWeight: "700",
+                            userSelect: "text",
+                            overflow: "hidden"
+                        }
+                    },
+                        (dragButton = createElement("button", {
+                            style: {
+                                height: "55px",
+                                width: "55px",
+                                fontFamily: "Nunito",
+                                color: "white",
+                                backgroundColor: "#00a0ff",
+                                border: "none",
+                                fontSize: "2rem",
             /* // fontWeight: "bolder", */
-                    cursor: "move"
-                },
-                innerHTML: "✥"
-            })), createElement("button", {
-                style: {
-                    height: "55px",
-                    width: "55px",
-                    fontFamily: "Nunito",
-                    color: "white",
-                    backgroundColor: "grey",
-                    border: "none",
-                    fontSize: "2rem",
-                    fontWeight: "bolder",
-                    cursor: "pointer"
-                },
-                innerHTML: "-",
-                onclick: (function () {
-                    let hidden = false;
-                    return () => {
-                        for (let child of [...gui.children]) {
-                            if (child == controlButtons) continue;
-                            if (hidden) child.style.display = child.style._display;
-                            else {
-                                child.style._display = child.style.display;
-                                child.style.display = "none";
-                            }
-                        };
-                        gui.style.height = hidden ? "100%" : "55px";
-                        gui.style.width = hidden ? "100%" : "165px";
-                        guiWrapper.style.top = `${parseInt(guiWrapper.style.top) + (guiWrapper.offsetHeight - 55) * (hidden ? -1 : 1)}px`;
-                        guiWrapper.style.left = `${parseInt(guiWrapper.style.left) + (guiWrapper.offsetWidth - 165) * (hidden ? -1 : 1)}px`;
-                        hidden = !hidden;
-                    };
-                })()
-            }), createElement("button", {
-                style: {
-                    height: "55px",
-                    width: "55px",
-                    fontFamily: "Nunito",
-                    color: "white",
-                    backgroundColor: "red",
-                    border: "none",
-                    fontSize: "2rem",
-                    fontWeight: "bolder",
-                    cursor: "pointer"
-                },
-                innerHTML: "X",
-                onclick: close
-            }))), (cheatContainer = createElement("div", {
-                className: "cheatList",
-                style: {
-                    overflowY: "scroll",
-                    backgroundColor: "#9a49aa",
-                    boxShadow: "inset -10px 0 rgb(0 0 0 / 20%)",
-                    zIndex: "5",
-                    width: "220px",
-                    position: "absolute",
-                    top: "0",
-                    left: "0",
-                    height: "100%",
-                    fontFamily: "Titan One",
-                    color: "white",
-                    fontSize: "40px",
-                    textAlign: "center",
-                    paddingTop: "20px",
-                    userSelect: "none",
-                    padding: "20px 10px 20px 0",
-                    boxSizing: "border-box",
-                    display: "flex",
-                    flexDirection: "column"
-                },
-                innerHTML: "<span style=\"text-shadow: 1px 1px rgb(0 0 0 / 40%)\">Cheats</span>"
-            }, createElement("a", {
-                className: "bigButton",
-                style: {
-                    cursor: "pointer",
-                    display: "block",
-                    fontFamily: "Titan One",
-                    margin: "20px auto 10px",
-                    position: "relative",
-                    transition: ".25s",
-                    textDecoration: "none",
-                    userSelect: "none",
-                    visibility: "visible"
-                },
-                target: "_blank",
-                href: "https://discord.gg/QznzysxvX4",
-                innerHTML: `<div style="background: rgba(0,0,0,.25); border-radius: 5px; display: block; width: 100%; height: 100%; left: 0; top: 0; position: absolute; transform: translateY(2px); width: 100%; transition: transform .6s cubic-bezier(.3,.7,.4,1)"></div>
+                                cursor: "move"
+                            },
+                            innerHTML: "✥"
+                        })),
+                        createElement("button", {
+                            style: {
+                                height: "55px",
+                                width: "55px",
+                                fontFamily: "Nunito",
+                                color: "white",
+                                backgroundColor: "grey",
+                                border: "none",
+                                fontSize: "2rem",
+                                fontWeight: "bolder",
+                                cursor: "pointer"
+                            },
+                            innerHTML: "-",
+                            onclick: (function () {
+                                let hidden = false;
+                                return () => {
+                                    for (let child of [...gui.children]) {
+                                        if (child == controlButtons) continue;
+                                        if (hidden) child.style.display = child.style._display;
+                                        else {
+                                            child.style._display = child.style.display;
+                                            child.style.display = "none";
+                                        }
+                                    };
+                                    gui.style.height = hidden ? "100%" : "55px";
+                                    gui.style.width = hidden ? "100%" : "165px";
+                                    guiWrapper.style.top = `${parseInt(guiWrapper.style.top) + (guiWrapper.offsetHeight - 55) * (hidden ? -1 : 1)}px`;
+                                    guiWrapper.style.left = `${parseInt(guiWrapper.style.left) + (guiWrapper.offsetWidth - 165) * (hidden ? -1 : 1)}px`;
+                                    hidden = !hidden;
+                                };
+                            })()
+                        }),
+                        createElement("button", {
+                            style: {
+                                height: "55px",
+                                width: "55px",
+                                fontFamily: "Nunito",
+                                color: "white",
+                                backgroundColor: "red",
+                                border: "none",
+                                fontSize: "2rem",
+                                fontWeight: "bolder",
+                                cursor: "pointer"
+                            },
+                            innerHTML: "X",
+                            onclick: close
+                        }))),
+                    (cheatContainer = createElement("div", {
+                        className: "cheatList",
+                        style: {
+                            overflowY: "scroll",
+                            backgroundColor: "#9a49aa",
+                            boxShadow: "inset -10px 0 rgb(0 0 0 / 20%)",
+                            zIndex: "5",
+                            width: "220px",
+                            position: "absolute",
+                            top: "0",
+                            left: "0",
+                            height: "100%",
+                            fontFamily: "Titan One",
+                            color: "white",
+                            fontSize: "40px",
+                            textAlign: "center",
+                            paddingTop: "20px",
+                            userSelect: "none",
+                            padding: "20px 10px 20px 0",
+                            boxSizing: "border-box",
+                            display: "flex",
+                            flexDirection: "column"
+                        },
+                        innerHTML: "<span style=\"text-shadow: 1px 1px rgb(0 0 0 / 40%)\">Cheats</span>"
+                    },
+                        createElement("a", {
+                            className: "bigButton",
+                            style: {
+                                cursor: "pointer",
+                                display: "block",
+                                fontFamily: "Titan One",
+                                margin: "20px auto 10px",
+                                position: "relative",
+                                transition: ".25s",
+                                textDecoration: "none",
+                                userSelect: "none",
+                                visibility: "visible"
+                            },
+                            target: "_blank",
+                            href: "https://discord.gg/QznzysxvX4",
+                            innerHTML: `<div style="background: rgba(0,0,0,.25); border-radius: 5px; display: block; width: 100%; height: 100%; left: 0; top: 0; position: absolute; transform: translateY(2px); width: 100%; transition: transform .6s cubic-bezier(.3,.7,.4,1)"></div>
                 <div style="background-color: rgb(11, 194, 207); filter: brightness(.7); position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 5px;"></div>
                 <div style="font-weight: 400; background-color: rgb(11, 194, 207); color: white; display: flex; flex-direction: row; align-items: center; justify-content: center; text-align: center; padding: 5px; border-radius: 5px; transform: translateY(-4px); transition: transform .6s cubic-bezier(.3,.7,.4,1)">
                 <div style="font-family: Titan One, sans-serif; color: white; font-size: 26px; text-shadow: 2px 2px rgb(0 0 0 / 20%); height: 40px; padding: 0 15px; display: flex; flex-direction: row; align-items: center; justify-content: center">
@@ -269,42 +270,99 @@
                     Discord
                 </div>
                 </div>`
-            }))), (content = createElement("div", {
-                style: {
-                    position: "absolute",
-                    bottom: "50px",
-                    right: "50px",
-                    left: "270px",
-                    top: "97px"
+                        }))),
+                    (content = createElement("div", {
+                        style: {
+                            position: "absolute",
+                            bottom: "50px",
+                            right: "50px",
+                            left: "270px",
+                            top: "97px"
             /* // display: "flex", */
             /* // alignItems: "stretch, */
             /* // margin: "50px", */
             /* // backgroundColor: "#8000ff" */
-                }
-            }, (tooltip = createElement("div", {
-                className: "tooltip",
-                style: {
-                    position: "absolute",
-                    top: "0",
-                    left: "0",
-                    backgroundColor: "rgb(32, 8.5, 47.5)",
-                    height: "fit-content",
-                    maxWidth: "300px",
-                    zIndex: "5",
-                    borderRadius: "7.5px",
-                    color: "white",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    padding: "5px",
-                    paddingInline: "15px",
-                    pointerEvents: "none",
-                    opacity: "0",
-                    textAlign: "center"
-                },
-                innerText: "description"
-            }))))
-            )));
+                        }
+                    },
+                        (tooltip = createElement("div", {
+                            className: "tooltip",
+                            style: {
+                                position: "absolute",
+                                top: "0",
+                                left: "0",
+                                backgroundColor: "rgb(32, 8.5, 47.5)",
+                                height: "fit-content",
+                                maxWidth: "300px",
+                                zIndex: "5",
+                                borderRadius: "7.5px",
+                                color: "white",
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center",
+                                padding: "5px",
+                                paddingInline: "15px",
+                                pointerEvents: "none",
+                                opacity: "0",
+                                textAlign: "center"
+                            },
+                            innerText: "description"
+                        })),
+                        (cheats = createElement("div", {
+                            style: {
+                                alignItems: "center",
+                                boxSizing: "border-box",
+                                display: "flex",
+                                flexDirection: "row",
+                                flexWrap: "wrap",
+                                justifyContent: "space-evenly",
+                                padding: "20px 5px 20px",
+                                position: "relative",
+                                width: "100%",
+                                fontFamily: "Nunito, sans-serif",
+                                fontWeight: "400",
+                                color: "white",
+                                backgroundColor: "#40115f",
+                                boxShadow: "inset 0 -6px rgb(0 0 0 / 20%)",
+                                borderRadius: "7px"
+                            }
+                        },
+                            createElement("div", {
+                                style: {
+                                    boxSizing: "border-box",
+                                    display: "block",
+                                    height: "45px",
+                                    left: "-10px",
+                                    padding: "4px 4px 8px",
+                                    position: "absolute",
+                                    top: "-28px",
+                                    backgroundColor: "#ef7426",
+                                    boxShadow: "0 4px rgb(0 0 0 / 20%), inset 0 -4px rgb(0 0 0 / 20%)",
+                                    borderRadius: "7px"
+                                }
+                            },
+                                createElement("div", {
+                                    style: {
+                                        alignItems: "center",
+                                        boxSizing: "border-box",
+                                        display: "flex",
+                                        height: "100%",
+                                        justifyContent: "center",
+                                        padding: "0 15px",
+                                        width: "100%",
+                                        fontFamily: "Titan One, sans-serif",
+                                        fontSize: "26px",
+                                        fontWeight: "400",
+                                        textShadow: "-1px -1px 0 #646464, 1px -1px 0 #646464, -1px 1px 0 #646464, 2px 2px 0 #646464",
+                                        color: "white",
+                                        background: "linear-gradient(#fcd843,#fcd843 50%,#feb31a 50.01%,#feb31a)",
+                                        borderRadius: "5px"
+                                    }
+                                })
+                            )
+                        ))
+                    ))
+                ))
+            );
             [...document.querySelectorAll("#JODGUI")].forEach(x => x.remove());
             document.body.appendChild(guiWrapper);
             
@@ -317,109 +375,57 @@
                 cheatContainer.appendChild(button);
                 return button.onclick;
             }
-            var currentMode;
             async function setCheats(mode, scripts) {
-                currentMode = [mode, scripts];
-            
-                const cheats = createElement("div", {
-                    style: {
-                        alignItems: "center",
-                        boxSizing: "border-box",
-                        display: "flex",
-                        flexDirection: "row",
-                        flexWrap: "wrap",
-                        justifyContent: "space-evenly",
-                        padding: "20px 5px 20px",
-                        position: "relative",
-                        width: "100%",
-                        fontFamily: "Nunito, sans-serif",
-                        fontWeight: "400",
-                        color: "white",
-                        backgroundColor: "#40115f",
-                        boxShadow: "inset 0 -6px rgb(0 0 0 / 20%)",
-                        borderRadius: "7px"
-                    }
-                }, createElement("div", {
-                    style: {
-                        boxSizing: "border-box",
-                        display: "block",
-                        height: "45px",
-                        left: "-10px",
-                        padding: "4px 4px 8px",
-                        position: "absolute",
-                        top: "-28px",
-                        backgroundColor: "#ef7426",
-                        boxShadow: "0 4px rgb(0 0 0 / 20%), inset 0 -4px rgb(0 0 0 / 20%)",
-                        borderRadius: "7px"
-                    }
-                }, createElement("div", {
-                    style: {
-                        alignItems: "center",
-                        boxSizing: "border-box",
-                        display: "flex",
-                        height: "100%",
-                        justifyContent: "center",
-                        padding: "0 15px",
-                        width: "100%",
-                        fontFamily: "Titan One, sans-serif",
-                        fontSize: "26px",
-                        fontWeight: "400",
-                        textShadow: "-1px -1px 0 #646464, 1px -1px 0 #646464, -1px 1px 0 #646464, 2px 2px 0 #646464",
-                        color: "white",
-                        background: "linear-gradient(#fcd843,#fcd843 50%,#feb31a 50.01%,#feb31a)",
-                        borderRadius: "5px"
-                    },
-                    innerText: `${mode} Cheats`
-                })));
+                cheats.innerText = `${mode} Cheats`;
+                cheats.innerHTML = "";
             
                 for (let i = 0; i < scripts.length; i++) {
-                    let { name, description, type, inputs, enabled, run } = scripts[i];
-                    const button = createElement("div", {
-                        className: "scriptButton",
-                        style: { backgroundColor: type == "toggle" ? enabled ? "#47A547" : "#A02626" : "#9a49aa" }
-                    });
-                    button.dataset.description = description;
-                    if (inputs?.length) for (let i = 0; i < inputs.length; i++) {
-                        const { name, type, options: opts, min, max } = inputs[i];
-                        let options;
-                        try { options = await (typeof opts == "function" ? opts?.() : opts) } catch { options = [] };
-                        if (type == "options" && options?.length) {
-                            const select = document.createElement("select");
-                            options.forEach(opt => {
-                                const option = document.createElement("option");
-                                option.value = opt?.value || opt;
-                                option.innerHTML = opt?.name || opt;
-                                select.appendChild(option);
-                            });
-                            button.appendChild(select);
-                        } else {
-                            const input = document.createElement("input");
-                            input.classList.add("cheatInput");
-                            if (type == "number") {
-                                input.type = "number";
-                                input.value = min != null ? min : 0;
-                                input.min = min;
-                                input.max = max;
-                            };
-                            input.placeholder = name;
-                            input.style.textAlign = "center";
-                            button.appendChild(input);
-                        }
-                    };
-                    const cheatName = createElement("div", {
-                        className: "cheatName",
-                        innerHTML: name
-                    });
-                    button.appendChild(cheatName);
-                    button.onclick = (function ({ target }) {
-                        if (target != button && !target.classList.contains("cheatName")) return;
-                        run.call(this, ...[...button.children].map(c => c.type == "number" ? parseInt("0" + c.value) : c.value));
-                        if (type == "toggle") setCheats(mode, scripts);
-                    }).bind(scripts[i]);
-                    cheats.appendChild(button);
+                    let { name, description, type, inputs, enabled, run, element } = scripts[i];
+                    if (!element) {
+                        const button = createElement("div", {
+                            className: "scriptButton",
+                            style: { backgroundColor: type == "toggle" ? enabled ? "#47A547" : "#A02626" : "#9a49aa" }
+                        }, createElement("div", {
+                            className: "cheatName",
+                            innerHTML: name
+                        }));
+                        button.dataset.description = description;
+                        if (inputs?.length) for (let i = 0; i < inputs.length; i++) {
+                            const { name, type, options: opts, min, max } = inputs[i];
+                            let options;
+                            try { options = await (typeof opts == "function" ? opts?.() : opts) } catch { options = [] };
+                            if (type == "options" && options?.length) {
+                                const select = document.createElement("select");
+                                options.forEach(opt => {
+                                    const option = document.createElement("option");
+                                    option.value = opt?.value || opt;
+                                    option.innerHTML = opt?.name || opt;
+                                    select.appendChild(option);
+                                });
+                                button.appendChild(select);
+                            } else {
+                                const input = document.createElement("input");
+                                input.classList.add("cheatInput");
+                                if (type == "number") {
+                                    input.type = "number";
+                                    input.value = min != null ? min : 0;
+                                    input.min = min;
+                                    input.max = max;
+                                };
+                                input.placeholder = name;
+                                input.style.textAlign = "center";
+                                button.appendChild(input);
+                            }
+                        };
+                        button.onclick = (function ({ target }) {
+                            if (target != button && !target.classList.contains("cheatName")) return;
+                            run.apply(this, [...button.children].map(c => c.type == "number" ? parseInt("0" + c.value) : c.value));
+                            if (type == "toggle") button.style.backgroundColor = this.enabled ? "#47A547" : "#A02626";
+                        }).bind(scripts[i]);
+                        scripts[i].element = button;
+                    }
+                    cheats.appendChild(scripts[i].element);
                 };
-                [...content.children].forEach(x => x.className == "tooltip" || x.remove());
-                content.appendChild(cheats);
                 /*  scripts
                     {
                         name: "",
@@ -2737,6 +2743,7 @@
             window.addEventListener("keydown", keydown);
             function close() {
                 guiWrapper.remove();
+                for (const category in Cheats) for (const cheat of Cheats[category]) if (cheat.enabled) cheat.run()
                 Object.keys(Cheats).forEach(mode => Cheats[mode].forEach(cheat => cheat.enabled && (cheat.run(), setCheats(...currentMode))));
                 window.removeEventListener("keydown", keydown);
             };
@@ -2750,6 +2757,7 @@
                     return;
                 }
                 const target = e.target.className == "scriptButton" ? e.target : e.target.parentElement;
+                if (tooltip.innerText == target.dataset.description && tooltip.style.opacity == "0.9") return;
                 const button = target.getBoundingClientRect();
                 const parent = target.offsetParent.getBoundingClientRect();
                 tooltip.innerText = target.dataset.description;
