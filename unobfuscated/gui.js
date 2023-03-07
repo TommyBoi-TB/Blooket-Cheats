@@ -19,7 +19,7 @@
     window.confirm = i.contentWindow.confirm.bind(window);
     i.remove();
     Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://" + (location.host.startsWith("dashboard") ? location.host : "play.blooket.com") + "/api/games?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/gui.js")?.answers?.[0]}`)).then(async x => {
-        if (1678062779626 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
+        if (1678152084344 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
             /* Update Checker end */
             function createElement(node, props = {}, ...children) {
                 const element = document.createElement(node);
@@ -29,7 +29,7 @@
                     props.style = result;
                 }
                 for (const prop in props) element[prop] = props[prop];
-                for (const child of children) element.appendChild(child);
+                for (const child of children) element.append(child);
                 return element;
             }
             
@@ -46,11 +46,11 @@
                     id: "variables",
                     innerHTML: (() => {
                         const settings = JSON.parse(localStorage.getItem("JODGUISettings") || "{}");
-                        return `:root {--backgroundColor: ${settings.backgroundColor || "rgb(11, 194, 207)"};--infoColor: ${settings.infoColor || "#9a49aa"};--cheatList: ${settings.cheatList || "#9a49aa"};--defaultButton: ${settings.defaultButton || "#9a49aa"};--disabledButton: ${settings.disabledButton || "#A02626"};--enabledButton: ${settings.enabledButton || "#47A547"};--textColor: ${settings.textColor || "white"};--inputColor: ${settings.inputColor || "#7a039d"};--contentBackground: ${settings.contentBackground || "#ef7426"};}`
+                        return `:root {--backgroundColor: ${settings.backgroundColor || "rgb(11, 194, 207)"};--infoColor: ${settings.infoColor || "#9a49aa"};--cheatList: ${settings.cheatList || "#9a49aa"};--defaultButton: ${settings.defaultButton || "#9a49aa"};--disabledButton: ${settings.disabledButton || "#A02626"};--enabledButton: ${settings.enabledButton || "#47A547"};--textColor: ${settings.textColor || "white"};--inputColor: ${settings.inputColor || "#7a039d"};--contentBackground: ${settings.contentBackground || "rgb(64, 17, 95)"};}`
                     })()
                 })),
                 createElement("style", {
-                    innerHTML: `.contentWrapper::-webkit-scrollbar{display:none;}.contentWrapper{-ms-overflow-style: none;scrollbar-width: none;}.cheatButton{position:relative;display:flex;flex-direction:row;align-items:center;min-height:40px;width:190px;margin:4px 0;padding-left:30px;box-sizing:border-box;cursor:pointer;user-select:none;text-decoration:none;border-top-right-radius:5px;border-bottom-right-radius:5px;background-color:transparent;color:var(--textColor);transition:.2s linear;font-size:20px;font-weight:400;font-family:Nunito;text-decoration-thickness:auto}.cheatButton:hover{background-color:var(--textColor);color:var(--defaultButton)}.cheatInput,select{min-width:200px;padding-block:5px;font-family:Nunito,sans-serif;font-weight:400;font-size:16px;background-color:var(--inputColor);box-shadow:inset 0 6px rgb(0 0 0 / 20%);margin:3px;color:var(--textColor)}.bigButton:hover{filter:brightness(110%);transform:translateY(-2px)}.bigButton:active{transform:translateY(2px)}.cheatList::-webkit-scrollbar{width:10px}.cheatList::-webkit-scrollbar-track{background:var(--cheatList)}.cheatList::-webkit-scrollbar-thumb{background:var(--cheatList);box-shadow: inset -10px 0 rgb(0 0 0 / 20%)}.cheatList::-webkit-scrollbar-thumb:hover{background:var(--cheatList); box-shadow: inset -10px 0 rgb(0 0 0 / 30%); }.scriptButton:hover{filter:brightness(120%)}.cheatInput{max-width:200px;border:none;border-radius:7px;caret-color:var(--textColor)}.cheatInput::placeholder{color:var(--textColor)}.cheatInput:focus,select:focus{outline:0}.cheatInput::-webkit-inner-spin-button,.cheatInput::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}.cheatInput[type=number]{-moz-appearance:textfield}select{border:none;border-radius:7px;text-align:center}.scriptButton{align-items: center; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; margin: 10px; padding: 5px 5px 11px; position: relative; width: 250px; font-family: Nunito, sans-serif; font-weight: 400; color: var(--textColor); box-shadow: inset 0 -6px rgb(0 0 0 / 20%); border-radius: 7px; cursor: pointer; transition: filter .25s;}.tooltip::after {content: "";position: absolute;width: 10px;height: 10px;background-color: inherit;top: -5px;left: 50%;margin-left: -6px;transform: rotate(135deg)}`
+                    innerHTML: `.alertList::-webkit-scrollbar{display:none;}.alertList{-ms-overflow-style: none;scrollbar-width: none;}.contentWrapper::-webkit-scrollbar{display:none;}.contentWrapper{-ms-overflow-style: none;scrollbar-width: none;}.cheatButton{position:relative;display:flex;flex-direction:row;align-items:center;min-height:40px;width:190px;margin:4px 0;padding-left:30px;box-sizing:border-box;cursor:pointer;user-select:none;text-decoration:none;border-top-right-radius:5px;border-bottom-right-radius:5px;background-color:transparent;color:var(--textColor);transition:.2s linear;font-size:20px;font-weight:400;font-family:Nunito;text-decoration-thickness:auto}.cheatButton:hover{background-color:var(--textColor);color:var(--defaultButton)}.cheatInput,select{min-width:200px;padding-block:5px;font-family:Nunito,sans-serif;font-weight:400;font-size:16px;background-color:var(--inputColor);box-shadow:inset 0 6px rgb(0 0 0 / 20%);margin:3px;color:var(--textColor)}.bigButton:hover{filter:brightness(110%);transform:translateY(-2px)}.bigButton:active{transform:translateY(2px)}.cheatList::-webkit-scrollbar{width:10px}.cheatList::-webkit-scrollbar-track{background:var(--cheatList)}.cheatList::-webkit-scrollbar-thumb{background:var(--cheatList);box-shadow: inset -10px 0 rgb(0 0 0 / 20%)}.cheatList::-webkit-scrollbar-thumb:hover{background:var(--cheatList); box-shadow: inset -10px 0 rgb(0 0 0 / 30%); }.scriptButton:hover{filter:brightness(120%)}.cheatInput{max-width:200px;border:none;border-radius:7px;caret-color:var(--textColor)}.cheatInput::placeholder{color:var(--textColor)}.cheatInput:focus,select:focus{outline:0}.cheatInput::-webkit-inner-spin-button,.cheatInput::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}.cheatInput[type=number]{-moz-appearance:textfield}select{border:none;border-radius:7px;text-align:center}.scriptButton{align-items: center; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; margin: 10px; padding: 5px 5px 11px; position: relative; width: 250px; font-family: Nunito, sans-serif; font-weight: 400; color: var(--textColor); box-shadow: inset 0 -6px rgb(0 0 0 / 20%); border-radius: 7px; cursor: pointer; transition: filter .25s;}.tooltip::after {content: "";position: absolute;width: 10px;height: 10px;background-color: inherit;top: -5px;left: 50%;margin-left: -6px;transform: rotate(135deg)}`
                 }),
                 (gui = createElement("div", {
                     style: {
@@ -73,7 +73,7 @@
                             overflowX: "hidden",
                             position: "absolute",
                             width: "100%",
-                            backgroundColor: "var(--backgroundColor)",
+                            background: "var(--backgroundColor)",
                             visibility: "visible"
                         }
                     },
@@ -110,7 +110,7 @@
                             zIndex: "5",
                             height: "52px",
                             width: "335px",
-                            backgroundColor: "var(--infoColor)",
+                            background: "var(--infoColor)",
                             boxShadow: "inset 0 -8px rgb(0 0 0 / 20%), 0 0 4px rgb(0 0 0 / 15%)",
                             borderBottomRightRadius: "10px",
                             color: "var(--textColor)",
@@ -135,7 +135,7 @@
                             zIndex: "5",
                             height: "47px",
                             width: "280px",
-                            backgroundColor: "var(--infoColor)",
+                            background: "var(--infoColor)",
                             boxShadow: "inset 0 -8px rgb(0 0 0 / 20%), 0 0 4px rgb(0 0 0 / 15%)",
                             borderBottomLeftRadius: "10px",
                             color: "var(--textColor)",
@@ -239,7 +239,7 @@
                         className: "cheatList",
                         style: {
                             overflowY: "scroll",
-                            backgroundColor: "var(--cheatList)",
+                            background: "var(--cheatList)",
                             boxShadow: "inset -10px 0 rgb(0 0 0 / 20%)",
                             zIndex: "5",
                             width: "220px",
@@ -345,7 +345,7 @@
                                         fontFamily: "Nunito, sans-serif",
                                         fontWeight: "400",
                                         color: "var(--textColor)",
-                                        backgroundColor: "#40115f",
+                                        background: "var(--contentBackground)",
                                         boxShadow: "inset 0 -6px rgb(0 0 0 / 20%)",
                                         borderRadius: "7px"
                                     }
@@ -360,7 +360,7 @@
                                             padding: "4px 4px 8px",
                                             position: "absolute",
                                             top: "-28px",
-                                            backgroundColor: "var(--contentBackground)",
+                                            backgroundColor: "#ef7426",
                                             boxShadow: "0 4px rgb(0 0 0 / 20%), inset 0 -4px rgb(0 0 0 / 20%)",
                                             borderRadius: "7px"
                                         }
@@ -394,18 +394,18 @@
             document.body.appendChild(guiWrapper);
             
             
-            function addMode(mode, img, cheats) {
+            function addMode(mode, img, cheats, nameOnly) {
                 const button = createElement("div", {
                     className: "cheatButton",
                     innerHTML: (typeof img == "string" ? `<img style="height: 30px; margin-right: 5px" src="${img}">` : img ? img : "") + mode,
-                    onclick: () => setCheats(button.innerText, cheats)
+                    onclick: () => setCheats(button.innerText, cheats, nameOnly)
                 });
                 cheatContainer.appendChild(button);
                 return button.onclick;
             }
-            async function setCheats(mode, scripts) {
+            async function setCheats(mode, scripts, nameOnly) {
                 cheats.innerHTML = "";
-                headerText.firstChild.innerText = `${mode} Cheats`;
+                headerText.firstChild.innerText = `${mode}${nameOnly ? "" : " Cheats"}`;
                 cheats.append(headerText);
             
                 for (let i = 0; i < scripts.length; i++) {
@@ -413,7 +413,7 @@
                     if (!element) {
                         const button = createElement("div", {
                             className: "scriptButton",
-                            style: { backgroundColor: type == "toggle" ? enabled ? "var(--enabledButton)" : "var(--disabledButton)" : "var(--defaultButton)" }
+                            style: { background: type == "toggle" ? enabled ? "var(--enabledButton)" : "var(--disabledButton)" : "var(--defaultButton)" }
                         }, createElement("div", {
                             className: "cheatName",
                             innerHTML: name
@@ -449,7 +449,7 @@
                         button.onclick = (function ({ target }) {
                             if (target != button && !target.classList.contains("cheatName")) return;
                             run.apply(this, [...button.children].slice(1).map(c => c.type == "number" ? parseInt("0" + c.value) : c.value));
-                            if (type == "toggle") button.style.backgroundColor = this.enabled ? "var(--enabledButton)" : "var(--disabledButton)";
+                            if (type == "toggle") button.style.background = this.enabled ? "var(--enabledButton)" : "var(--disabledButton)";
                         }).bind(scripts[i]);
                         scripts[i].element = button;
                     }
@@ -2736,7 +2736,7 @@
                             variables.sheet.cssRules[0].style.setProperty("--enabledButton", "#47A547");
                             variables.sheet.cssRules[0].style.setProperty("--textColor", "white");
                             variables.sheet.cssRules[0].style.setProperty("--inputColor", "#7a039d");
-                            variables.sheet.cssRules[0].style.setProperty("--contentBackground", "#ef7426");
+                            variables.sheet.cssRules[0].style.setProperty("--contentBackground", "rgb(64, 17, 95)");
                             localStorage.setItem("JODGUISettings", "{}");
                         }
                     },
@@ -2848,9 +2848,189 @@
                             localStorage.setItem("JODGUISettings", JSON.stringify({ ...JSON.parse(localStorage.getItem("JODGUISettings") || "{}"), contentBackground: color }));
                         }
                     }
+                ],
+                alerts: [
+                    {
+                        element: createElement("div", {
+                            className: "alertContainer",
+                            style: {
+                                margin: "15px 15px 5px 15px",
+                                backgroundColor: "rgb(0 0 0 / 50%)",
+                                width: "95%",
+                                height: "370px",
+                                borderRadius: "7px",
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center"
+                            }
+                        }, createElement("span", {
+                            innerText: "Join a game with alerts to use this tab\n(Gold Quest, Crypto Hack, Fishing Frenzy, Deceptive Dinos, Cafe, Factory)",
+                            style: { textAlign: "center" }
+                        })),
+                        addAlert: function (name, blook, message) {
+                            return this.element.firstChild.prepend(createElement("li", { style: { margin: "5px 5px 5px 5px" } }, createElement("img", {
+                                src: blook,
+                                alt: "blook",
+                                draggable: false,
+                                style: { height: "22.5px", margin: "0 10px -5px 0" }
+                            }), createElement("strong", {}, name), " ", message));
+                        },
+                        connection: null,
+                        data: {},
+                        async connect() {
+                            try {
+                                const { stateNode } = Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner;
+                                if (!stateNode?.props?.liveGameController?._liveGameCode || !["gold", "hack", "fishing", "dino", "cafe", "factory"].includes(this.getGamemode())) return false;
+                                this.element.innerHTML = "";
+                                this.element.style.display = "block";
+                                this.element.append(createElement("ul", {
+                                    className: "alertList",
+                                    style: {
+                                        margin: "10px 10px 0 10px",
+                                        padding: "0",
+                                        listStyleType: "none",
+                                        display: "flex",
+                                        flexDirection: "column-reverse",
+                                        height: "355px",
+                                        overflowY: "scroll",
+                                        wordWrap: "break-word"
+                                    }
+                                }));
+                                this.connection = await stateNode.props.liveGameController.getDatabaseRef("c");
+                                const blooks = Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']],]).cache).find(x => x.exports?.a?.Alice && x.exports?.a?.Alien).exports.a;
+                                const gamemode = this.getGamemode();
+                                const factoryGlitches = { lb: "Lunch Break", as: "Ad Spam", e37: "Error 37", nt: "Night Time", lo: "#LOL", j: "Jokester", sm: "Slow Mo", dp: "Dance Party", v: "Vortex", r: "Reverse", f: "Flip", m: "Micro" }
+                                this.connection.on("value", snapshot => {
+                                    const players = snapshot.val() || {};
+                                    if (!players || !this.diffObjects(this.data, players)) return;
+                                    const added = this.diffObjects(this.data, players)
+                                    this.data = players;
+            /* // this.addAlert(`Removed: ${JSON.stringify(removed)}\nAdded: ${JSON.stringify(added)}`); */
+                                    switch (gamemode) {
+                                        case "gold":
+                                            for (const player in added) {
+                                                if (!added[player].tat) continue;
+                                                const [tat, amount] = added[player].tat.split(':');
+                                                if (amount == "swap") this.addAlert(player, blooks[players[player].b]?.url, `just swapped with ${tat}`);
+                                                else this.addAlert(player, blooks[players[player].b]?.url, `just took ${amount} gold from ${tat}`);
+                                            }
+                                            break;
+                                        case "hack":
+                                            for (const player in added) {
+                                                if (!added[player].tat) continue;
+                                                const [tat, amount] = added[player].tat.split(':');
+                                                this.addAlert(player, blooks[players[player].b]?.url, `just took ${amount} crypto from ${tat}`);
+                                            }
+                                            break;
+                                        case "fishing":
+                                            for (const player in added) {
+                                                if (added[player].f == "Frenzy") this.addAlert(player, blooks[players[player].b]?.url, `just started a frenzy`);
+                                                else if (added[player].s) this.addAlert(player, blooks[players[player].b]?.url, `just sent a ${added[player].f} distraction`);
+                                            }
+                                            break;
+                                        case "dino":
+                                            for (const player in added) {
+                                                if (!added[player].tat) continue;
+                                                const [tat, caught] = added[player].tat.split(':');
+                                                if (caught == "true") this.addAlert(player, blooks[players[player].b]?.url, `just caught ${tat} CHEATING!`);
+                                                else this.addAlert(player, blooks[players[player].b]?.url, `investigated ${tat}`);
+                                            }
+                                            break;
+                                        case "cafe":
+                                            for (const player in added) {
+                                                if (!added[player].up) continue;
+                                                const [upgrade, level] = added[player].up.split(":");
+                                                if (level) this.addAlert(player, blooks[players[player].b]?.url, `upgraded ${upgrade} to level ${level}`);
+                                            }
+                                            break;
+                                        case "factory":
+                                            for (const player in added) {
+                                                const data = added[player];
+                                                if (data.g) this.addAlert(player, blooks[players[player].b]?.url, `activated the ${factoryGlitches[data.g]} glitch!`);
+                                                if (data.s) {
+                                                    const [amount, synergy] = data.s.split('-')
+                                                    this.addAlert(player, blooks[players[player].b]?.url, `has a ${amount} ${synergy} synergy!`);
+                                                }
+                                                else if (data.t) this.addAlert(player, blooks[players[player].b]?.url, `now has 10 Blooks!`);
+                                            }
+                                            break;
+                                    }
+                                });
+                            } catch {
+                                return false;
+                            }
+                        },
+                        diffObjects(obj1, obj2) {
+                            const changed = {};
+            
+                            for (const key in obj1) {
+                                if(!(key in obj2)) continue;
+                                if (typeof obj1[key] === "object" && typeof obj2[key] === "object") {
+                                    const recChanged = this.diffObjects(obj1[key], obj2[key]);
+                                    if (recChanged && Object.keys(recChanged).length !== 0) changed[key] = recChanged;
+                                } else if (JSON.stringify(obj1[key]) !== JSON.stringify(obj2[key])) changed[key] = obj2[key];
+                            }
+            
+                            for (const key in obj2) if (!(key in obj1)) changed[key] = obj2[key];
+            
+                            if (Object.keys(changed).length == 0) return null;
+                            return changed;
+                        },
+                        getGamemode() {
+                            switch (window.location.pathname) {
+                                case "/play/racing":
+                                    return "racing";
+                                case "/play/factory":
+                                    return "factory";
+                                case "/play/classic/get-ready":
+                                case "/play/classic/question":
+                                case "/play/classic/answer/sent":
+                                case "/play/classic/answer/result":
+                                case "/play/classic/standings":
+                                    return "classic";
+                                case "/play/battle-royale/match/preview":
+                                case "/play/battle-royale/question":
+                                case "/play/battle-royale/answer/sent":
+                                case "/play/battle-royale/answer/result":
+                                case "/play/battle-royale/match/result":
+                                    return "royale";
+                                case "/play/toy":
+                                    return "workshop";
+                                case "/play/gold":
+                                    return "gold";
+                                case "/play/brawl":
+                                    return "brawl";
+                                case "/play/hack":
+                                    return "hack";
+                                case "/play/fishing":
+                                    return "fishing";
+                                case "/play/rush":
+                                    return "rush";
+                                case "/play/dino":
+                                    return "dino";
+                                case "/tower/map":
+                                case "/tower/battle":
+                                case "/tower/rest":
+                                case "/tower/risk":
+                                case "/tower/shop":
+                                case "/tower/victory":
+                                    return "doom";
+                                case "/cafe":
+                                case "/cafe/shop":
+                                    return "cafe";
+                                case "/defense":
+                                    return "defense";
+                                case "/kingdom":
+                                    return "kingdom";
+                                default:
+                                    return false;
+                            }
+                        }
+                    }
                 ]
             };
             
+            addMode("Alerts", null, Cheats.alerts, true);
             addMode("Global", "https://media.blooket.com/image/upload/v1661496291/Media/uiTest/Games_Played_2.svg", Cheats.global)();
             addMode("Gold Quest", "https://media.blooket.com/image/upload/v1661496292/Media/uiTest/Gold.svg", Cheats.gold);
             addMode("Cafe", "https://media.blooket.com/image/upload/v1655161189/Media/survivor/Pizza_lvl1.svg", Cheats.cafe);
@@ -2868,7 +3048,7 @@
             addMode("Blook Rush", "data:image/png;base64,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", Cheats.rush);
             addMode("<span style=\"font-size: 18px\">Monster Brawl</span>", [`<img style="height: 28px; margin-left: 5px; margin-right: 8px" src="https://media.blooket.com/image/upload/v1655233787/Media/survivor/xp/Blue_xp_2.svg">`], Cheats.brawl);
             addMode("<span style=\"font-size: 15px\">Santa's Workshop</span>", ['<img style="height: 28px; margin-left: 3px; margin-right: 6px" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8cGF0aCBzdHlsZT0iZmlsbDojRkZERTc2OyIgZD0iTTQzMy42NjEsMjM3LjgzN2MtNC40OTctNi4yMTQtNC44OC0xNC40NC0xLjIyNS0yMS4xODRjMTEuMzY1LTIwLjk2NywxNy43NzMtNDUuMDE0LDE3LjY1MS03MC41NjYKCUM0NDkuNzAxLDY0Ljg2OSwzODIuNTY0LTEuMDM3LDMwMS4zNTIsMC4wMTJjLTgwLjE4MywxLjAzNi0xNDQuODY0LDY2LjM1OS0xNDQuODY0LDE0Ni43ODhjMCwzMi41NTMsMTAuNTk1LDYyLjYzLDI4LjUyNiw4Ni45NzIKCWM3Ljc1MywxMC41MjYsNy4yMTMsMjUuMS0xLjU0MywzNC44MDhjLTEzLjI5NywxNC43NDEtNDEuOTM1LDI0LjMwNi0xMDIuNTk1LTE2LjI3N2MtNi42NTItNC40NS0xNC40NjItNi44NjQtMjIuNDY1LTYuODY0bDAsMAoJYy0xOS45NDcsMC0zNi44MzMsMTQuNjI4LTM5Ljc3NiwzNC4zNTdDNy44ODksMzUxLjgxNiw2LjUyLDUxMiwyMDYuOTY2LDUxMmg3MS4wODNDNDY2LjA1LDUxMiw1MTYuMTI3LDM1MS44MDEsNDMzLjY2MSwyMzcuODM3eiIvPgo8Zz4KCTxwYXRoIHN0eWxlPSJmaWxsOiNGRkI2NDE7IiBkPSJNMTgzLjQ3LDI2OC41ODJjLTMuOTMsNC4zNTctOS4yMDIsOC4yNjEtMTYuMjQ0LDEwLjU1MmMyNC40NjksNS44ODIsMzguODItMS4zMTksNDcuMTQ5LTEwLjU1MgoJCWM4Ljc1Ny05LjcwOCw5LjI5Ni0yNC4yODEsMS41NDMtMzQuODA4Yy0xNy45My0yNC4zNDItMjguNTI2LTU0LjQyLTI4LjUyNi04Ni45NzNjMC03NS44MzMsNTcuNTAzLTEzOC4yMjYsMTMxLjI4MS0xNDUuOTgKCQljLTUuNjg5LTAuNjAxLTExLjQ2Ny0wLjg4NC0xNy4zMjMtMC44MDljLTgwLjE4MywxLjAzNi0xNDQuODY0LDY2LjM1OS0xNDQuODY0LDE0Ni43ODhjMCwzMi41NTMsMTAuNTk1LDYyLjYzLDI4LjUyNiw4Ni45NzMKCQlDMTkyLjc2NiwyNDQuMywxOTIuMjI2LDI1OC44NzMsMTgzLjQ3LDI2OC41ODJ6Ii8+Cgk8cGF0aCBzdHlsZT0iZmlsbDojRkZCNjQxOyIgZD0iTTQ5LjUzOSwyNzkuNzk2YzIuMTM3LTE0LjMxNywxMS42MTgtMjUuOTQyLDI0LjI4Mi0zMS4yNDVjLTQuODY2LTIuMDIyLTEwLjA5MS0zLjExLTE1LjQxMi0zLjExCgkJbDAsMGMtMTkuOTQ3LDAtMzYuODMzLDE0LjYyOC0zOS43NzYsMzQuMzU3QzcuODg5LDM1MS44MTYsNi41Miw1MTIsMjA2Ljk2Niw1MTJoMzAuOTA1QzM3LjQyNSw1MTIsMzguNzk0LDM1MS44MTYsNDkuNTM5LDI3OS43OTZ6CgkJIi8+Cgk8cGF0aCBzdHlsZT0iZmlsbDojRkZCNjQxOyIgZD0iTTgwLjUxOCwzNDQuMzM2Yy04Ljc2Niw4LjY1Ni0xMC4yNzcsMjIuMjY4LTMuNTk4LDMyLjYxOQoJCWMxOS41MDQsMzAuMjI3LDY4LjM1MSw4Ni4yODMsMTYyLjM3Miw4Ni4yODNjNTcuMjU2LDAsMTE3Ljc5MS0zNS44MDksMTI5LjA2NC05NS4wOTdjOS4zMS00OC45NjYtMTkuMjQ2LTEwOC44MjEtNzUuMzMtMTA2LjI0NwoJCWMtNDEuMDk3LDEuODg3LTY1LjEzNSwzNy40MTUtOTkuODY1LDUzLjg0MWMtMjQuMzk4LDExLjU0LTUwLjg0NCwxOC42NTEtNzcuNjg3LDIxLjMwNwoJCUMxMDIuNjk4LDMzOC4zMDYsOTAuODA1LDMzNC4xNzgsODAuNTE4LDM0NC4zMzZ6Ii8+CjwvZz4KPHBhdGggc3R5bGU9ImZpbGw6IzM4NDg0QTsiIGQ9Ik0zODguMzk0LDExMC44MzNjLTMuNTAyLDAtNi42NzQtMi4zOTYtNy41MTMtNS45NTFsLTMuNzE1LTE1LjczCgljLTAuOTgxLTQuMTUzLDEuNTkxLTguMzE1LDUuNzQzLTkuMjk1YzQuMTUyLTAuOTc5LDguMzE1LDEuNTkxLDkuMjk1LDUuNzQzbDMuNzE1LDE1LjczYzAuOTgxLDQuMTUzLTEuNTkxLDguMzE1LTUuNzQzLDkuMjk1CglDMzg5LjU4LDExMC43NjUsMzg4Ljk4MiwxMTAuODMzLDM4OC4zOTQsMTEwLjgzM3oiLz4KPHBhdGggc3R5bGU9ImZpbGw6I0ZGQjY0MTsiIGQ9Ik00MjcuNjE4LDY4Ljk5NGMwLDAsMy4xOTgsNDUuODMyLTE4LjAzMyw2Ni41OTFjLTIxLjIzMSwyMC43NTksMTQuMTU0LDUzLjMxNCw1Ni4xNDUsMjIuNjQ2CgljNi4wMzItNC40MDUsMTIuMTQzLTcuMjA0LDE4LjE4NC04Ljc2OGM3Ljc3Ny0yLjAxMiwxMy4yNDMtOC45NjcsMTMuMjQzLTE2Ljk5OWwwLDBjMC03LjcyNC01LjAzMS0xNC41OTctMTIuNDM4LTE2Ljc4NgoJYy00LjkyNS0xLjQ1Ni0xMS4xOC0yLjMyNS0xOC41MTYtMS4zMjVjMCwwLDI1LjM5My0yMi4xMzgsMTkuMTE5LTQ3Ljc1M2MtMi4wMjctOC4yOC0xMS44NTYtMTEuNzI2LTE4LjgzNi02LjgzMgoJQzQ1Ny40NjEsNjYuMDk0LDQ0My40NTQsNzIuNzY0LDQyNy42MTgsNjguOTk0eiIvPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K">'], Cheats.workshop);
-            addMode("Settings", null, Cheats.settings);
+            addMode("Settings", null, Cheats.settings, true);
             
             dragElement(controls, guiWrapper);
             dragElement(dragButton, guiWrapper);
@@ -2896,8 +3076,13 @@
                 }
             }
             window.addEventListener("keydown", keydown);
+            let alertInterval = setInterval(() => {
+                if (!Cheats.alerts[0].connection) Cheats.alerts[0].connect();
+                else clearInterval(alertInterval);
+            }, 5000);
             function close() {
                 guiWrapper.remove();
+                clearInterval(alertInterval);
                 for (const category in Cheats) for (const cheat of Cheats[category]) if (cheat.enabled) cheat.run()
                 Object.keys(Cheats).forEach(mode => Cheats[mode].forEach(cheat => cheat.enabled && (cheat.run(), setCheats(...currentMode))));
                 window.removeEventListener("keydown", keydown);
