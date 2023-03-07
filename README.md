@@ -7,8 +7,8 @@
 
 - [ ] Auto Play
 - [ ] GUI ingame chat for cheaters???
-- [ ] GUI Game Events tab
 - [ ] More Racing cheats
+- [x] GUI Game Events tab
 - [x] GUI scroll wheel to get rid of global 2
 - [x] GUI Color Customizations tab
 
