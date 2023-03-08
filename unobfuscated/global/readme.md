@@ -16,6 +16,8 @@ Clicks the first correct answer
 Sells the blook you unlock when you open a pack if you already have one (Doesn't sell Legendaries or rarer)
 ## [Every Answer Correct](everyAnswerCorrect.js)
 Makes every answer correct (Fixed bug that doesn't count it as correct in finals)
+## [Flood Game](floodGame.js)
+Floods a game with a number of fake accounts
 ## [Get Daily Rewards](getDailyRewards.js)
 Gets max daily tokens and xp
 ## [Highlight Answers](highlightAnswers.js)

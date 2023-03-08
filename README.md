@@ -133,6 +133,7 @@ The mobile GUI is the original GUI I made long ago. Some people said it worked o
 * [Auto Answer](unobfuscated/global/autoAnswer.js)
 * [Auto Sell Dupes On Open](unobfuscated/global/autoSellDupesOnOpen.js)
 * [Every Answer Correct](unobfuscated/global/everyAnswerCorrect.js)
+* [Flood Game](unobfuscated/global/floodGame.js)
 * [Get Daily Rewards](unobfuscated/global/getDailyRewards.js)
 * [Highlight Answers](unobfuscated/global/highlightAnswers.js)
 * [Prevent Suspension](unobfuscated/global/preventSuspension.js)
