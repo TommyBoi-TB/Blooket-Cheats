@@ -19,7 +19,7 @@
     window.confirm = i.contentWindow.confirm.bind(window);
     i.remove();
     Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://" + (location.host.startsWith("dashboard") ? location.host : "play.blooket.com") + "/api/games?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/mobileGui.js")?.answers?.[0]}`)).then(async x => {
-        if (1678237984720 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
+        if (1678238186251 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
             /* Update Checker end */
             ; (() => {
                 let n = document.createElement('iframe');
@@ -397,6 +397,11 @@
                             name: "Flood Game",
                             description: "Floods a game with a number of fake accounts",
                             run: async function () {
+                                let i = document.createElement('iframe');
+                                document.body.append(i);
+                                window.prompt = i.contentWindow.prompt.bind(window);
+                                i.remove();
+                                
                                 const id = prompt("Game ID:");
                                 const name = prompt("Name:");
                                 const amount = parseInt(prompt("Amount:"));
