@@ -42,6 +42,4 @@ Opens a box a specified amount of times
 Unlocks Plus Only gamemodes
 ## [Use Any Blook](useAnyBlook.js)
 Gives all blooks in game lobby
-## [Use Any Blook Part](useAnyBlookPart.js)
-Let's you use any blook part when making a custom blook in the stats page
 [^1]: Run everytime a new tab opens to make sure
