@@ -19,7 +19,7 @@
     window.confirm = i.contentWindow.confirm.bind(window);
     i.remove();
     Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://" + (location.host.startsWith("dashboard") ? location.host : "play.blooket.com") + "/api/games?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/gui.js")?.answers?.[0]}`)).then(async x => {
-        if (1678237984712 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
+        if (1678322943933 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
             /* Update Checker end */
             function createElement(node, props = {}, ...children) {
                 const element = document.createElement(node);
@@ -488,10 +488,11 @@
                                 this.enabled = true;
                                 this.data = setInterval(() => {
                                     const { stateNode: { state: { question, stage, feedback }, props: { client: { question: pquestion } } } } = Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner;
+                                    const q = (question || pquestion);
                                     try {
-                                        if (question.qType != "typing") if (stage !== "feedback" && !feedback) [...document.querySelectorAll(`[class*="answerContainer"]`)][(question || pquestion).answers.map((x, i) => (question || pquestion).correctAnswers.includes(x) ? i : null).filter(x => x != null)[0]]?.click?.();
+                                        if (q.qType != "typing") if (stage !== "feedback" && !feedback) [...document.querySelectorAll(`[class*="answerContainer"]`)][q.answers.map((x, i) => q.correctAnswers.includes(x) ? i : null).filter(x => x != null)[0]]?.click?.();
                                         else document.querySelector('[class*="feedback"]')?.firstChild?.click?.();
-                                        else Object.values(document.querySelector("[class*='typingAnswerWrapper']"))[1].children._owner.stateNode.sendAnswer(question.answers[0])
+                                        else Object.values(document.querySelector("[class*='typingAnswerWrapper']"))[1].children._owner.stateNode.sendAnswer(q.answers[0])
                                     } catch { }
                                 }, 50);
                             } else {
@@ -2623,7 +2624,7 @@
                                 this.enabled = true;
                                 this.data = setInterval(() => {
                                     let { stateNode } = Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner;
-                                    stateNode.onAnswer(stateNode.props.client.question.correctAnswers[0]);
+                                    stateNode?.onAnswer?.(true, stateNode.props.client.question.correctAnswers[0]);
                                 }, 50);
                             } else {
                                 this.enabled = false;
@@ -2637,7 +2638,7 @@
                         description: "Chooses the correct answer for you",
                         run: function () {
                             let { stateNode } = Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner;
-                            stateNode.onAnswer(stateNode.props.client.question.correctAnswers[0]);
+                            stateNode?.onAnswer?.(true, stateNode.props.client.question.correctAnswers[0]);
                         }
                     },
                 ],
