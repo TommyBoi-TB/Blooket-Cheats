@@ -31,6 +31,9 @@ body:
         - Imported Bookmarklets.html
         - "Put 'javascript:(code)' in the url bar or a bookmark"
         - Pasted script into console
+        - Other (described in Extra Info section)
+    validations:
+      required: true
   - type: dropdown
     id: type
     attributes:
