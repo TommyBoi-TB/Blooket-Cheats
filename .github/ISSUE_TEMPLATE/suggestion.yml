@@ -24,7 +24,7 @@ body:
       description: Please make sure to read [the FaQ](https://github.com/Minesraft2/Blooket-Cheats/wiki#faq) before submitting any suggestions
       multiple: true
       options:
-        - I have not the FaQ and my suggestion will be closed immediately
+        - I have not the FaQ
         - I read the FaQ and my suggestion has not already been asked for or isn't possible
     validations:
       required: true
