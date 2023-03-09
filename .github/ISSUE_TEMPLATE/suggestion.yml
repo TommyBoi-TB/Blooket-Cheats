@@ -23,6 +23,7 @@ body:
       label: Method
       description: Please make sure to read [the faq](https://github.com/Minesraft2/Blooket-Cheats/wiki#faq) before submitting any suggestions
       options:
+        - I have not [the faq](https://github.com/Minesraft2/Blooket-Cheats/wiki#faq) and my suggestion will be closed immediately
         - I read the [faq questions](https://github.com/Minesraft2/Blooket-Cheats/wiki#faq) and my suggestion has not already been asked for or isn't possible
     validations:
       required: true
