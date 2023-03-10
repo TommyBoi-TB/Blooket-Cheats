@@ -19,7 +19,7 @@
     window.confirm = i.contentWindow.confirm.bind(window);
     i.remove();
     Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://" + (location.host.startsWith("dashboard") ? location.host : "play.blooket.com") + "/api/games?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/global/floodGame.js")?.answers?.[0]}`)).then(async x => {
-        if (1678238186240 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
+        if (1678491467025 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
             /* Update Checker end */
             let i = document.createElement('iframe');
             document.body.append(i);
@@ -34,9 +34,9 @@
             const axios = Object.values(webpack.c).find((x) => x.exports?.a?.get).exports.a;
             const firebase = Object.values(webpack.c).find(x => x.exports?.a?.initializeApp).exports.a;
             
-            for (let i = 1; i <= amount; i++) {
+            for (let i = 1; i <= amount; i++) (async () => {
                 const { data: { success, fbToken, fbShardURL } } = await axios.put("https://fb.blooket.com/c/firebase/join", { id, name: `${name}${i}` });
-                if (!success) continue;
+                if (!success) return;
                 const liveApp = firebase.initializeApp({
                     apiKey: "AIzaSyCA-cTOnX19f6LFnDVVsHXya3k6ByP_MnU",
                     authDomain: "blooket-2020.firebaseapp.com",
@@ -51,7 +51,8 @@
                 await auth.setPersistence(firebase.auth.Auth.Persistence.NONE).catch(console.error);
                 await auth.signInWithCustomToken(fbToken).catch(console.error);
                 await liveApp.database().ref(`${id}/c/${name}${i}`).set({ b: "Black" });
-            }
+                liveApp.delete();
+            })();
         }
     });
 })();
