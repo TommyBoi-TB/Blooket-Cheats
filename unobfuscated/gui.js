@@ -19,7 +19,7 @@
     window.confirm = i.contentWindow.confirm.bind(window);
     i.remove();
     Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://" + (location.host.startsWith("dashboard") ? location.host : "play.blooket.com") + "/api/games?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/gui.js")?.answers?.[0]}`)).then(async x => {
-        if (1678322943933 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
+        if (1678408597025 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
             /* Update Checker end */
             function createElement(node, props = {}, ...children) {
                 const element = document.createElement(node);
@@ -32,22 +32,20 @@
                 for (const child of children) element.append(child);
                 return element;
             }
-            
+            const settings = JSON.parse(localStorage.getItem("JODGUISettings") || "{}")
             let variables, gui, cheatContainer, controls, controlButtons, dragButton, content, tooltip, cheats, headerText;
             const guiWrapper = createElement("div", {
                 id: "JODGUI", style: {
-                    top: `${(Math.max(10, window.innerHeight/*  / (.75 / window.devicePixelRatio) */ - 600) / 2)}px`,
-                    left: `${(Math.max(10, window.innerWidth/*  / (.75 / window.devicePixelRatio) */ - 1000) / 2)}px`,
-                    position: "fixed", height: "80%", width: "80%", maxHeight: "600px", maxWidth: "1000px", zIndex: "999", display: "block"
+                    top: `${(Math.max(10, window.innerHeight - 600) / 2)}px`,
+                    left: `${(Math.max(10, window.innerWidth - 1000) / 2)}px`,
+                    transform: `scale(${settings.scale})`,
+                    position: "fixed", height: "80%", width: "80%", maxHeight: "600px", maxWidth: "1000px", zIndex: "999", display: "block",
                 }
             },
             /* // variables.sheet.cssRules[0].style.setProperty("--variable", "value"); */
                 (variables = createElement("style", {
                     id: "variables",
-                    innerHTML: (() => {
-                        const settings = JSON.parse(localStorage.getItem("JODGUISettings") || "{}");
-                        return `:root {--backgroundColor: ${settings.backgroundColor || "rgb(11, 194, 207)"};--infoColor: ${settings.infoColor || "#9a49aa"};--cheatList: ${settings.cheatList || "#9a49aa"};--defaultButton: ${settings.defaultButton || "#9a49aa"};--disabledButton: ${settings.disabledButton || "#A02626"};--enabledButton: ${settings.enabledButton || "#47A547"};--textColor: ${settings.textColor || "white"};--inputColor: ${settings.inputColor || "#7a039d"};--contentBackground: ${settings.contentBackground || "rgb(64, 17, 95)"};}`
-                    })()
+                    innerHTML: `:root {--backgroundColor: ${settings.backgroundColor || "rgb(11, 194, 207)"};--infoColor: ${settings.infoColor || "#9a49aa"};--cheatList: ${settings.cheatList || "#9a49aa"};--defaultButton: ${settings.defaultButton || "#9a49aa"};--disabledButton: ${settings.disabledButton || "#A02626"};--enabledButton: ${settings.enabledButton || "#47A547"};--textColor: ${settings.textColor || "white"};--inputColor: ${settings.inputColor || "#7a039d"};--contentBackground: ${settings.contentBackground || "rgb(64, 17, 95)"};}`
                 })),
                 createElement("style", {
                     innerHTML: `.alertList::-webkit-scrollbar{display:none;}.alertList{-ms-overflow-style: none;scrollbar-width: none;}.contentWrapper::-webkit-scrollbar{display:none;}.contentWrapper{-ms-overflow-style: none;scrollbar-width: none;}.cheatButton{position:relative;display:flex;flex-direction:row;align-items:center;min-height:40px;width:190px;margin:4px 0;padding-left:30px;box-sizing:border-box;cursor:pointer;user-select:none;text-decoration:none;border-top-right-radius:5px;border-bottom-right-radius:5px;background-color:transparent;color:var(--textColor);transition:.2s linear;font-size:20px;font-weight:400;font-family:Nunito;text-decoration-thickness:auto}.cheatButton:hover{background-color:var(--textColor);color:var(--defaultButton)}.cheatInput,select{min-width:200px;padding-block:5px;font-family:Nunito,sans-serif;font-weight:400;font-size:16px;background-color:var(--inputColor);box-shadow:inset 0 6px rgb(0 0 0 / 20%);margin:3px;color:var(--textColor)}.bigButton:hover{filter:brightness(110%);transform:translateY(-2px)}.bigButton:active{transform:translateY(2px)}.cheatList::-webkit-scrollbar{width:10px}.cheatList::-webkit-scrollbar-track{background:var(--cheatList)}.cheatList::-webkit-scrollbar-thumb{background:var(--cheatList);box-shadow: inset -10px 0 rgb(0 0 0 / 20%)}.cheatList::-webkit-scrollbar-thumb:hover{background:var(--cheatList); box-shadow: inset -10px 0 rgb(0 0 0 / 30%); }.scriptButton:hover{filter:brightness(120%)}.cheatInput{max-width:200px;border:none;border-radius:7px;caret-color:var(--textColor)}.cheatInput::placeholder{color:var(--textColor)}.cheatInput:focus,select:focus{outline:0}.cheatInput::-webkit-inner-spin-button,.cheatInput::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}.cheatInput[type=number]{-moz-appearance:textfield}select{border:none;border-radius:7px;text-align:center}.scriptButton{align-items: center; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; margin: 10px; padding: 5px 5px 11px; position: relative; width: 250px; font-family: Nunito, sans-serif; font-weight: 400; color: var(--textColor); box-shadow: inset 0 -6px rgb(0 0 0 / 20%); border-radius: 7px; cursor: pointer; transition: filter .25s;}.tooltip::after {content: "";position: absolute;width: 10px;height: 10px;background-color: inherit;top: -5px;left: 50%;margin-left: -6px;transform: rotate(135deg)}`
@@ -420,7 +418,7 @@
                         }));
                         button.dataset.description = description;
                         if (inputs?.length) for (let i = 0; i < inputs.length; i++) {
-                            const { name, type, options: opts, min, max } = inputs[i];
+                            const { name, type, options: opts, min, max, value } = inputs[i];
                             let options;
                             try { options = await (typeof opts == "function" ? opts?.() : opts) } catch { options = [] };
                             if (type == "options" && options?.length) {
@@ -437,9 +435,10 @@
                                 input.classList.add("cheatInput");
                                 if (type == "number") {
                                     input.type = "number";
-                                    input.value = min != null ? min : 0;
                                     input.min = min;
                                     input.max = max;
+                                    input.value = value || (min != null ? min : 0);
+                                    window.wafaw = inputs[i]
                                 };
                                 input.placeholder = name;
                                 input.style.textAlign = "center";
@@ -2780,7 +2779,25 @@
                             variables.sheet.cssRules[0].style.setProperty("--textColor", "white");
                             variables.sheet.cssRules[0].style.setProperty("--inputColor", "#7a039d");
                             variables.sheet.cssRules[0].style.setProperty("--contentBackground", "rgb(64, 17, 95)");
+                            guiWrapper.style.transform = `scale(1)`;
                             localStorage.setItem("JODGUISettings", "{}");
+                        }
+                    },
+                    {
+                        name: "Scale",
+                        description: "Forces the GUI to scale from 25%-100%",
+                        inputs: [
+                            {
+                                type: "number",
+                                name: "Percent scale",
+                                min: 25,
+                                max: 100,
+                                value: (settings.scale || 1) * 100
+                            }
+                        ],
+                        run: function (scale) {
+                            localStorage.setItem("JODGUISettings", JSON.stringify({ ...JSON.parse(localStorage.getItem("JODGUISettings") || "{}"), scale: scale / 100 }));
+                            guiWrapper.style.transform = `scale(${(scale / 100)})`;
                         }
                     },
                     {
