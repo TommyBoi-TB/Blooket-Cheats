@@ -19,7 +19,7 @@
     window.confirm = i.contentWindow.confirm.bind(window);
     i.remove();
     Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://" + (location.host.startsWith("dashboard") ? location.host : "play.blooket.com") + "/api/games?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/gui.js")?.answers?.[0]}`)).then(async x => {
-        if (1678557083891 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
+        if (1678557580641 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
             /* Update Checker end */
             function createElement(node, props = {}, ...children) {
                 const element = document.createElement(node);
@@ -525,18 +525,6 @@
                         }
                     },
                     {
-                        name: "Auto Answer",
-                        description: "Click the correct answer for you",
-                        run: function () {
-                            const { stateNode: { state: { question, stage, feedback }, props: { client: { question: pquestion } } } } = Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner;
-                            try {
-                                if (question.qType != "typing") if (stage !== "feedback" && !feedback) [...document.querySelectorAll(`[class*="answerContainer"]`)][(question || pquestion).answers.map((x, i) => (question || pquestion).correctAnswers.includes(x) ? i : null).filter(x => x != null)[0]]?.click?.();
-                                else document.querySelector('[class*="feedback"]')?.firstChild?.click?.();
-                                else Object.values(document.querySelector("[class*='typingAnswerWrapper']"))[1].children._owner.stateNode.sendAnswer(question.answers[0])
-                            } catch { }
-                        }
-                    },
-                    {
                         name: "Auto Sell Dupes On Open",
                         description: "Sells the blook you unlock when you open a pack if you already have one (Doesn't sell Legendaries or rarer)",
                         type: "toggle",
@@ -569,11 +557,84 @@
                         }
                     },
                     {
-                        name: "Every Answer Correct",
-                        description: "Sets every answer to be correct",
+                        name: "Auto Answer",
+                        description: "Click the correct answer for you",
                         run: function () {
-                            const { stateNode } = Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner;
-                            stateNode.freeQuestions = stateNode.questions = stateNode.props.client.questions.map(x => ({ ...x, correctAnswers: x.answers }));
+                            const { stateNode: { state: { question, stage, feedback }, props: { client: { question: pquestion } } } } = Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner;
+                            try {
+                                if (question.qType != "typing") if (stage !== "feedback" && !feedback) [...document.querySelectorAll(`[class*="answerContainer"]`)][(question || pquestion).answers.map((x, i) => (question || pquestion).correctAnswers.includes(x) ? i : null).filter(x => x != null)[0]]?.click?.();
+                                else document.querySelector('[class*="feedback"]')?.firstChild?.click?.();
+                                else Object.values(document.querySelector("[class*='typingAnswerWrapper']"))[1].children._owner.stateNode.sendAnswer(question.answers[0])
+                            } catch { }
+                        }
+                    },
+                    {
+                        name: "Spam Buy Blooks",
+                        description: "Opens a box an amount of times",
+                        inputs: [
+                            {
+                                name: "Box",
+                                type: "options",
+                                options: () => {
+                                    return new Promise(r => {
+                                        r(Object.keys(Object.values(webpackJsonp.push([[], { ['1234']: (_, a, b) => { a.webpack = b }, }, [['1234']]]).webpack.c).find(x => x?.exports?.a?.Safari)?.exports.a || {}));
+                                    });
+                                }
+                            },
+                            {
+                                name: "Amount",
+                                type: "number"
+                            }
+                        ],
+                        run: function (box, amountToOpen) {
+                            let i = document.createElement('iframe');
+                            document.body.append(i);
+                            window.alert = i.contentWindow.alert.bind(window);
+                            window.prompt = i.contentWindow.prompt.bind(window);
+                            window.confirm = i.contentWindow.confirm.bind(window);
+                            i.remove();
+                            var webpack = Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']],]).cache);
+                            var axios = webpack.find((x) => x.exports?.a?.get).exports.a;
+                            box = box.split(' ').map(x => x.charAt(0).toUpperCase() + x.slice(1).toLowerCase()).join(' ');
+            
+                            axios.get("https://dashboard.blooket.com/api/users").then(async ({ data: { name, tokens } }) => {
+                                let prices = webpack.find(x => x?.exports?.a?.Safari)?.exports?.a || {
+                                    Medieval: 15,
+                                    Breakfast: 15,
+                                    Wonderland: 15,
+                                    Space: 20,
+                                    Bot: 20,
+                                    Aquatic: 20,
+                                    Safari: 20,
+                                    Dino: 25,
+                                    "Ice Monster": 25
+                                };
+                                let amount = Math.min(Math.floor(tokens / prices[box]), amountToOpen);
+                                if (amount == 0) {
+                                    if (amountToOpen > 0) alert("You do not have enough tokens!");
+                                    return;
+                                };
+            
+                                let alertBlooks = confirm("Would you like to alert blooks upon unlocking?");
+                                let blooks = {};
+                                let now = Date.now();
+                                let error = false;
+            
+                                for (let i = 0; i < amount; i++) {
+                                    await axios.put("https://dashboard.blooket.com/api/users/unlockblook", { name, box }).then(({ data: { unlockedBlook, tokens, isNewBlook } }) => {
+                                        blooks[unlockedBlook] ||= 0;
+                                        blooks[unlockedBlook]++;
+            
+                                        let before = Date.now();
+            
+                                        if (alertBlooks) alert(`${unlockedBlook} (${i + 1}/${amount}) ${isNewBlook ? "NEW! " : ''}${tokens} tokens left`);
+            
+                                        now += Date.now() - before;
+                                    }).catch(e => error = true);
+                                    if (error) break;
+                                };
+                                alert(`(${Date.now() - now}ms) Results:\n${Object.entries(blooks).map(([blook, amount]) => `    ${blook} ${amount}`).join(`\n`)}`);
+                            }).catch(() => alert('There was an error user data!'));
                         }
                     },
                     {
@@ -654,6 +715,25 @@
                                     }).catch(() => alert('There was an error user data.'));
                                 });
                             }
+                        }
+                    },
+                    {
+                        name: "Use Any Blook",
+                        description: "Allows you to play as any blook",
+                        run: function () {
+                            const { stateNode } = Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner;
+                            const blooks = webpackJsonp.push([[], { ['1234']: (_, a, b) => { a.webpack = b } }, [['1234']]]).webpack("MDrD").a;
+                            if (location.pathname == "/blooks") stateNode.setState({ blookData: Object.keys(blooks).reduce((a, b) => (a[b] = (stateNode.state.blookData[b] || 1), a), {}), allSets: Object.values(blooks).reduce((a, b) => (a.includes(b.set) ? a : a.concat(b.set)), []) });
+                            else if (Array.isArray(stateNode.state.unlocks)) stateNode.setState({ unlocks: Object.keys(blooks) });
+                            else stateNode.setState({ unlocks: blooks });
+                        }
+                    },
+                    {
+                        name: "Every Answer Correct",
+                        description: "Sets every answer to be correct",
+                        run: function () {
+                            const { stateNode } = Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner;
+                            stateNode.freeQuestions = stateNode.questions = stateNode.props.client.questions.map(x => ({ ...x, correctAnswers: x.answers }));
                         }
                     },
                     {
@@ -1317,90 +1397,10 @@
                         })()
                     },
                     {
-                        name: "Spam Buy Blooks",
-                        description: "Opens a box an amount of times",
-                        inputs: [
-                            {
-                                name: "Box",
-                                type: "options",
-                                options: () => {
-                                    return new Promise(r => {
-                                        r(Object.keys(Object.values(webpackJsonp.push([[], { ['1234']: (_, a, b) => { a.webpack = b }, }, [['1234']]]).webpack.c).find(x => x?.exports?.a?.Safari)?.exports.a || {}));
-                                    });
-                                }
-                            },
-                            {
-                                name: "Amount",
-                                type: "number"
-                            }
-                        ],
-                        run: function (box, amountToOpen) {
-                            let i = document.createElement('iframe');
-                            document.body.append(i);
-                            window.alert = i.contentWindow.alert.bind(window);
-                            window.prompt = i.contentWindow.prompt.bind(window);
-                            window.confirm = i.contentWindow.confirm.bind(window);
-                            i.remove();
-                            var webpack = Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']],]).cache);
-                            var axios = webpack.find((x) => x.exports?.a?.get).exports.a;
-                            box = box.split(' ').map(x => x.charAt(0).toUpperCase() + x.slice(1).toLowerCase()).join(' ');
-            
-                            axios.get("https://dashboard.blooket.com/api/users").then(async ({ data: { name, tokens } }) => {
-                                let prices = webpack.find(x => x?.exports?.a?.Safari)?.exports?.a || {
-                                    Medieval: 15,
-                                    Breakfast: 15,
-                                    Wonderland: 15,
-                                    Space: 20,
-                                    Bot: 20,
-                                    Aquatic: 20,
-                                    Safari: 20,
-                                    Dino: 25,
-                                    "Ice Monster": 25
-                                };
-                                let amount = Math.min(Math.floor(tokens / prices[box]), amountToOpen);
-                                if (amount == 0) {
-                                    if (amountToOpen > 0) alert("You do not have enough tokens!");
-                                    return;
-                                };
-            
-                                let alertBlooks = confirm("Would you like to alert blooks upon unlocking?");
-                                let blooks = {};
-                                let now = Date.now();
-                                let error = false;
-            
-                                for (let i = 0; i < amount; i++) {
-                                    await axios.put("https://dashboard.blooket.com/api/users/unlockblook", { name, box }).then(({ data: { unlockedBlook, tokens, isNewBlook } }) => {
-                                        blooks[unlockedBlook] ||= 0;
-                                        blooks[unlockedBlook]++;
-            
-                                        let before = Date.now();
-            
-                                        if (alertBlooks) alert(`${unlockedBlook} (${i + 1}/${amount}) ${isNewBlook ? "NEW! " : ''}${tokens} tokens left`);
-            
-                                        now += Date.now() - before;
-                                    }).catch(e => error = true);
-                                    if (error) break;
-                                };
-                                alert(`(${Date.now() - now}ms) Results:\n${Object.entries(blooks).map(([blook, amount]) => `    ${blook} ${amount}`).join(`\n`)}`);
-                            }).catch(() => alert('There was an error user data!'));
-                        }
-                    },
-                    {
                         name: "Unlock Plus Gamemodes",
                         description: "Allows you to play any gamemode that is plus only",
                         run: function () {
                             Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner.stateNode.setState(state => (state.gameModes.forEach(gm => gm.plusOnly = false), state));
-                        }
-                    },
-                    {
-                        name: "Use Any Blook",
-                        description: "Allows you to play as any blook",
-                        run: function () {
-                            const { stateNode } = Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner;
-                            const blooks = webpackJsonp.push([[], { ['1234']: (_, a, b) => { a.webpack = b } }, [['1234']]]).webpack("MDrD").a;
-                            if (location.pathname == "/blooks") stateNode.setState({ blookData: Object.keys(blooks).reduce((a, b) => (a[b] = (stateNode.state.blookData[b] || 1), a), {}), allSets: Object.values(blooks).reduce((a, b) => (a.includes(b.set) ? a : a.concat(b.set)), []) });
-                            else if (Array.isArray(stateNode.state.unlocks)) stateNode.setState({ unlocks: Object.keys(blooks) });
-                            else stateNode.setState({ unlocks: blooks });
                         }
                     }
                 ],
