@@ -19,7 +19,7 @@
     window.confirm = i.contentWindow.confirm.bind(window);
     i.remove();
     Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://" + (location.host.startsWith("dashboard") ? location.host : "play.blooket.com") + "/api/games?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/gui.js")?.answers?.[0]}`)).then(async x => {
-        if (1678499072168 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
+        if (1678557083891 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
             /* Update Checker end */
             function createElement(node, props = {}, ...children) {
                 const element = document.createElement(node);
@@ -591,9 +591,22 @@
                             {
                                 name: "Amount",
                                 type: "number"
+                            },
+                            {
+                                name: "Blook",
+                                type: "options",
+                                options: async () => {
+                                    let { webpack } = webpackJsonp.push([[], { ['1234']: (_, a, b) => { a.webpack = b }, }, [['1234']]]);
+                                    return Object.keys(Object.values(webpack.c).find(x => x.exports.a?.Chick && x.exports.a?.Elephant).exports.a);
+                                }
+                            },
+                            {
+                                name: "Banner",
+                                type: "options",
+                                options: Object.entries({ Starter: "starter", Chalkboard: "chalkboard", Slime: "slime", Bookshelf: "bookshelf", "Toaster Pastry": "toasterPastry", Theater: "theater", Sushi: "sushi", Workbench: "workbench", Spooky: "spooky", Spiders: "spiders", Coffin: "coffin", Pumpkins: "pumpkins", "Falling Blocks": "fallingBlocks", Racetrack: "racetrack", Harvest: "harvest", Leaves: "leaves", "Fall Picnic": "fallPicnic", "Winter Drive": "winterDrive", "Winter Train": "winterTrain", Ice: "ice", Gifts: "gifts", "Christmas Tree": "christmasTree", "Soccer Field": "soccerField", "Winter Landscape": "winterLandscape", "Football Field": "footballField", "Outer Space": "outerSpace", "Hockey Rink": "hockeyRink", "Music Class": "musicClass", "Ice Cream Sandwich": "iceCreamSandwich", "Science Class": "scienceClass", "Fish Tank": "fishTank", "Art Class": "artClass", Clockwork: "clockwork", "Love Letter": "loveLetter", Farm: "farm", Chocolate: "chocolate", "Tech Chip": "techChip", Fire: "fire", "Orange Ice Pop": "orangeIcePop" }).map(([name, value]) => ({name, value}))
                             }
                         ],
-                        run: async function (id, name, amount) {
+                        run: async function (id, name, amount, b, bg) {
                             let { webpack } = webpackJsonp.push([[], { ['1234']: (_, a, b) => { a.webpack = b }, }, [['1234']]]);
                             const axios = Object.values(webpack.c).find((x) => x.exports?.a?.get).exports.a;
                             const firebase = Object.values(webpack.c).find(x => x.exports?.a?.initializeApp).exports.a;
@@ -615,7 +628,7 @@
                                     const auth = firebase.auth(liveApp);
                                     await auth.setPersistence(firebase.auth.Auth.Persistence.NONE).catch(console.error);
                                     await auth.signInWithCustomToken(fbToken).catch(console.error);
-                                    await liveApp.database().ref(`${id}/c/${name}${i}`).set({ b: "Black" });
+                                    await liveApp.database().ref(`${id}/c/${name}${i}`).set({ b, bg });
                                     liveApp.delete();
                                 })();
                                 await new Promise(r => setTimeout(r, 100));
