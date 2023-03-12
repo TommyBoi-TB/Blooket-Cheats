@@ -18,8 +18,8 @@
     document.body.append(i);
     window.confirm = i.contentWindow.confirm.bind(window);
     i.remove();
-    Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://" + (location.host.startsWith("dashboard") ? location.host : "play.blooket.com") + "/api/games?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/gui.js")?.answers?.[0]}`)).then(async x => {
-        if (1678557580641 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
+    Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://" + (location.host.startsWith("dashboard") ? location.host + "/api/games" : "play.blooket.com/api/gamequestionsets") + "?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/gui.js")?.answers?.[0]}`)).then(async x => {
+        if (1678659460308 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
             /* Update Checker end */
             function createElement(node, props = {}, ...children) {
                 const element = document.createElement(node);
@@ -425,7 +425,7 @@
                                 const select = document.createElement("select");
                                 options.forEach(opt => {
                                     const option = document.createElement("option");
-                                    option.value = opt?.value || opt;
+                                    option.value = JSON.stringify(opt?.value || opt);
                                     option.innerHTML = opt?.name || opt;
                                     select.appendChild(option);
                                 });
@@ -2784,19 +2784,62 @@
                 ],
                 settings: [
                     {
-                        name: "Reset To Defaults",
+                        name: "Defaults",
                         description: "Changes all the settings back to default",
-                        run: function () {
-                            variables.sheet.cssRules[0].style.setProperty("--backgroundColor", "rgb(11, 194, 207)");
-                            variables.sheet.cssRules[0].style.setProperty("--infoColor", "#9a49aa");
-                            variables.sheet.cssRules[0].style.setProperty("--cheatList", "#9a49aa");
-                            variables.sheet.cssRules[0].style.setProperty("--defaultButton", "#9a49aa");
-                            variables.sheet.cssRules[0].style.setProperty("--disabledButton", "#A02626");
-                            variables.sheet.cssRules[0].style.setProperty("--enabledButton", "#47A547");
-                            variables.sheet.cssRules[0].style.setProperty("--textColor", "white");
-                            variables.sheet.cssRules[0].style.setProperty("--inputColor", "#7a039d");
-                            variables.sheet.cssRules[0].style.setProperty("--contentBackground", "rgb(64, 17, 95)");
-                            guiWrapper.style.transform = `scale(1)`;
+                        inputs: [
+                            {
+                                name: "Theme",
+                                type: "options",
+                                options: [
+                                    {
+                                        name: "Default",
+                                        value: {
+                                            backgroundColor: "rgb(11, 194, 207)",
+                                            infoColor: "#9a49aa",
+                                            cheatList: "#9a49aa",
+                                            defaultButton: "#9a49aa",
+                                            disabledButton: "#A02626",
+                                            enabledButton: "#47A547",
+                                            textColor: "white",
+                                            inputColor: "#7a039d",
+                                            contentBackground: "rgb(64, 17, 95)"
+                                        }
+                                    },
+                                    {
+                                        name: "Blue - Purple",
+                                        value: {
+                                            backgroundColor: "linear-gradient(162.5deg, rgba(0,183,255,1) 0%, rgba(128,0,255,1) 100%)",
+                                            infoColor: "#9a49aa",
+                                            cheatList: "#9a49aa",
+                                            defaultButton: "#9a49aa",
+                                            disabledButton: "#A02626",
+                                            enabledButton: "#47A547",
+                                            textColor: "white",
+                                            inputColor: "#7a039d",
+                                            contentBackground: "rgb(64, 17, 95)"
+                                        }
+                                    },
+                                    {
+                                        name: "Blacket",
+                                        value: {
+                                            backgroundColor: "#4f4f4f",
+                                            infoColor: "#2f2f2f",
+                                            cheatList: "#2f2f2f",
+                                            defaultButton: "#4f4f4f",
+                                            disabledButton: "#eb6234",
+                                            enabledButton: "#00c20c",
+                                            textColor: "white",
+                                            inputColor: "#3f3f3f",
+                                            contentBackground: "#2f2f2f"
+                                        }
+                                    }
+                                ]
+                            }
+                        ],
+                        run: function (theme) {
+                            theme = JSON.parse(theme);
+                            for (const prop in theme) variables.sheet.cssRules[0].style.setProperty(`--${prop}`, theme[prop]);
+                            alert(JSON.stringify(theme));
                             localStorage.setItem("JODGUISettings", "{}");
                         }
                     },
