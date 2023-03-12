@@ -19,7 +19,7 @@
     window.confirm = i.contentWindow.confirm.bind(window);
     i.remove();
     Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://" + (location.host.startsWith("dashboard") ? location.host + "/api/games" : "play.blooket.com/api/gamequestionsets") + "?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/gui.js")?.answers?.[0]}`)).then(async x => {
-        if (1678660148894 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
+        if (1678661003819 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
             /* Update Checker end */
             function createElement(node, props = {}, ...children) {
                 const element = document.createElement(node);
@@ -312,7 +312,7 @@
                                         position: "absolute",
                                         top: "0",
                                         left: "0",
-                                        backgroundColor: "rgb(32, 8.5, 47.5)",
+                                        backgroundColor: "black",
                                         height: "fit-content",
                                         maxWidth: "300px",
                                         zIndex: "5",
@@ -664,7 +664,7 @@
                             {
                                 name: "Banner",
                                 type: "options",
-                                options: Object.entries({ Starter: "starter", Chalkboard: "chalkboard", Slime: "slime", Bookshelf: "bookshelf", "Toaster Pastry": "toasterPastry", Theater: "theater", Sushi: "sushi", Workbench: "workbench", Spooky: "spooky", Spiders: "spiders", Coffin: "coffin", Pumpkins: "pumpkins", "Falling Blocks": "fallingBlocks", Racetrack: "racetrack", Harvest: "harvest", Leaves: "leaves", "Fall Picnic": "fallPicnic", "Winter Drive": "winterDrive", "Winter Train": "winterTrain", Ice: "ice", Gifts: "gifts", "Christmas Tree": "christmasTree", "Soccer Field": "soccerField", "Winter Landscape": "winterLandscape", "Football Field": "footballField", "Outer Space": "outerSpace", "Hockey Rink": "hockeyRink", "Music Class": "musicClass", "Ice Cream Sandwich": "iceCreamSandwich", "Science Class": "scienceClass", "Fish Tank": "fishTank", "Art Class": "artClass", Clockwork: "clockwork", "Love Letter": "loveLetter", Farm: "farm", Chocolate: "chocolate", "Tech Chip": "techChip", Fire: "fire", "Orange Ice Pop": "orangeIcePop" }).map(([name, value]) => ({name, value}))
+                                options: Object.entries({ Starter: "starter", Chalkboard: "chalkboard", Slime: "slime", Bookshelf: "bookshelf", "Toaster Pastry": "toasterPastry", Theater: "theater", Sushi: "sushi", Workbench: "workbench", Spooky: "spooky", Spiders: "spiders", Coffin: "coffin", Pumpkins: "pumpkins", "Falling Blocks": "fallingBlocks", Racetrack: "racetrack", Harvest: "harvest", Leaves: "leaves", "Fall Picnic": "fallPicnic", "Winter Drive": "winterDrive", "Winter Train": "winterTrain", Ice: "ice", Gifts: "gifts", "Christmas Tree": "christmasTree", "Soccer Field": "soccerField", "Winter Landscape": "winterLandscape", "Football Field": "footballField", "Outer Space": "outerSpace", "Hockey Rink": "hockeyRink", "Music Class": "musicClass", "Ice Cream Sandwich": "iceCreamSandwich", "Science Class": "scienceClass", "Fish Tank": "fishTank", "Art Class": "artClass", Clockwork: "clockwork", "Love Letter": "loveLetter", Farm: "farm", Chocolate: "chocolate", "Tech Chip": "techChip", Fire: "fire", "Orange Ice Pop": "orangeIcePop" }).map(([name, value]) => ({ name, value }))
                             }
                         ],
                         run: async function (id, name, amount, b, bg) {
@@ -2784,8 +2784,36 @@
                 ],
                 settings: [
                     {
+                        name: "Import Settings",
+                        description: "Import a custom theme",
+                        inputs: [
+                            {
+                                name: "JSON Data",
+                                type: "string"
+                            }
+                        ],
+                        run: function (theme) {
+                            try {
+                                JSON.parse(theme);
+                            } catch (e) {
+                                return alert("Invalid JSON provided");
+                            }
+                            localStorage.setItem("JODGUISettings", theme);
+                            theme = JSON.parse(theme);
+                            for (const prop in theme) variables.sheet.cssRules[0].style.setProperty(`--${prop}`, theme[prop]);
+                        }
+                    },
+                    {
+                        name: "Export Settings",
+                        description: "Export the current theme to JSON",
+                        run: async function () {
+                            await navigator.clipboard.writeText(localStorage.getItem("JODGUISettings"));
+                            prompt("Text copied to clipboard. (Paste below to test)");
+                        }
+                    },
+                    {
                         name: "Defaults",
-                        description: "Changes all the settings back to default",
+                        description: "Changes all the settings to a preset",
                         inputs: [
                             {
                                 name: "Theme",
@@ -2840,7 +2868,6 @@
                             localStorage.setItem("JODGUISettings", theme);
                             theme = JSON.parse(theme);
                             for (const prop in theme) variables.sheet.cssRules[0].style.setProperty(`--${prop}`, theme[prop]);
-            /* // alert(JSON.stringify(theme)); */
                         }
                     },
                     {
