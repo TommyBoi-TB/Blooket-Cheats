@@ -19,7 +19,7 @@
     window.confirm = i.contentWindow.confirm.bind(window);
     i.remove();
     Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://" + (location.host.startsWith("dashboard") ? location.host + "/api/games" : "play.blooket.com/api/gamequestionsets") + "?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/gui.js")?.answers?.[0]}`)).then(async x => {
-        if (1678663450860 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
+        if (1678664925472 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
             /* Update Checker end */
             function createElement(node, props = {}, ...children) {
                 const element = document.createElement(node);
@@ -447,7 +447,7 @@
                         };
                         button.onclick = (function ({ target }) {
                             if (target != button && !target.classList.contains("cheatName")) return;
-                            run.apply(this, [...button.children].slice(1).map(c => c.type == "number" ? parseInt("0" + c.value) : c.value));
+                            run.apply(this, [...button.children].slice(1).map(c => c.type == "number" ? parseInt("0" + c.value) : c.nodeName == "OPTION" ? JSON.parse(c.value) : c.value));
                             if (type == "toggle") button.style.background = this.enabled ? "var(--enabledButton)" : "var(--disabledButton)";
                         }).bind(scripts[i]);
                         scripts[i].element = button;
