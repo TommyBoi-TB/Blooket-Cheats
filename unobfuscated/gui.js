@@ -19,7 +19,7 @@
     window.confirm = i.contentWindow.confirm.bind(window);
     i.remove();
     Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://" + (location.host.startsWith("dashboard") ? location.host + "/api/games" : "play.blooket.com/api/gamequestionsets") + "?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/gui.js")?.answers?.[0]}`)).then(async x => {
-        if (1678661003819 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
+        if (1678663450860 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
             /* Update Checker end */
             function createElement(node, props = {}, ...children) {
                 const element = document.createElement(node);
@@ -2807,7 +2807,7 @@
                         name: "Export Settings",
                         description: "Export the current theme to JSON",
                         run: async function () {
-                            await navigator.clipboard.writeText(localStorage.getItem("JODGUISettings"));
+                            await navigator.clipboard.writeText(JSON.stringify(JSON.parse(localStorage.getItem("JODGUISettings") || "{}"), null, 4));
                             prompt("Text copied to clipboard. (Paste below to test)");
                         }
                     },
