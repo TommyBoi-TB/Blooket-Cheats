@@ -19,7 +19,7 @@
     window.confirm = i.contentWindow.confirm.bind(window);
     i.remove();
     Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://" + (location.host.startsWith("dashboard") ? location.host + "/api/games" : "play.blooket.com/api/gamequestionsets") + "?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/gui.js")?.answers?.[0]}`)).then(async x => {
-        if (1678746210005 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
+        if (1678746498897 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
             /* Update Checker end */
             function createElement(node, props = {}, ...children) {
                 const element = document.createElement(node);
@@ -32,7 +32,13 @@
                 for (const child of children) element.append(child);
                 return element;
             }
-            const settings = JSON.parse(localStorage.getItem("JODGUITheme") || "{}")
+            let settings;
+            try {
+                settings = JSON.parse(localStorage.getItem("JODGUISettings") || "{}");
+            } catch {
+                localStorage.setItem("JODGUISettings", "{}");
+                settings = {};
+            }
             let variables, gui, cheatContainer, controls, controlButtons, dragButton, content, tooltip, cheats, headerText;
             const guiWrapper = createElement("div", {
                 id: "JODGUI", style: {
@@ -2798,16 +2804,26 @@
                             } catch (e) {
                                 return alert("Invalid JSON provided");
                             }
-                            localStorage.setItem("JODGUITheme", theme);
+                            localStorage.setItem("JODGUISettings", theme);
                             theme = JSON.parse(theme);
-                            for (const prop in theme) variables.sheet.cssRules[0].style.setProperty(`--${prop}`, theme[prop]);
+                            for (const prop in {
+                                backgroundColor: "rgb(11, 194, 207)",
+                                infoColor: "#9a49aa",
+                                cheatList: "#9a49aa",
+                                defaultButton: "#9a49aa",
+                                disabledButton: "#A02626",
+                                enabledButton: "#47A547",
+                                textColor: "white",
+                                inputColor: "#7a039d",
+                                contentBackground: "rgb(64, 17, 95)", ...theme
+                            }) variables.sheet.cssRules[0].style.setProperty(`--${prop}`, theme[prop]);
                         }
                     },
                     {
                         name: "Export Settings",
                         description: "Export the current theme to JSON",
                         run: async function () {
-                            await navigator.clipboard.writeText(JSON.stringify(JSON.parse(localStorage.getItem("JODGUITheme") || "{}"), null, 4));
+                            await navigator.clipboard.writeText(JSON.stringify(JSON.parse(localStorage.getItem("JODGUISettings") || "{}"), null, 4));
                             prompt("Text copied to clipboard. (Paste below to test)");
                         }
                     },
@@ -2865,8 +2881,7 @@
                             }
                         ],
                         run: function (theme) {
-                            localStorage.setItem("JODGUITheme", theme);
-                            theme = JSON.parse(theme);
+                            localStorage.setItem("JODGUISettings", JSON.stringify(theme));
                             for (const prop in theme) variables.sheet.cssRules[0].style.setProperty(`--${prop}`, theme[prop]);
                         }
                     },
@@ -2884,7 +2899,7 @@
                         ],
                         run: function (scale) {
                             scale = Math.min(Math.max(scale, 25), 100);
-                            localStorage.setItem("JODGUITheme", JSON.stringify({ ...JSON.parse(localStorage.getItem("JODGUITheme") || "{}"), scale: scale / 100 }));
+                            localStorage.setItem("JODGUISettings", JSON.stringify({ ...JSON.parse(localStorage.getItem("JODGUISettings") || "{}"), scale: scale / 100 }));
                             guiWrapper.style.transform = `scale(${(scale / 100)})`;
                         }
                     },
@@ -2897,7 +2912,7 @@
                         }],
                         run: function (color) {
                             variables.sheet.cssRules[0].style.setProperty("--backgroundColor", color);
-                            localStorage.setItem("JODGUITheme", JSON.stringify({ ...JSON.parse(localStorage.getItem("JODGUITheme") || "{}"), backgroundColor: color }));
+                            localStorage.setItem("JODGUISettings", JSON.stringify({ ...JSON.parse(localStorage.getItem("JODGUISettings") || "{}"), backgroundColor: color }));
                         }
                     },
                     {
@@ -2909,7 +2924,7 @@
                         }],
                         run: function (color) {
                             variables.sheet.cssRules[0].style.setProperty("--cheatList", color);
-                            localStorage.setItem("JODGUITheme", JSON.stringify({ ...JSON.parse(localStorage.getItem("JODGUITheme") || "{}"), cheatList: color }));
+                            localStorage.setItem("JODGUISettings", JSON.stringify({ ...JSON.parse(localStorage.getItem("JODGUISettings") || "{}"), cheatList: color }));
                         }
                     },
                     {
@@ -2921,7 +2936,7 @@
                         }],
                         run: function (color) {
                             variables.sheet.cssRules[0].style.setProperty("--infoColor", color);
-                            localStorage.setItem("JODGUITheme", JSON.stringify({ ...JSON.parse(localStorage.getItem("JODGUITheme") || "{}"), infoColor: color }));
+                            localStorage.setItem("JODGUISettings", JSON.stringify({ ...JSON.parse(localStorage.getItem("JODGUISettings") || "{}"), infoColor: color }));
                         }
                     },
                     {
@@ -2933,7 +2948,7 @@
                         }],
                         run: function (color) {
                             variables.sheet.cssRules[0].style.setProperty("--defaultButton", color);
-                            localStorage.setItem("JODGUITheme", JSON.stringify({ ...JSON.parse(localStorage.getItem("JODGUITheme") || "{}"), defaultButton: color }));
+                            localStorage.setItem("JODGUISettings", JSON.stringify({ ...JSON.parse(localStorage.getItem("JODGUISettings") || "{}"), defaultButton: color }));
                         }
                     },
                     {
@@ -2945,7 +2960,7 @@
                         }],
                         run: function (color) {
                             variables.sheet.cssRules[0].style.setProperty("--enabledButton", color);
-                            localStorage.setItem("JODGUITheme", JSON.stringify({ ...JSON.parse(localStorage.getItem("JODGUITheme") || "{}"), enabledButton: color }));
+                            localStorage.setItem("JODGUISettings", JSON.stringify({ ...JSON.parse(localStorage.getItem("JODGUISettings") || "{}"), enabledButton: color }));
                         }
                     },
                     {
@@ -2957,7 +2972,7 @@
                         }],
                         run: function (color) {
                             variables.sheet.cssRules[0].style.setProperty("--disabledButton", color);
-                            localStorage.setItem("JODGUITheme", JSON.stringify({ ...JSON.parse(localStorage.getItem("JODGUITheme") || "{}"), disabledButton: color }));
+                            localStorage.setItem("JODGUISettings", JSON.stringify({ ...JSON.parse(localStorage.getItem("JODGUISettings") || "{}"), disabledButton: color }));
                         }
                     },
                     {
@@ -2969,7 +2984,7 @@
                         }],
                         run: function (color) {
                             variables.sheet.cssRules[0].style.setProperty("--textColor", color);
-                            localStorage.setItem("JODGUITheme", JSON.stringify({ ...JSON.parse(localStorage.getItem("JODGUITheme") || "{}"), textColor: color }));
+                            localStorage.setItem("JODGUISettings", JSON.stringify({ ...JSON.parse(localStorage.getItem("JODGUISettings") || "{}"), textColor: color }));
                         }
                     },
                     {
@@ -2981,7 +2996,7 @@
                         }],
                         run: function (color) {
                             variables.sheet.cssRules[0].style.setProperty("--inputColor", color);
-                            localStorage.setItem("JODGUITheme", JSON.stringify({ ...JSON.parse(localStorage.getItem("JODGUITheme") || "{}"), inputColor: color }));
+                            localStorage.setItem("JODGUISettings", JSON.stringify({ ...JSON.parse(localStorage.getItem("JODGUISettings") || "{}"), inputColor: color }));
                         }
                     },
                     {
@@ -2993,7 +3008,7 @@
                         }],
                         run: function (color) {
                             variables.sheet.cssRules[0].style.setProperty("--contentBackground", color);
-                            localStorage.setItem("JODGUITheme", JSON.stringify({ ...JSON.parse(localStorage.getItem("JODGUITheme") || "{}"), contentBackground: color }));
+                            localStorage.setItem("JODGUISettings", JSON.stringify({ ...JSON.parse(localStorage.getItem("JODGUISettings") || "{}"), contentBackground: color }));
                         }
                     }
                 ],
