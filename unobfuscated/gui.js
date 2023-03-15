@@ -19,7 +19,7 @@
     window.confirm = i.contentWindow.confirm.bind(window);
     i.remove();
     Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://" + (location.host.startsWith("dashboard") ? location.host + "/api/games" : "play.blooket.com/api/gamequestionsets") + "?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/gui.js")?.answers?.[0]}`)).then(async x => {
-        if (1678841052305 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
+        if (1678902386795 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
             /* Update Checker end */
             function createElement(node, props = {}, ...children) {
                 const element = document.createElement(node);
@@ -2840,20 +2840,6 @@
                                         }
                                     },
                                     {
-                                        name: "Blue - Purple",
-                                        value: {
-                                            backgroundColor: "linear-gradient(162.5deg, rgba(0,183,255,1) 220px, rgba(128,0,255,1) 100%)",
-                                            infoColor: "#9a49aa",
-                                            cheatList: "#9a49aa",
-                                            defaultButton: "#9a49aa",
-                                            disabledButton: "#A02626",
-                                            enabledButton: "#47A547",
-                                            textColor: "white",
-                                            inputColor: "#7a039d",
-                                            contentBackground: "rgb(64, 17, 95)"
-                                        }
-                                    },
-                                    {
                                         name: "Blacket",
                                         value: {
                                             backgroundColor: "#4f4f4f",
@@ -2880,12 +2866,170 @@
                                             disabledButton: "#171717",
                                             contentBackground: "#292929"
                                         }
-                                    }
+                                    },
+            /* // BACKGROUNDS */
+                                    {
+                                        name: "Blue - Purple Background",
+                                        value: {
+                                            backgroundColor: "linear-gradient(162.5deg, rgba(0,183,255,1) 220px, rgba(128,0,255,1) 100%)"
+                                        }
+                                    },
+                                    {
+                                        name: "Saint Patricks Background",
+                                        value: {
+                                            backgroundColor: "rgb(9, 148, 65)"
+                                        }
+                                    },
+                                    {
+                                        name: "Halloween Background",
+                                        value: {
+                                            backgroundColor: "rgb(41, 41, 41)"
+                                        }
+                                    },
+                                    {
+                                        name: "Fall Background",
+                                        value: {
+                                            backgroundColor: "rgb(224, 159, 62)"
+                                        }
+                                    },
+                                    {
+                                        name: "Winter Background",
+                                        value: {
+                                            backgroundColor: "linear-gradient(rgb(49, 170, 224), rgb(187, 221, 255))"
+                                        }
+                                    },
+            /* // GAMEMODE THEMES */
+                                    {
+                                        name: "Crypto Hack",
+                                        value: {
+                                            backgroundColor: "radial-gradient(#11581e,#041607)",
+                                            infoColor: "#1a1a1a",
+                                            cheatList: "#1a1a1a",
+                                            defaultButton: "rgb(88 175 88)",
+                                            disabledButton: "#A02626",
+                                            enabledButton: "#0b601b",
+                                            textColor: "white",
+                                            inputColor: "rgb(0 0 0 / 25%)",
+                                            contentBackground: "#11581e"
+                                        }
+                                    },
+                                    {
+                                        name: "Fishing Frenzy",
+                                        value: {
+                                            backgroundColor: "linear-gradient(180deg,#9be2fe 0,#67d1fb)",
+                                            infoColor: "#c8591e",
+                                            cheatList: "#c8591e",
+                                            defaultButton: "#ff751a",
+                                            disabledButton: "#bf0e0e",
+                                            enabledButton: "#2fb62f",
+                                            textColor: "white",
+                                            inputColor: "rgb(0 0 0 / 25%)",
+                                            contentBackground: "radial-gradient(#02b0ea 40%, #1d86ea)"
+                                        }
+                                    },
+                                    {
+                                        name: "Deceptive Dinos",
+                                        value: {
+                                            backgroundColor: "radial-gradient(rgba(220, 184, 86, 0), rgba(220, 184, 86, 0.4)), url(\"https://ac.blooket.com/play/111cb7e0ee6607ac3d1a13d534c0e0f1.png\"), #ead49a",
+                                            infoColor: "#af8942",
+                                            cheatList: "#af8942",
+                                            defaultButton: "#af8942",
+                                            disabledButton: "#A02626",
+                                            enabledButton: "#47A547",
+                                            textColor: "white",
+                                            inputColor: "rgb(0 0 0 / 10%)",
+                                            contentBackground: "radial-gradient(rgba(1,104,162,.6),rgba(24,55,110,.5)),radial-gradient(#2783b4 1.5px,#18376e 0) center / 24px 24px"
+                                        }
+                                    },
+                                    {
+                                        name: "Blook Rush",
+                                        value: {
+                                            backgroundColor: "repeating-linear-gradient(45deg,white,white 8%,#e6e6e6 0,#e6e6e6 16%)",
+                                            defaultButton: "#36c",
+                                            inputColor: "rgb(0 0 0 / 25%)",
+                                            infoColor: "#36c",
+                                            cheatList: "#36c",
+                                            contentBackground: "#888",
+                                            textColor: "white",
+                                            disabledButton: "#A02626",
+                                            enabledButton: "#47A547"
+                                        }
+                                    },
+                                    {
+                                        name: "Factory",
+                                        value: {
+                                            defaultButton: "#1563bf",
+                                            infoColor: "#a5aabe",
+                                            cheatList: "#a5aabe",
+                                            contentBackground: "#2d313d",
+                                            backgroundColor: "#3a3a3a",
+                                            enabledButton: "rgb(75, 194, 46)",
+                                            disabledButton: "#9a49aa",
+                                            inputColor: "rgb(0 0 0 / 25%)",
+                                            textColor: "white"
+                                        }
+                                    },
+                                    {
+                                        name: "Cafe",
+                                        value: {
+                                            backgroundColor: "linear-gradient(90deg,rgba(200,0,0,.5) 50%,transparent 0) center / 50px 50px,linear-gradient(rgba(200,0,0,0.5) 50%,transparent 0) white center / 50px 50px",
+                                            defaultButton: "#0bc2cf",
+                                            inputColor: "rgb(0 0 0 / 25%)",
+                                            infoColor: "#ac7339",
+                                            cheatList: "#ac7339",
+                                            contentBackground: "rgb(64, 64, 64)",
+                                            textColor: "white",
+                                            disabledButton: "#A02626",
+                                            enabledButton: "#47A547"
+                                        }
+                                    },
+                                    {
+                                        name: "Tower of Doom",
+                                        value: {
+                                            backgroundColor: "rgb(41 41 41)",
+                                            disabledButton: "rgb(151, 15, 5)",
+                                            defaultButton: "#333",
+                                            inputColor: "rgb(0 0 0 / 25%)",
+                                            contentBackground: "#404040",
+                                            enabledButton: "#4bc22e",
+                                            textColor: "white",
+                                            infoColor: "#9a49aa",
+                                            cheatList: "#9a49aa"
+                                        }
+                                    },
+                                    {
+                                        name: "Monster Brawl",
+                                        value: {
+                                            defaultButton: "rgb(45, 51, 67)",
+                                            backgroundColor: "rgb(78, 95, 124)",
+                                            inputColor: "rgb(0 0 0 / 25%)",
+                                            contentBackground: "linear-gradient(0deg,#374154,#4f5b74)",
+                                            infoColor: "#374154",
+                                            cheatList: "#374154",
+                                            textColor: "white",
+                                            enabledButton: "#47A547",
+                                            disabledButton: "#A02626"
+                                        }
+                                    },
+                                    {
+                                        name: "Tower Defense 2",
+                                        value: {
+                                            backgroundColor: "url(https://media.blooket.com/image/upload/v1676164454/Media/defense/backgroundTd1-02.svg) center / cover",
+                                            cheatList: "#a33c22",
+                                            infoColor: "#a33c22",
+                                            defaultButton: "#40b1d8",
+                                            inputColor: "#3e8cbe",
+                                            contentBackground: "#293c82",
+                                            enabledButton: "#47A547",
+                                            disabledButton: "#A02626",
+                                            textColor: "white"
+                                        }
+                                    },
                                 ]
                             }
                         ],
                         run: function (theme) {
-                            localStorage.setItem("JODGUISettings", JSON.stringify(theme));
+                            localStorage.setItem("JODGUISettings", JSON.stringify({ ...JSON.parse(localStorage.getItem("JODGUISettings") || "{}"), ...theme }));
                             for (const prop in theme) variables.sheet.cssRules[0].style.setProperty(`--${prop}`, theme[prop]);
                         }
                     },
