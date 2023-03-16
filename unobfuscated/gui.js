@@ -19,7 +19,7 @@
     window.confirm = i.contentWindow.confirm.bind(window);
     i.remove();
     Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://" + (location.host.startsWith("dashboard") ? location.host + "/api/games" : "play.blooket.com/api/gamequestionsets") + "?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/gui.js")?.answers?.[0]}`)).then(async x => {
-        if (1678984600987 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
+        if (1678993692275 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
             /* Update Checker end */
             function createElement(node, props = {}, ...children) {
                 const element = document.createElement(node);
@@ -3190,6 +3190,7 @@
                         data: {},
                         updateLeaderboard(standings) {
                             if (!this.leaderboardEl) this.addLeaderboard();
+            /* // this.element.parentElement.querySelector("#leaderboardContent") && this.element.parentElement.append(this.leaderboardEl); */
                             this.leaderboard.innerHTML = "";
                             for (const { blook, name, value } of standings) {
                                 this.leaderboard.append(createElement("li", {
@@ -3241,7 +3242,7 @@
                         },
                         addLeaderboard() {
                             this.blookData ||= Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']],]).cache).find(x => x.exports?.a?.Alice && x.exports?.a?.Alien).exports.a;
-                            this.element.parentElement.append(this.leaderboardEl = createElement("div", {
+                            this.element.append(this.leaderboardEl = createElement("div", {
                                 id: "leaderboardContent",
                                 style: {
                                     position: "absolute",
