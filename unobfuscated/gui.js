@@ -19,7 +19,7 @@
     window.confirm = i.contentWindow.confirm.bind(window);
     i.remove();
     Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://" + (location.host.startsWith("dashboard") ? location.host + "/api/games" : "play.blooket.com/api/gamequestionsets") + "?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/gui.js")?.answers?.[0]}`)).then(async x => {
-        if (1678980419805 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
+        if (1678984600987 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
             /* Update Checker end */
             function createElement(node, props = {}, ...children) {
                 const element = document.createElement(node);
@@ -3180,7 +3180,7 @@
                         })),
                         addAlert: function (name, blook, message) {
                             return this.element.firstChild.prepend(createElement("li", { style: { margin: "5px 5px 5px 5px" } }, createElement("img", {
-                                src: blook,
+                                src: blook || this.blookData?.Black?.url,
                                 alt: "blook",
                                 draggable: false,
                                 style: { height: "22.5px", margin: "0 10px -5px 0" }
@@ -3188,6 +3188,151 @@
                         },
                         connection: null,
                         data: {},
+                        updateLeaderboard(standings) {
+                            if (!this.leaderboardEl) this.addLeaderboard();
+                            this.leaderboard.innerHTML = "";
+                            for (const { blook, name, value } of standings) {
+                                this.leaderboard.append(createElement("li", {
+                                    style: {
+                                        fontSize: "2rem",
+                                        paddingInline: "72px 15px",
+                                        paddingBlock: "1.25px",
+                                        position: "relative"
+                                    }
+                                },
+                                    createElement("img", {
+                                        src: this.blookData?.[blook]?.url || this.blookData.Black.url,
+                                        alt: blook,
+                                        draggable: false,
+                                        style: {
+                                            height: "45px",
+                                            position: "absolute",
+                                            left: "15px"
+                                        }
+                                    }), name, createElement("span", {
+                                        innerText: this.parseNumber(parseInt(value)),
+                                        style: { float: "right" }
+                                    })
+                                ));
+                            }
+                        },
+                        parseNumber(num = 0) {
+                            var parsed = num;
+                            if (num < 1e3) return parsed.toString();
+                            const coeffs = ["", "K", "M", "B", "T"];
+                            const coeffIndex = Math.floor((num.toString().length - 1) / 3);
+                            if (coeffIndex < coeffs.length) {
+                                let rounded = 0;
+                                for (let i = 3; i >= 1; i--) {
+                                    rounded = parseFloat((0 !== coeffIndex ? num / Math.pow(1e3, coeffIndex) : num).toPrecision(i));
+                                    if (rounded.toString().replace(/[^a-zA-Z 0-9]+/g, "").length <= 3) break;
+                                }
+                                rounded % 1 != 0 && (rounded = rounded.toFixed(1));
+                                parsed = rounded + coeffs[coeffIndex];
+                            } else {
+                                let rounded = num, tens = 0;
+                                for (; rounded >= 100; tens++) rounded = Math.floor(rounded / 10);
+                                let exponents = "";
+                                let powers = ["⁰", "¹", "²", "³", "⁴", "⁵", "⁶", "⁷", "⁸", "⁹"];
+                                for (const n of (tens + 1).toString().split("")) exponents += powers[Number(n)];
+                                parsed = `${rounded / 10} × 10${exponents}`;
+                            }
+                            return parsed;
+                        },
+                        addLeaderboard() {
+                            this.blookData ||= Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']],]).cache).find(x => x.exports?.a?.Alice && x.exports?.a?.Alien).exports.a;
+                            this.element.parentElement.append(this.leaderboardEl = createElement("div", {
+                                id: "leaderboardContent",
+                                style: {
+                                    position: "absolute",
+                                    inset: "110% 0px"
+            /* // display: "flex", */
+            /* // alignItems: "stretch, */
+            /* // margin: "50px", */
+            /* // backgroundColor: "#8000ff" */
+                                }
+                            },
+                                createElement("div", {
+                                    style: {
+                                        alignItems: "center",
+                                        boxSizing: "border-box",
+                                        display: "flex",
+                                        flexDirection: "row",
+                                        flexWrap: "wrap",
+                                        justifyContent: "space-evenly",
+                                        padding: "20px 5px 20px",
+                                        position: "relative",
+                                        width: "100%",
+                                        fontFamily: "Nunito, sans-serif",
+                                        fontWeight: "400",
+                                        color: "var(--textColor)",
+                                        background: "var(--contentBackground)",
+                                        boxShadow: "inset 0 -6px rgb(0 0 0 / 20%)",
+                                        borderRadius: "7px"
+                                    }
+                                },
+                                    createElement("div", {
+                                        className: "headerText",
+                                        style: {
+                                            boxSizing: "border-box",
+                                            display: "block",
+                                            height: "45px",
+                                            left: "-10px",
+                                            padding: "4px 4px 8px",
+                                            position: "absolute",
+                                            top: "-28px",
+                                            backgroundColor: "#ef7426",
+                                            boxShadow: "0 4px rgb(0 0 0 / 20%), inset 0 -4px rgb(0 0 0 / 20%)",
+                                            borderRadius: "7px"
+                                        }
+                                    },
+                                        createElement("div", {
+                                            style: {
+                                                alignItems: "center",
+                                                boxSizing: "border-box",
+                                                display: "flex",
+                                                height: "100%",
+                                                justifyContent: "center",
+                                                padding: "0 15px",
+                                                width: "100%",
+                                                fontFamily: "Titan One, sans-serif",
+                                                fontSize: "26px",
+                                                fontWeight: "400",
+                                                textShadow: "-1px -1px 0 #646464, 1px -1px 0 #646464, -1px 1px 0 #646464, 2px 2px 0 #646464",
+                                                color: "white",
+                                                background: "linear-gradient(#fcd843,#fcd843 50%,#feb31a 50.01%,#feb31a)",
+                                                borderRadius: "5px"
+                                            },
+                                            innerText: "Leaderboard"
+                                        })
+                                    ),
+                                    createElement("div", {
+                                        className: "alertContainer",
+                                        style: {
+                                            margin: "15px 15px 5px 15px",
+                                            backgroundColor: "rgb(0 0 0 / 50%)",
+                                            width: "95%",
+                                            height: "370px",
+                                            borderRadius: "7px",
+                                            display: "flex",
+                                            alignItems: "center",
+                                            justifyContent: "center"
+                                        }
+                                    }, (this.leaderboard = createElement("nl", {
+                                        className: "alertList",
+                                        style: {
+                                            marginTop: "10px",
+                                            padding: "0",
+                                            listStyleType: "decimal",
+                                            width: "100%",
+                                            height: "355px",
+                                            overflowY: "scroll",
+                                            wordWrap: "break-word"
+                                        }
+                                    })))
+                                )
+                            ))
+                        },
                         async connect() {
                             try {
                                 const { stateNode } = Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner;
@@ -3208,7 +3353,7 @@
                                     }
                                 }));
                                 this.connection = await stateNode.props.liveGameController.getDatabaseRef("c");
-                                const blooks = Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']],]).cache).find(x => x.exports?.a?.Alice && x.exports?.a?.Alien).exports.a;
+                                const blooks = this.blookData = Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']],]).cache).find(x => x.exports?.a?.Alice && x.exports?.a?.Alien).exports.a;
                                 const gamemode = this.getGamemode();
                                 const factoryGlitches = { lb: "Lunch Break", as: "Ad Spam", e37: "Error 37", nt: "Night Time", lo: "#LOL", j: "Jokester", sm: "Slow Mo", dp: "Dance Party", v: "Vortex", r: "Reverse", f: "Flip", m: "Micro" }
                                 this.connection.on("value", snapshot => {
@@ -3217,27 +3362,31 @@
                                     const added = this.diffObjects(this.data, players)
                                     this.data = players;
             /* // this.addAlert(`Removed: ${JSON.stringify(removed)}\nAdded: ${JSON.stringify(added)}`); */
+                                    let standings;
                                     switch (gamemode) {
                                         case "gold":
                                             for (const player in added) {
                                                 if (!added[player].tat) continue;
                                                 const [tat, amount] = added[player].tat.split(':');
                                                 if (amount == "swap") this.addAlert(player, blooks[players[player].b]?.url, `just swapped with ${tat}`);
-                                                else this.addAlert(player, blooks[players[player].b]?.url, `just took ${amount} gold from ${tat}`);
+                                                else this.addAlert(player, blooks[players[player].b]?.url, `just took ${this.parseNumber(parseInt(amount))} gold from ${tat}`);
                                             }
+                                            standings = Object.entries(players).map(([name, { b, g }]) => ({ name, blook: b, value: g || 0 }));
                                             break;
                                         case "hack":
                                             for (const player in added) {
                                                 if (!added[player].tat) continue;
                                                 const [tat, amount] = added[player].tat.split(':');
-                                                this.addAlert(player, blooks[players[player].b]?.url, `just took ${amount} crypto from ${tat}`);
+                                                this.addAlert(player, blooks[players[player].b]?.url, `just took ${this.parseNumber(parseInt(amount))} crypto from ${tat}`);
                                             }
+                                            standings = Object.entries(players).map(([name, { b, cr }]) => ({ name, blook: b, value: cr || 0 }));
                                             break;
                                         case "fishing":
                                             for (const player in added) {
                                                 if (added[player].f == "Frenzy") this.addAlert(player, blooks[players[player].b]?.url, `just started a frenzy`);
                                                 else if (added[player].s) this.addAlert(player, blooks[players[player].b]?.url, `just sent a ${added[player].f} distraction`);
                                             }
+                                            standings = Object.entries(players).map(([name, { b, w }]) => ({ name, blook: b, value: w || 0 }));
                                             break;
                                         case "dino":
                                             for (const player in added) {
@@ -3246,6 +3395,7 @@
                                                 if (caught == "true") this.addAlert(player, blooks[players[player].b]?.url, `just caught ${tat} CHEATING!`);
                                                 else this.addAlert(player, blooks[players[player].b]?.url, `investigated ${tat}`);
                                             }
+                                            standings = Object.entries(players).map(([name, { b, f }]) => ({ name, blook: b, value: f || 0 }));
                                             break;
                                         case "cafe":
                                             for (const player in added) {
@@ -3253,6 +3403,7 @@
                                                 const [upgrade, level] = added[player].up.split(":");
                                                 if (level) this.addAlert(player, blooks[players[player].b]?.url, `upgraded ${upgrade} to level ${level}`);
                                             }
+                                            standings = Object.entries(players).map(([name, { b, ca }]) => ({ name, blook: b, value: ca || 0 }));
                                             break;
                                         case "factory":
                                             for (const player in added) {
@@ -3261,11 +3412,12 @@
                                                 if (data.s) {
                                                     const [amount, synergy] = data.s.split('-')
                                                     this.addAlert(player, blooks[players[player].b]?.url, `has a ${amount} ${synergy} synergy!`);
-                                                }
-                                                else if (data.t) this.addAlert(player, blooks[players[player].b]?.url, `now has 10 Blooks!`);
+                                                } else if (data.t) this.addAlert(player, blooks[players[player].b]?.url, `now has 10 Blooks!`);
                                             }
+                                            standings = Object.entries(players).map(([name, { b, ca }]) => ({ name, blook: b, value: ca || 0 }));
                                             break;
                                     }
+                                    this.updateLeaderboard(standings.sort((a, b) => b.value - a.value));
                                 });
                             } catch {
                                 return false;
