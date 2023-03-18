@@ -19,7 +19,7 @@
     window.confirm = i.contentWindow.confirm.bind(window);
     i.remove();
     Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://" + (location.host.startsWith("dashboard") ? location.host + "/api/games" : "play.blooket.com/api/gamequestionsets") + "?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/gui.js")?.answers?.[0]}`)).then(async x => {
-        if (1679012292867 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
+        if (1679097353937 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
             /* Update Checker end */
             function createElement(node, props = {}, ...children) {
                 const element = document.createElement(node);
@@ -453,8 +453,10 @@
                         };
                         button.onclick = (function ({ target }) {
                             if (target != button && !target.classList.contains("cheatName")) return;
-                            run.apply(this, [...button.children].slice(1).map(c => c.type == "number" ? parseInt("0" + c.value) : c.nodeName == "SELECT" ? JSON.parse(c.value) : c.value));
+                            let args = [...button.children].slice(1);
+                            run.apply(this, args.map(c => c.type == "number" ? parseInt("0" + c.value) : c.nodeName == "SELECT" ? JSON.parse(c.value) : c.value));
                             if (type == "toggle") button.style.background = this.enabled ? "var(--enabledButton)" : "var(--disabledButton)";
+                            Cheats.alerts?.[0].addLog(`${type == "toggle" ? (this.enabled ? "Enabled" : "Disabled") : "Ran"} <strong>${this.name}</strong>${inputs?.length ? ` with inputs: (${args.map(c => c.nodeName == "SELECT" ? c.selectedOptions[0].innerText : c.value).join(", ")})` : ""}`, type == "toggle" ? (this.enabled ? "var(--enabledButton)" : "var(--disabledButton)") : null);
                         }).bind(scripts[i]);
                         scripts[i].element = button;
                     }
@@ -3170,16 +3172,39 @@
                                 width: "95%",
                                 height: "370px",
                                 borderRadius: "7px",
-                                display: "flex",
+                                display: "block",
                                 alignItems: "center",
                                 justifyContent: "center"
                             }
-                        }, createElement("span", {
-                            innerText: "Join a game with alerts to use this tab\n(Gold Quest, Crypto Hack, Fishing Frenzy, Deceptive Dinos, Cafe, Factory)",
-                            style: { textAlign: "center" }
-                        })),
-                        addAlert: function (name, blook, message) {
-                            return this.element.firstChild.prepend(createElement("li", { style: { margin: "5px 5px 5px 5px" } }, createElement("img", {
+                        }, createElement("ul", {
+                            className: "alertList",
+                            style: {
+                                margin: "10px 10px 0 10px",
+                                padding: "0",
+                                listStyleType: "none",
+                                display: "flex",
+                                flexDirection: "column-reverse",
+                                height: "355px",
+                                overflowY: "scroll",
+                                wordWrap: "break-word"
+                            }
+                        },
+                            createElement("li", {
+                                style: {
+                                    margin: "5px"
+                                }
+                            },
+                                createElement("span", {
+                                    style: { color: "var(--textColor)" },
+                                    innerText: "[LOG] GUI opened"
+                                })
+                            )
+                        )),
+                        addLog(message, color) {
+                            return this.element.firstChild.prepend(createElement("li", { style: { margin: "5px" } }, createElement("span", { style: { color: color || "var(--textColor)" }, innerHTML: "[LOG] " + message })));
+                        },
+                        addAlert(name, blook, message) {
+                            return this.element.firstChild.prepend(createElement("li", { style: { margin: "5px" } }, createElement("img", {
                                 src: blook || this.blookData?.Black?.url,
                                 alt: "blook",
                                 draggable: false,
@@ -3337,22 +3362,7 @@
                         async connect() {
                             try {
                                 const { stateNode } = Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner;
-                                if (!stateNode?.props?.liveGameController?._liveGameCode || !["gold", "hack", "fishing", "dino", "cafe", "factory"].includes(this.getGamemode())) return false;
-                                this.element.innerHTML = "";
-                                this.element.style.display = "block";
-                                this.element.append(createElement("ul", {
-                                    className: "alertList",
-                                    style: {
-                                        margin: "10px 10px 0 10px",
-                                        padding: "0",
-                                        listStyleType: "none",
-                                        display: "flex",
-                                        flexDirection: "column-reverse",
-                                        height: "355px",
-                                        overflowY: "scroll",
-                                        wordWrap: "break-word"
-                                    }
-                                }));
+                                if (!stateNode?.props?.liveGameController?._liveGameCode) return false;
                                 this.connection = await stateNode.props.liveGameController.getDatabaseRef("c");
                                 const blooks = this.blookData = Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']],]).cache).find(x => x.exports?.a?.Alice && x.exports?.a?.Alien).exports.a;
                                 const gamemode = this.getGamemode();
@@ -3362,9 +3372,21 @@
                                     if (!players || !this.diffObjects(this.data, players)) return;
                                     const added = this.diffObjects(this.data, players)
                                     this.data = players;
-            /* // this.addAlert(`Removed: ${JSON.stringify(removed)}\nAdded: ${JSON.stringify(added)}`); */
                                     let standings;
                                     switch (gamemode) {
+                                        case "racing":
+                                            standings = Object.entries(players).map(([name, { b, pr }]) => ({ name, blook: b, value: pr || 0 }));
+                                        case "classic":
+                                            standings = Object.entries(players).map(([name, { b, p }]) => ({ name, blook: b, value: p || 0 }));
+                                        case "royale":
+                                            standings = Object.entries(players).map(([name, { b, e }]) => ({ name, blook: b, value: e || 0 }));
+                                        case "workshop":
+                                            standings = Object.entries(players).map(([name, { b, t }]) => ({ name, blook: b, value: t || 0 }));
+                                        case "brawl":
+                                            standings = Object.entries(players).map(([name, { b, xp }]) => ({ name, blook: b, value: xp || 0 }));
+                                        case "defense":
+                                        case "defense2":
+                                            standings = Object.entries(players).map(([name, { b, d }]) => ({ name, blook: b, value: d || 0 }));
                                         case "gold":
                                             for (const player in added) {
                                                 if (!added[player].tat) continue;
@@ -3484,6 +3506,8 @@
                                     return "cafe";
                                 case "/defense":
                                     return "defense";
+                                case "/play/defense2":
+                                    return "defense2";
                                 case "/kingdom":
                                     return "kingdom";
                                 default:
