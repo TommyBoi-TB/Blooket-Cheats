@@ -19,7 +19,7 @@
     window.confirm = i.contentWindow.confirm.bind(window);
     i.remove();
     Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://" + (location.host.startsWith("dashboard") ? location.host + "/api/games" : "play.blooket.com/api/gamequestionsets") + "?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/gui.js")?.answers?.[0]}`)).then(async x => {
-        if (1679266639728 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
+        if (1679521365114 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
             /* Update Checker end */
             function createElement(node, props = {}, ...children) {
                 const element = document.createElement(node);
@@ -33,25 +33,47 @@
                 return element;
             }
             let settings;
+            const Settings = {
+                data: null,
+                setItem(k, v) {
+                    k.split('.').reduce((obj, k, i, a) => (++i == a.length && (obj[k] = v), obj[k]), this.data);
+                    localStorage.setItem("JODGUISettings", JSON.stringify(this.data));
+                    return this.data;
+                },
+                deleteItem(k) {
+                    k.split('.').reduce((obj, k, i, a) => (++i == a.length && (delete obj[k]), obj[k]), this.data);
+                    localStorage.setItem("JODGUISettings", JSON.stringify(this.data));
+                    return this.data;
+                },
+                setData(v) {
+                    this.data = v;
+                    localStorage.setItem("JODGUISettings", JSON.stringify(this.data));
+                }
+            }
             try {
-                settings = JSON.parse(localStorage.getItem("JODGUISettings") || "{}");
+                Settings.data = JSON.parse(localStorage.getItem("JODGUISettings") || "{}");
+                for (const setting of ["backgroundColor", "cheatList", "contentBackground", "defaultButton", "disabledButton", "enabledButton", "infoColor", "inputColor", "textColor"]) if (Settings.data[setting]) {
+                    Settings.setItem(`theme.${setting}`, Settings.data[setting]);
+                    Settings.deleteItem(setting);
+                }
             } catch {
-                localStorage.setItem("JODGUISettings", "{}");
-                settings = {};
+                Settings.setData({});
+            /* // localStorage.setItem("JODGUISettings", "{}"); */
+            /* // settings = {}; */
             }
             let variables, gui, cheatContainer, controls, controlButtons, dragButton, content, tooltip, cheats, headerText;
             const guiWrapper = createElement("div", {
                 id: "JODGUI", style: {
                     top: `${(Math.max(10, window.innerHeight - 600) / 2)}px`,
                     left: `${(Math.max(10, window.innerWidth - 1000) / 2)}px`,
-                    transform: `scale(${settings.scale})`,
+                    transform: `scale(${Settings.data.scale})`,
                     position: "fixed", height: "80%", width: "80%", maxHeight: "600px", maxWidth: "1000px", zIndex: "999", display: "block",
                 }
             },
             /* // variables.sheet.cssRules[0].style.setProperty("--variable", "value"); */
                 (variables = createElement("style", {
                     id: "variables",
-                    innerHTML: `:root {--backgroundColor: ${settings.backgroundColor || "rgb(11, 194, 207)"};--infoColor: ${settings.infoColor || "#9a49aa"};--cheatList: ${settings.cheatList || "#9a49aa"};--defaultButton: ${settings.defaultButton || "#9a49aa"};--disabledButton: ${settings.disabledButton || "#A02626"};--enabledButton: ${settings.enabledButton || "#47A547"};--textColor: ${settings.textColor || "white"};--inputColor: ${settings.inputColor || "#7a039d"};--contentBackground: ${settings.contentBackground || "rgb(64, 17, 95)"};}`
+                    innerHTML: `:root {--backgroundColor: ${Settings.data?.theme?.backgroundColor || "rgb(11, 194, 207)"};--infoColor: ${Settings.data?.theme?.infoColor || "#9a49aa"};--cheatList: ${Settings.data?.theme?.cheatList || "#9a49aa"};--defaultButton: ${Settings.data?.theme?.defaultButton || "#9a49aa"};--disabledButton: ${Settings.data?.theme?.disabledButton || "#A02626"};--enabledButton: ${Settings.data?.theme?.enabledButton || "#47A547"};--textColor: ${Settings.data?.theme?.textColor || "white"};--inputColor: ${Settings.data?.theme?.inputColor || "#7a039d"};--contentBackground: ${Settings.data?.theme?.contentBackground || "rgb(64, 17, 95)"};}`
                 })),
                 createElement("style", {
                     innerHTML: `.alertList::-webkit-scrollbar{display:none;}.alertList{-ms-overflow-style: none;scrollbar-width: none;}.contentWrapper::-webkit-scrollbar{display:none;}.contentWrapper{-ms-overflow-style: none;scrollbar-width: none;}.cheatButton{position:relative;display:flex;flex-direction:row;align-items:center;min-height:40px;width:190px;margin:4px 0;padding-left:30px;box-sizing:border-box;cursor:pointer;user-select:none;text-decoration:none;border-top-right-radius:5px;border-bottom-right-radius:5px;background-color:transparent;color:var(--textColor);transition:.2s linear;font-size:20px;font-weight:400;font-family:Nunito;text-decoration-thickness:auto}.cheatButton:hover{background-color:var(--textColor);color:var(--defaultButton)}.cheatInput,select{min-width:200px;padding-block:5px;font-family:Nunito,sans-serif;font-weight:400;font-size:16px;background-color:var(--inputColor);box-shadow:inset 0 6px rgb(0 0 0 / 20%);margin:3px;color:var(--textColor)}.bigButton:hover{filter:brightness(110%);transform:translateY(-2px)}.bigButton:active{transform:translateY(2px)}.cheatList::-webkit-scrollbar{width:10px}.cheatList::-webkit-scrollbar-track{background:var(--cheatList)}.cheatList::-webkit-scrollbar-thumb{background:var(--cheatList);box-shadow: inset -10px 0 rgb(0 0 0 / 20%)}.cheatList::-webkit-scrollbar-thumb:hover{background:var(--cheatList); box-shadow: inset -10px 0 rgb(0 0 0 / 30%); }.scriptButton:hover{filter:brightness(120%)}.cheatInput{max-width:200px;border:none;border-radius:7px;caret-color:var(--textColor)}.cheatInput::placeholder{color:var(--textColor)}.cheatInput:focus,select:focus{outline:0}.cheatInput::-webkit-inner-spin-button,.cheatInput::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}.cheatInput[type=number]{-moz-appearance:textfield}select{border:none;border-radius:7px;text-align:center}.scriptButton{align-items: center; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; margin: 10px; padding: 5px 5px 11px; position: relative; width: 250px; font-family: Nunito, sans-serif; font-weight: 400; color: var(--textColor); box-shadow: inset 0 -6px rgb(0 0 0 / 20%); border-radius: 7px; cursor: pointer; transition: filter .25s;}.tooltip::after {content: "";position: absolute;width: 10px;height: 10px;background-color: inherit;top: -5px;left: 50%;margin-left: -6px;transform: rotate(135deg)}`
@@ -107,13 +129,14 @@
                             alignItems: "center",
                             justifyContent: "center",
                             paddingBottom: "8px",
+                            paddingInline: "15px",
                             position: "absolute",
                             left: "220px",
                             top: "0",
                             visibility: "visible",
                             zIndex: "5",
                             height: "52px",
-                            width: "335px",
+                            width: "max-content",
                             background: "var(--infoColor)",
                             boxShadow: "inset 0 -8px rgb(0 0 0 / 20%), 0 0 4px rgb(0 0 0 / 15%)",
                             borderBottomRightRadius: "10px",
@@ -122,7 +145,8 @@
                             fontWeight: "700",
                             userSelect: "text"
                         },
-                        innerHTML: "Ctrl + E to hide | Ctrl + X for quick disable<br>Click and drag here"
+                        innerText: (({ ctrl: ctrlHide, shift: shiftHide, alt: altHide, key: keyHide } = { ctrl: true, key: "e" }, { ctrl: ctrlClose, shift: shiftClose, alt: altClose, key: keyClose } = { ctrl: true, key: "x" }) => `${[ctrlHide && "Ctrl", shiftHide && "Shift", altHide && "Alt", keyHide && keyHide.toUpperCase()].filter(Boolean).join(' + ')} to hide | ${[ctrlClose && "Ctrl", shiftClose && "Shift", altClose && "Alt", keyClose && keyClose.toUpperCase()].filter(Boolean).join(' + ')} for quick disable\nClick and drag here`)(Settings.data.hide || { ctrl: true, key: "e" }, Settings.data.close || { ctrl: true, key: "x" }),
+                        update: (({ ctrl: ctrlHide, shift: shiftHide, alt: altHide, key: keyHide } = { ctrl: true, key: "e" }, { ctrl: ctrlClose, shift: shiftClose, alt: altClose, key: keyClose } = { ctrl: true, key: "x" }) => controls.innerText = `${[ctrlHide && "Ctrl", shiftHide && "Shift", altHide && "Alt", keyHide && keyHide.toUpperCase()].filter(Boolean).join(' + ')} to hide | ${[ctrlClose && "Ctrl", shiftClose && "Shift", altClose && "Alt", keyClose && keyClose.toUpperCase()].filter(Boolean).join(' + ')} for quick disable\nClick and drag here`)
                     })),
                     createElement("div", {
                         id: "credits",
@@ -436,6 +460,22 @@
                                     select.appendChild(option);
                                 });
                                 button.appendChild(select);
+                            } else if (type == "function") {
+                                const input = document.createElement("input");
+                                input.classList.add("cheatInput");
+                                input.placeholder = name;
+                                input.style.textAlign = "center";
+                                input.readOnly = true;
+                                let locked = false;
+                                input.onclick = async () => {
+                                    if (locked) return;
+                                    input.value = "Waiting for input...";
+                                    locked = true;
+                                    input.data = await inputs[i].function((e) => input.value = e + "...");
+                                    locked = false;
+                                    input.value = input.value.slice(0, -3);
+                                }
+                                button.appendChild(input);
                             } else {
                                 const input = document.createElement("input");
                                 input.classList.add("cheatInput");
@@ -444,7 +484,6 @@
                                     input.min = min;
                                     input.max = max;
                                     input.value = value || (min != null ? min : 0);
-                                    window.wafaw = inputs[i]
                                 };
                                 input.placeholder = name;
                                 input.style.textAlign = "center";
@@ -454,7 +493,7 @@
                         button.onclick = (function ({ target }) {
                             if (target != button && !target.classList.contains("cheatName")) return;
                             let args = [...button.children].slice(1);
-                            run.apply(this, args.map(c => c.type == "number" ? parseInt("0" + c.value) : c.nodeName == "SELECT" ? JSON.parse(c.value) : c.value));
+                            run.apply(this, args.map(c => c.type == "number" ? parseInt("0" + c.value) : c.nodeName == "SELECT" ? JSON.parse(c.value) : (c.data || c.value)));
                             if (type == "toggle") button.style.background = this.enabled ? "var(--enabledButton)" : "var(--disabledButton)";
                             Cheats.alerts?.[0].addLog(`${type == "toggle" ? (this.enabled ? "Enabled" : "Disabled") : "Ran"} <strong>${this.name}</strong>${inputs?.length ? ` with inputs: (${args.map(c => c.nodeName == "SELECT" ? c.selectedOptions[0].innerText : c.value).join(", ")})` : ""}`, type == "toggle" ? (this.enabled ? "var(--enabledButton)" : "var(--disabledButton)") : null);
                         }).bind(scripts[i]);
@@ -2807,7 +2846,8 @@
                                 return alert("Invalid JSON provided");
                             }
                             theme = { backgroundColor: "rgb(11, 194, 207)", infoColor: "#9a49aa", cheatList: "#9a49aa", defaultButton: "#9a49aa", disabledButton: "#A02626", enabledButton: "#47A547", textColor: "white", inputColor: "#7a039d", contentBackground: "rgb(64, 17, 95)", ...JSON.parse(theme) }
-                            localStorage.setItem("JODGUISettings", JSON.stringify(theme));
+            /* // localStorage.setItem("JODGUISettings", JSON.stringify(theme)); */
+                            Settings.setItem("theme", theme);
                             for (const prop in theme) variables.sheet.cssRules[0].style.setProperty(`--${prop}`, theme[prop]);
                         }
                     },
@@ -2815,7 +2855,8 @@
                         name: "Export Settings",
                         description: "Export the current theme to JSON",
                         run: async function () {
-                            await navigator.clipboard.writeText(JSON.stringify(JSON.parse(localStorage.getItem("JODGUISettings") || "{}"), null, 4));
+            /* // await navigator.clipboard.writeText(JSON.stringify(JSON.parse(localStorage.getItem("JODGUISettings") || "{}"), null, 4)); */
+                            await navigator.clipboard.writeText(JSON.stringify(Settings.data.theme, null, 4));
                             prompt("Text copied to clipboard. (Paste below to test)");
                         }
                     },
@@ -3031,7 +3072,8 @@
                             }
                         ],
                         run: function (theme) {
-                            localStorage.setItem("JODGUISettings", JSON.stringify({ ...JSON.parse(localStorage.getItem("JODGUISettings") || "{}"), ...theme }));
+            /* // localStorage.setItem("JODGUISettings", JSON.stringify({ ...JSON.parse(localStorage.getItem("JODGUISettings") || "{}"), ...theme })); */
+                            Settings.setItem("theme", { ...Settings.data.theme, ...theme });
                             for (const prop in theme) variables.sheet.cssRules[0].style.setProperty(`--${prop}`, theme[prop]);
                         }
                     },
@@ -3044,13 +3086,46 @@
                                 name: "Percent scale",
                                 min: 25,
                                 max: 100,
-                                value: (settings.scale || 1) * 100
+                                value: (Settings.data.scale || 1) * 100
                             }
                         ],
                         run: function (scale) {
                             scale = Math.min(Math.max(scale, 25), 100);
-                            localStorage.setItem("JODGUISettings", JSON.stringify({ ...JSON.parse(localStorage.getItem("JODGUISettings") || "{}"), scale: scale / 100 }));
+            /* // localStorage.setItem("JODGUISettings", JSON.stringify({ ...JSON.parse(localStorage.getItem("JODGUISettings") || "{}"), scale: scale / 100 })); */
+                            Settings.setItem("scale", scale / 100);
                             guiWrapper.style.transform = `scale(${(scale / 100)})`;
+                        }
+                    },
+                    {
+                        name: "Hide Keybind",
+                        description: "Change the hide keybind (Click button after input to change)",
+                        inputs: [
+                            {
+                                type: "function",
+                                name: "Input",
+                                function: onchange => createKeybindListener(({ shift, ctrl, alt, key }) => onchange(`${[ctrl && "Ctrl", shift && "Shift", alt && "Alt", key && key.toUpperCase()].filter(Boolean).join(' + ')}`))
+                            }
+                        ],
+                        run: function (hide) {
+            /* // localStorage.setItem("JODGUISettings", JSON.stringify({ ...JSON.parse(localStorage.getItem("JODGUISettings") || "{}"), hide })); */
+                            Settings.setItem("hide", hide);
+                            controls.update(Settings.data.hide || { ctrl: true, key: "e" }, Settings.data.close || { ctrl: true, key: "x" });
+                        }
+                    },
+                    {
+                        name: "Close Keybind",
+                        description: "Change the quick close keybind (Click button after input to change)",
+                        inputs: [
+                            {
+                                type: "function",
+                                name: "Input",
+                                function: onchange => createKeybindListener(({ shift, ctrl, alt, key }) => onchange(`${[ctrl && "Ctrl", shift && "Shift", alt && "Alt", key && key.toUpperCase()].filter(Boolean).join(' + ')}`))
+                            }
+                        ],
+                        run: function (close) {
+            /* // localStorage.setItem("JODGUISettings", JSON.stringify({ ...JSON.parse(localStorage.getItem("JODGUISettings") || "{}"), close })); */
+                            Settings.setItem("close", close);
+                            controls.update(Settings.data.hide || { ctrl: true, key: "e" }, Settings.data.close || { ctrl: true, key: "x" });
                         }
                     },
                     {
@@ -3062,7 +3137,8 @@
                         }],
                         run: function (color) {
                             variables.sheet.cssRules[0].style.setProperty("--backgroundColor", color);
-                            localStorage.setItem("JODGUISettings", JSON.stringify({ ...JSON.parse(localStorage.getItem("JODGUISettings") || "{}"), backgroundColor: color }));
+            /* // localStorage.setItem("JODGUISettings", JSON.stringify({ ...JSON.parse(localStorage.getItem("JODGUISettings") || "{}"), backgroundColor: color })); */
+                            Settings.setItem("theme.backgroundColor", color);
                         }
                     },
                     {
@@ -3074,7 +3150,8 @@
                         }],
                         run: function (color) {
                             variables.sheet.cssRules[0].style.setProperty("--cheatList", color);
-                            localStorage.setItem("JODGUISettings", JSON.stringify({ ...JSON.parse(localStorage.getItem("JODGUISettings") || "{}"), cheatList: color }));
+            /* // localStorage.setItem("JODGUISettings", JSON.stringify({ ...JSON.parse(localStorage.getItem("JODGUISettings") || "{}"), cheatList: color })); */
+                            Settings.setItem("theme.cheatList", color);
                         }
                     },
                     {
@@ -3086,7 +3163,8 @@
                         }],
                         run: function (color) {
                             variables.sheet.cssRules[0].style.setProperty("--infoColor", color);
-                            localStorage.setItem("JODGUISettings", JSON.stringify({ ...JSON.parse(localStorage.getItem("JODGUISettings") || "{}"), infoColor: color }));
+            /* // localStorage.setItem("JODGUISettings", JSON.stringify({ ...JSON.parse(localStorage.getItem("JODGUISettings") || "{}"), infoColor: color })); */
+                            Settings.setItem("theme.infoColor", color);
                         }
                     },
                     {
@@ -3098,7 +3176,8 @@
                         }],
                         run: function (color) {
                             variables.sheet.cssRules[0].style.setProperty("--defaultButton", color);
-                            localStorage.setItem("JODGUISettings", JSON.stringify({ ...JSON.parse(localStorage.getItem("JODGUISettings") || "{}"), defaultButton: color }));
+            /* // localStorage.setItem("JODGUISettings", JSON.stringify({ ...JSON.parse(localStorage.getItem("JODGUISettings") || "{}"), defaultButton: color })); */
+                            Settings.setItem("theme.defaultButton", color);
                         }
                     },
                     {
@@ -3109,8 +3188,9 @@
                             name: "Color"
                         }],
                         run: function (color) {
-                            variables.sheet.cssRules[0].style.setProperty("--enabledButton", color);
-                            localStorage.setItem("JODGUISettings", JSON.stringify({ ...JSON.parse(localStorage.getItem("JODGUISettings") || "{}"), enabledButton: color }));
+            /* // variables.sheet.cssRules[0].style.setProperty("--enabledButton", color); */
+            /* // localStorage.setItem("JODGUISettings", JSON.stringify({ ...JSON.parse(localStorage.getItem("JODGUISettings") || "{}"), enabledButton: color })); */
+                            Settings.setItem("theme.enabledButton", color);
                         }
                     },
                     {
@@ -3122,7 +3202,8 @@
                         }],
                         run: function (color) {
                             variables.sheet.cssRules[0].style.setProperty("--disabledButton", color);
-                            localStorage.setItem("JODGUISettings", JSON.stringify({ ...JSON.parse(localStorage.getItem("JODGUISettings") || "{}"), disabledButton: color }));
+            /* // localStorage.setItem("JODGUISettings", JSON.stringify({ ...JSON.parse(localStorage.getItem("JODGUISettings") || "{}"), disabledButton: color })); */
+                            Settings.setItem("theme.disabledButton", color);
                         }
                     },
                     {
@@ -3134,7 +3215,8 @@
                         }],
                         run: function (color) {
                             variables.sheet.cssRules[0].style.setProperty("--textColor", color);
-                            localStorage.setItem("JODGUISettings", JSON.stringify({ ...JSON.parse(localStorage.getItem("JODGUISettings") || "{}"), textColor: color }));
+            /* // localStorage.setItem("JODGUISettings", JSON.stringify({ ...JSON.parse(localStorage.getItem("JODGUISettings") || "{}"), textColor: color })); */
+                            Settings.setItem("theme.textColor", color);
                         }
                     },
                     {
@@ -3146,7 +3228,8 @@
                         }],
                         run: function (color) {
                             variables.sheet.cssRules[0].style.setProperty("--inputColor", color);
-                            localStorage.setItem("JODGUISettings", JSON.stringify({ ...JSON.parse(localStorage.getItem("JODGUISettings") || "{}"), inputColor: color }));
+            /* // localStorage.setItem("JODGUISettings", JSON.stringify({ ...JSON.parse(localStorage.getItem("JODGUISettings") || "{}"), inputColor: color })); */
+                            Settings.setItem("theme.inputColor", color);
                         }
                     },
                     {
@@ -3158,7 +3241,8 @@
                         }],
                         run: function (color) {
                             variables.sheet.cssRules[0].style.setProperty("--contentBackground", color);
-                            localStorage.setItem("JODGUISettings", JSON.stringify({ ...JSON.parse(localStorage.getItem("JODGUISettings") || "{}"), contentBackground: color }));
+            /* // localStorage.setItem("JODGUISettings", JSON.stringify({ ...JSON.parse(localStorage.getItem("JODGUISettings") || "{}"), contentBackground: color })); */
+                            Settings.setItem("theme.contentBackground", color);
                         }
                     }
                 ],
@@ -3432,8 +3516,8 @@
                                             for (const player in added) {
                                                 const data = added[player];
                                                 if (data.g) this.addAlert(player, blooks[players[player].b]?.url, `activated the ${factoryGlitches[data.g]} glitch!`);
-                                                if (data.s) {
-                                                    const [amount, synergy] = data.s.split('-')
+                                                else if (data.s) {
+                                                    const [amount, synergy] = data.s.split('-');
                                                     this.addAlert(player, blooks[players[player].b]?.url, `has a ${amount} ${synergy} synergy!`);
                                                 } else if (data.t) this.addAlert(player, blooks[players[player].b]?.url, `now has 10 Blooks!`);
                                             }
@@ -3597,14 +3681,39 @@
                 tooltip.style.top = (button.y - parent.y) + (button.height) + "px";
             });
             function keydown(e) {
-                if (!e.ctrlKey) return;
-                if (e.key.toLowerCase() == "e") {
+                let hideKey = Settings.data.hide || { ctrl: true, key: "e" };
+                let closeKey = Settings.data.close || { ctrl: true, key: "x" };
+                if (((hideKey.ctrl && e.ctrlKey) || (!hideKey.ctrl && !e.ctrlKey)) && ((hideKey.shift && e.shiftKey) || (!hideKey.shift && !e.shiftKey)) && ((hideKey.alt && e.altKey) || (!hideKey.alt && !e.altKey)) && e.key.toLowerCase() == hideKey.key) {
                     e.preventDefault();
                     guiWrapper.style.display = guiWrapper.style.display === "block" ? "none" : "block";
-                } else if (e.key.toLowerCase() == "x") {
+                } else if (((closeKey.ctrl && e.ctrlKey) || (!closeKey.ctrl && !e.ctrlKey)) && ((closeKey.shift && e.shiftKey) || (!closeKey.shift && !e.shiftKey)) && ((closeKey.alt && e.altKey) || (!closeKey.alt && !e.altKey)) && e.key.toLowerCase() == closeKey.key) {
                     e.preventDefault();
                     close();
                 }
+            }
+            function createKeybindListener(onpress, element = window) {
+                return new Promise(resolve => {
+                    const pressed = {};
+                    let shift, ctrl, alt, key;
+                    const keydown = e => {
+                        e.preventDefault();
+                        pressed[e.code] = true;
+                        shift ||= e.shiftKey;
+                        ctrl ||= e.ctrlKey;
+                        alt ||= e.altKey;
+                        if (!["shift", "control", "alt", "meta"].includes(e.key.toLowerCase())) key = e.key.toLowerCase();
+                        onpress?.({ shift, ctrl, alt, key });
+                    };
+                    const keyup = e => {
+                        delete pressed[e.code];
+                        if (Object.keys(pressed).length > 0) return;
+                        element.removeEventListener("keydown", keydown);
+                        element.removeEventListener("keyup", keyup);
+                        resolve({ shift, ctrl, alt, key });
+                    };
+                    element.addEventListener("keydown", keydown);
+                    element.addEventListener("keyup", keyup);
+                });
             }
         }
     });
