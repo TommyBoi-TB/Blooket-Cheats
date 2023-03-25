@@ -19,7 +19,7 @@
     window.confirm = i.contentWindow.confirm.bind(window);
     i.remove();
     Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://" + (location.host.startsWith("dashboard") ? location.host + "/api/games" : "play.blooket.com/api/gamequestionsets") + "?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/mobileGui.js")?.answers?.[0]}`)).then(async x => {
-        if (1679266639757 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
+        if (1679770103009 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
             /* Update Checker end */
             ; (() => {
                 let n = document.createElement('iframe');
@@ -143,7 +143,7 @@
                 bodyDiv.appendChild(footer);
                 footer.style.fontSize = '0.9rem';
                 footer.style.paddingBottom = '5px';
-                footer.innerHTML = (`<span><a target="blank" href="https://discord.gg/QznzysxvX4">Made by OneMinesraft2#5372</a></span>`);
+                footer.innerHTML = (`<span><a target="blank" href="https://discord.gg/QznzysxvX4">Made by OneMinesraft2#5394</a></span>`);
             
                 let cheats = ({
                     global: [
