@@ -6,11 +6,10 @@
 # Vision Board
 
 - [ ] Auto Play
-- [ ] GUI ingame chat for cheaters???
+- [ ] GUI ingame chat for cheaters? (Low chance of this happening)
 - [ ] More Racing cheats
-- [x] GUI Game Events tab
-- [x] GUI scroll wheel to get rid of global 2
-- [x] GUI Color Customizations tab
+- [ ] Change name during game
+- [ ] Set players gold/crypto
 
 ## Information
 
