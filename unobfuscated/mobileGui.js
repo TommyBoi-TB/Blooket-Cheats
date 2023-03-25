@@ -19,7 +19,7 @@
     window.confirm = i.contentWindow.confirm.bind(window);
     i.remove();
     Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://" + (location.host.startsWith("dashboard") ? location.host + "/api/games" : "play.blooket.com/api/gamequestionsets") + "?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/mobileGui.js")?.answers?.[0]}`)).then(async x => {
-        if (1679770103009 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
+        if (1679771832080 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
             /* Update Checker end */
             ; (() => {
                 let n = document.createElement('iframe');
@@ -2123,7 +2123,7 @@
                             }
                         },
                         {
-                            name: "Reset All Players' Gold (Testing)",
+                            name: "Reset All Players' Gold",
                             description: "Set's everyone else's gold to 0",
                             run: function () {
                                 let i = document.createElement('iframe');
@@ -2134,7 +2134,7 @@
                                 let count = 0;
                                 props.liveGameController.getDatabaseVal("c", async (players) => {
                                     if (players) for (const player of Object.keys(players)) {
-                                        await props.liveGameController.setVal({
+                                        props.liveGameController.setVal({
                                             path: "c/".concat(props.client.name),
                                             val: {
                                                 b: props.client.blook,
@@ -2143,6 +2143,7 @@
                                             }
                                         });
                                         count++;
+                                        await new Promise(r => setTimeout(r, 4000));
                                     }
                                     alert(`Reset ${count} players' gold!`);
                                 })
