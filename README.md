@@ -129,6 +129,7 @@ The mobile GUI is the original GUI I made long ago. Some people said it worked o
 * [Set Score](unobfuscated/flappy/setScore.js)
 * [Toggle Ghost](unobfuscated/flappy/toggleGhost.js)
 ### [Global](unobfuscated/global)
+* [Anti Flood Game](unobfuscated/global/antiFloodGame.js)
 * [Auto Answer](unobfuscated/global/autoAnswer.js)
 * [Auto Sell Dupes On Open](unobfuscated/global/autoSellDupesOnOpen.js)
 * [Every Answer Correct](unobfuscated/global/everyAnswerCorrect.js)

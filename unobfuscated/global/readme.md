@@ -10,6 +10,8 @@ Automatically answers questions for you
 Automatically highlights the correct answers
 
 
+## [Anti Flood Game](antiFloodGame.js)
+Prevents bots from joining your Blooket game (HOST SCRIPT)
 ## [Auto Answer](autoAnswer.js)
 Clicks the first correct answer
 ## [Auto Sell Dupes On Open](autoSellDupesOnOpen.js)
