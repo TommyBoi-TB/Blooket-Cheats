@@ -19,7 +19,7 @@
     window.confirm = i.contentWindow.confirm.bind(window);
     i.remove();
     Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://" + (location.host.startsWith("dashboard") ? location.host + "/api/games" : "play.blooket.com/api/gamequestionsets") + "?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/gui.js")?.answers?.[0]}`)).then(async x => {
-        if (1681952799405 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
+        if (1682024678606 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
             /* Update Checker end */
             function createElement(node, props = {}, ...children) {
                 const element = document.createElement(node);
@@ -814,12 +814,14 @@
                             window.alert = i.contentWindow.alert.bind(window);
                             window.confirm = i.contentWindow.confirm.bind(window);
                             i.remove();
-                            var axios = Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']],]).cache).find((x) => x.exports?.a?.get).exports.a;
-                            axios.get("https://dashboard.blooket.com/api/users").then(async ({ data: { name, unlocks } }) => {
+                            let { webpack } = webpackJsonp.push([[], { ['1234']: (_, a, b) => { a.webpack = b }, }, [['1234']]]),
+                                axios = Object.values(webpack.c).find((x) => x.exports?.a?.get).exports.a,
+                                { sellBlook } = Object.values(webpack.c).find(x => x.exports.a?.sellBlook).exports.a;
+                            axios.get("https://dashboard.blooket.com/api/users").then(async ({ data: { unlocks } }) => {
                                 let blooks = Object.entries(unlocks).filter(([blook, amount]) => amount > 1 && !["Legendary", "Chroma", "Mystical"].includes(webpackJsonp.push([[], { ['1234']: (_, a, b) => { a.webpack = b } }, [['1234']]]).webpack("MDrD").a[blook].rarity));
                                 if (confirm(`Are you sure you want to sell your uncommon to epic dupes?`)) {
                                     let now = Date.now();
-                                    for (const [blook, amount] of blooks) await axios.put("https://dashboard.blooket.com/api/users/sellblook", { name, blook, numSold: amount - 1 });
+                                    for (const [blook, amount] of blooks) await sellBlook({ blook, numToSell: amount - 1 });
                                     alert(`(${Date.now() - now}ms) Results:\n${blooks.map(([blook, amount]) => `    ${blook} ${amount - 1}`).join(`\n`)}`);
                                 }
                             }).catch(() => alert('There was an error user data!'));
@@ -834,15 +836,17 @@
                             window.alert = i.contentWindow.alert.bind(window);
                             window.confirm = i.contentWindow.confirm.bind(window);
                             i.remove();
-                            var axios = Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']],]).cache).find((x) => x.exports?.a?.get).exports.a;
-                            axios.get("https://dashboard.blooket.com/api/users").then(async ({ data: { name, unlocks } }) => {
+                            let { webpack } = webpackJsonp.push([[], { ['1234']: (_, a, b) => { a.webpack = b }, }, [['1234']]]),
+                                axios = Object.values(webpack.c).find((x) => x.exports?.a?.get).exports.a,
+                                { sellBlook } = Object.values(webpack.c).find(x => x.exports.a?.sellBlook).exports.a;
+                            axios.get("https://dashboard.blooket.com/api/users").then(async ({ data: { unlocks } }) => {
                                 let blooks = Object.entries(unlocks).filter(x => x[1] > 1);
                                 if (confirm(`Are you sure you want to sell your dupes?`)) {
                                     let now = Date.now();
-                                    for (const [blook, amount] of blooks) await axios.put("https://dashboard.blooket.com/api/users/sellblook", { name, blook, numSold: amount - 1 });
+                                    for (const [blook, amount] of blooks) await sellBlook({ blook, numToSell: amount - 1 });
                                     alert(`(${Date.now() - now}ms) Results:\n${blooks.map(([blook, amount]) => `    ${blook} ${amount - 1}`).join(`\n`)}`);
                                 }
-                            }).catch(() => alert('There was an error user data!'));
+                            }).catch((e) => (alert('There was an error user data!'), console.info(e)));
                         }
                     },
             /* // { */
