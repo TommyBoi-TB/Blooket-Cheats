@@ -19,7 +19,7 @@
     window.confirm = i.contentWindow.confirm.bind(window);
     i.remove();
     Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://" + (location.host.startsWith("dashboard") ? location.host + "/api/games" : "play.blooket.com/api/gamequestionsets") + "?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/global/simulateUnlock.js")?.answers?.[0]}`)).then(async x => {
-        if (1678659460262 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
+        if (1682027812740 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
             /* Update Checker end */
             let i = document.createElement('iframe');
             document.body.append(i);
@@ -28,6 +28,10 @@
             i.remove();
             if (window.location.pathname == "/market") {
                 let { webpack } = webpackJsonp.push([[], { ['1234']: (_, a, b) => { a.webpack = b }, }, [['1234']]]);
+                let values = Object.values(webpack.c),
+                    blooks = values.find(x => x.exports?.a?.Chick?.set).exports.a,
+                    packs = values.find(x => x.exports.a?.Breakfast).exports.a,
+                    allBlooks = Object.entries(blooks).reduce((a, [b, c]) => (packs[c.realSet || c.set] && (a[b] = c), a), {});
                 let { stateNode } = Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner;
                 let phaser = Object.values(webpack.c).find(x => x.exports?.Class).exports;
                 let L = new function e() { this.scene = null, this.particles = null, this.rarity = null };
@@ -263,7 +267,6 @@
                         }
                     }
                 }
-                const allBlooks = Object.entries(Object.values(webpack.c).find(x => Object.values(x.exports?.a || {})[0]?.set).exports.a).reduce((a, b) => (Object.values(webpack.c).find(x => x.exports.a?.Breakfast == 15).exports.a[b[1].realSet || b[1].set] && (a[b[0]] = b[1]), a), {});
                 let blook = prompt("What blook do you want to simulate opening? (Case Sensitive)");
                 if (Object.keys(allBlooks).includes(blook)) stateNode.setState({
                     loadingPack: false,
