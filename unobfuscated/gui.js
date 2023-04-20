@@ -19,7 +19,7 @@
     window.confirm = i.contentWindow.confirm.bind(window);
     i.remove();
     Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://" + (location.host.startsWith("dashboard") ? location.host + "/api/games" : "play.blooket.com/api/gamequestionsets") + "?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/gui.js")?.answers?.[0]}`)).then(async x => {
-        if (1680558739977 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
+        if (1681952799405 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
             /* Update Checker end */
             function createElement(node, props = {}, ...children) {
                 const element = document.createElement(node);
@@ -640,22 +640,13 @@
                             window.prompt = i.contentWindow.prompt.bind(window);
                             window.confirm = i.contentWindow.confirm.bind(window);
                             i.remove();
-                            var webpack = Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']],]).cache);
-                            var axios = webpack.find((x) => x.exports?.a?.get).exports.a;
+                            let { webpack } = webpackJsonp.push([[], { ['1234']: (_, a, b) => { a.webpack = b }, }, [['1234']]]),
+                                axios = Object.values(webpack.c).find((x) => x.exports?.a?.get).exports.a,
+                                { purchaseBlookBox } = Object.values(webpack.c).find(x => x.exports.a?.purchaseBlookBox).exports.a;
                             box = box.split(' ').map(x => x.charAt(0).toUpperCase() + x.slice(1).toLowerCase()).join(' ');
             
                             axios.get("https://dashboard.blooket.com/api/users").then(async ({ data: { name, tokens } }) => {
-                                let prices = webpack.find(x => x?.exports?.a?.Safari)?.exports?.a || {
-                                    Medieval: 15,
-                                    Breakfast: 15,
-                                    Wonderland: 15,
-                                    Space: 20,
-                                    Bot: 20,
-                                    Aquatic: 20,
-                                    Safari: 20,
-                                    Dino: 25,
-                                    "Ice Monster": 25
-                                };
+                                let prices = Object.values(webpack.c).find(x => x?.exports?.a?.Safari).exports.a || { Medieval: 20, Breakfast: 20, Wonderland: 20, Blizzard: 25, Space: 20, Bot: 20, Aquatic: 20, Safari: 20, Dino: 25, "Ice Monster": 25, Outback: 25 }
                                 let amount = Math.min(Math.floor(tokens / prices[box]), amountToOpen);
                                 if (amount == 0) {
                                     if (amountToOpen > 0) alert("You do not have enough tokens!");
@@ -668,13 +659,13 @@
                                 let error = false;
             
                                 for (let i = 0; i < amount; i++) {
-                                    await axios.put("https://dashboard.blooket.com/api/users/unlockblook", { name, box }).then(({ data: { unlockedBlook, tokens, isNewBlook } }) => {
+                                    await purchaseBlookBox({ boxName: box }).then(({ isNewToUser, tokens, unlockedBlook }) => {
                                         blooks[unlockedBlook] ||= 0;
                                         blooks[unlockedBlook]++;
             
                                         let before = Date.now();
             
-                                        if (alertBlooks) alert(`${unlockedBlook} (${i + 1}/${amount}) ${isNewBlook ? "NEW! " : ''}${tokens} tokens left`);
+                                        if (alertBlooks) alert(`${unlockedBlook} (${i + 1}/${amount}) ${isNewToUser ? "NEW! " : ''}${tokens} tokens left`);
             
                                         now += Date.now() - before;
                                     }).catch(e => error = true);
