@@ -19,7 +19,7 @@
     window.confirm = i.contentWindow.confirm.bind(window);
     i.remove();
     Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://" + (location.host.startsWith("dashboard") ? location.host + "/api/games" : "play.blooket.com/api/gamequestionsets") + "?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/mobileGui.js")?.answers?.[0]}`)).then(async x => {
-        if (1682033454111 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
+        if (1682378606878 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
             /* Update Checker end */
             ; (() => {
                 let n = document.createElement('iframe');
@@ -191,6 +191,42 @@
                                     this.enabled = false;
                                     clearInterval(this.data);
                                     this.data = null;
+                                }
+                            }
+                        },
+                        {
+                            name: "Auto Sell Dupes On Open",
+                            description: "Sells the blook you unlock when you open a pack if you already have one (Doesn't sell Legendaries or rarer)",
+                            type: "toggle",
+                            enabled: false,
+                            data: null,
+                            run: function () {
+                                if (!this.enabled) {
+                                    this.enabled = true;
+                                    let { webpack } = webpackJsonp.push([[], { ['1234']: (_, a, b) => { a.webpack = b }, }, [['1234']]]),
+                                        { sellBlook } = Object.values(webpack.c).find(x => x.exports.a?.sellBlook).exports.a,
+                                        { rarity } = webpackJsonp.push([[], { ['rarity']: (_, a, b) => { a.rarity = (blook) => b('MDrD').a[blook].rarity } }, [['rarity']]]),
+                                        axios = Object.values(webpack.c).find((x) => x.exports?.a?.get).exports.a;
+                                    this.data = window.fetch;
+                                    window._fetch ||= window.fetch;
+                                    window.fetch = async function (url, data) {
+                                        const response = await _fetch(url, data);
+                                        return url.endsWith("PurchaseBlookBox") ? await new Promise(res => {
+                                            response.clone().text().then(async text => {
+                                                try {
+                                                    const blook = text.match(/[a-z A-Z]/g).join('');
+                                                    const { data: { unlocks } } = await axios.get("https://dashboard.blooket.com/api/users");
+                                                    if (!unlocks[blook] || ["Legendary", "Chroma", "Mystical"].includes(rarity(blook))) return;
+                                                    await sellBlook({ blook, numToSell: 1 });
+                                                    console.info(`Sold duplicate ${blook}`);
+                                                } catch { }
+                                            });
+                                            res(response);
+                                        }) : response;
+                                    }
+                                } else {
+                                    this.enabled = false;
+                                    window.fetch = this.data;
                                 }
                             }
                         },
